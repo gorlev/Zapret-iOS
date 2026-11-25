@@ -21,6 +21,7 @@ targets:
     sources:
       - App
       - Shared
+      - Intents
       - path: Icon/AppIcon.icon
         buildPhase: resources
       - path: Icon/Accent.xcassets
@@ -43,6 +44,29 @@ targets:
     dependencies:
       - target: ZapretTunnel
         embed: true
+      - target: ZapretWidgets
+        embed: true
+
+  ZapretWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widgets
+      - Intents
+      - Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios.widgets
+        PRODUCT_NAME: ZapretWidgets
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Zapret
+        CODE_SIGN_ENTITLEMENTS: Widgets/ZapretWidgets.entitlements
+        SKIP_INSTALL: YES
+    info:
+      path: Widgets/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
 
   ZapretTunnel:
     type: app-extension

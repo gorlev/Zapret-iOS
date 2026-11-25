@@ -17,7 +17,7 @@ public enum DNSChoice: String, CaseIterable, Sendable, Codable, Identifiable {
 }
 
 /// The files and settings the app and the tunnel extension share through the App Group.
-public enum AppGroup {
+public nonisolated enum AppGroup {
     public static let id = "group.com.gorlev.zapretios"
     public static let tunnelBundleID = "com.gorlev.zapretios.tunnel"
 
@@ -47,15 +47,40 @@ public struct TunnelConfig: Codable, Equatable, Sendable {
     public var hasExcludes: Bool
     /// Subscribed lists, IP ranges, and the automatic list (nil: none).
     public var lists: TunnelLists?
+    /// Log every connection (tpws debug level 1) or only errors (level 0).
+    public var verbose: Bool
+    /// Also listen on the iPhone's Wi-Fi address, so other devices can use the proxy.
+    public var shareOnNetwork: Bool
+    /// The Wi-Fi IPv4 address to share on. The extension fills it in when it starts.
+    public var shareAddress: String?
 
     public init(strategy: [String], scope: Scope, dns: DNSChoice, hasHostlist: Bool, hasExcludes: Bool,
-                lists: TunnelLists? = nil) {
+                lists: TunnelLists? = nil,
+                verbose: Bool = SharedPrefs.verboseLog, shareOnNetwork: Bool = SharedPrefs.shareOnNetwork,
+                shareAddress: String? = nil) {
         self.strategy = strategy
         self.scope = scope
         self.dns = dns
         self.hasHostlist = hasHostlist
         self.hasExcludes = hasExcludes
         self.lists = lists
+        self.verbose = verbose
+        self.shareOnNetwork = shareOnNetwork
+        self.shareAddress = shareAddress
+    }
+
+    // Older saved files lack the newer fields.
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        strategy = try c.decode([String].self, forKey: .strategy)
+        scope = try c.decode(Scope.self, forKey: .scope)
+        dns = try c.decode(DNSChoice.self, forKey: .dns)
+        hasHostlist = try c.decode(Bool.self, forKey: .hasHostlist)
+        hasExcludes = try c.decode(Bool.self, forKey: .hasExcludes)
+        lists = try c.decodeIfPresent(TunnelLists.self, forKey: .lists)
+        verbose = try c.decodeIfPresent(Bool.self, forKey: .verbose) ?? true
+        shareOnNetwork = try c.decodeIfPresent(Bool.self, forKey: .shareOnNetwork) ?? false
+        shareAddress = try c.decodeIfPresent(String.self, forKey: .shareAddress)
     }
 
     /// The port tpws listens on inside the extension; hev-socks5-tunnel connects to it.
@@ -63,8 +88,14 @@ public struct TunnelConfig: Codable, Equatable, Sendable {
 
     /// The full tpws argument list, starting with the program name.
     public var tpwsArguments: [String] {
-        var out = ["tpws", "--socks", "--bind-addr=127.0.0.1", "--port=\(Self.socksPort)",
-                   "--debug=@\(AppGroup.logURL.path)"]
+        var out = ["tpws", "--socks", "--bind-addr=127.0.0.1"]
+        // Every --bind-addr starts its own listener on the one --port.
+        if shareOnNetwork, let shareAddress, NetworkShare.isShareable(shareAddress) {
+            out.append("--bind-addr=\(shareAddress)")
+        }
+        out += ["--port=\(Self.socksPort)", "--debug=@\(AppGroup.logURL.path)"]
+        // Level 1 logs every connection; level 0 only errors.
+        if !verbose { out.append("--debug-level=0") }
         let extra = lists ?? TunnelLists()
         let path = { (name: String) in AppGroup.url(relative: name).path }
         // Both exclude lists go into every profile.

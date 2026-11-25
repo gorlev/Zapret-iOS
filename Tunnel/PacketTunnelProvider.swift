@@ -22,10 +22,17 @@ final class PacketTunnelProvider: NEPacketTunnelProvider {
 
     private func start() async throws {
         TunnelLog.reset()
-        let config: TunnelConfig
+        var config: TunnelConfig
         do { config = try TunnelConfig.load() } catch {
             TunnelLog.write("Could not read the settings: \(error.localizedDescription)")
             throw TunnelError.noConfig
+        }
+        // Sharing: the Wi-Fi address other devices can reach, if there is one.
+        config.shareAddress = nil
+        if config.shareOnNetwork {
+            config.shareAddress = NetworkShare.choose(from: NetworkShare.currentAddresses(), preferred: "en0")?.ip
+            TunnelLog.write(config.shareAddress.map { "Sharing on \($0):\(TunnelConfig.socksPort)." }
+                ?? "Sharing is on, but there is no Wi-Fi address.")
         }
         // tpws logs to a fresh file each start.
         try? Data().write(to: AppGroup.logURL)
