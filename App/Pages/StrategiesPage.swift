@@ -9,6 +9,7 @@ struct StrategiesPage: View {
     @State private var deleted: DeletedStrategy?
 
     private let columns = [GridItem(.adaptive(minimum: 300), spacing: Space.lg, alignment: .top)]
+    @State private var showFinder = false
 
     var body: some View {
         ScrollView {
@@ -56,6 +57,9 @@ struct StrategiesPage: View {
         .background(Color(uiColor: .systemGroupedBackground))
         .navigationTitle("Strategies")
         .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Find a Strategy", systemImage: "wand.and.sparkles") { showFinder = true }
+            }
             ToolbarItem(placement: .primaryAction) {
                 Button("New Strategy", systemImage: "plus") { draft = .new() }
             }
@@ -63,6 +67,7 @@ struct StrategiesPage: View {
         .sheet(item: $draft) { draft in
             StrategyEditor(draft: draft)
         }
+        .sheet(isPresented: $showFinder) { FinderSheet() }
         .overlay(alignment: .bottom) {
             if let deleted {
                 UndoToast(name: deleted.strategy.name) { undo(deleted) }
