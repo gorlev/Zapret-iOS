@@ -9,6 +9,12 @@ struct ZapretApp: App {
             RootView()
                 .environment(model)
                 .tint(Palette.accent)
+                .task {
+                    WidgetSync.update(model)
+                    if AppPrefs.shared.startOnLaunch { await model.startOnLaunch() }
+                }
+                .onChange(of: model.state) { WidgetSync.update(model) }
+                .onChange(of: model.presetID) { WidgetSync.update(model) }
         }
     }
 }

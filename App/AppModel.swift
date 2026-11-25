@@ -40,6 +40,7 @@ final class AppModel {
     private var logOffset: UInt64 = 0
     private var nextLineID = 0
     private var restartPending = false
+    private var loadTask: Task<Void, Never>?
 
     var preset: Preset { Preset.with(id: presetID) ?? Preset.all[0] }
     var isOn: Bool { state == .running || state == .starting }
@@ -57,7 +58,7 @@ final class AppModel {
             sites = ["discord.com", "discord.gg", "discordapp.com", "roblox.com", "wattpad.com"]
                 .map { SiteEntry(domain: $0) }
         }
-        Task { await loadManager() }
+        loadTask = Task { await loadManager() }
     }
 
     private func save() {
@@ -86,7 +87,13 @@ final class AppModel {
     }
 
     func stop() async {
-        manager?.connection.stopVPNTunnel()
+        await BypassControl.stop(manager)
+    }
+
+    /// "Turn the bypass on when Zapret opens": waits for the saved VPN configuration, then starts.
+    func startOnLaunch() async {
+        await loadTask?.value
+        if state == .stopped { await start() }
     }
 
     /// A new strategy, scope, or DNS applies on the next start; restart now if on.
@@ -122,6 +129,7 @@ final class AppModel {
         manager.protocolConfiguration = proto
         manager.localizedDescription = "Zapret"
         manager.isEnabled = true
+        BypassControl.configureOnDemand(manager)
         try await manager.saveToPreferences()
         try await manager.loadFromPreferences()
         adopt(manager)

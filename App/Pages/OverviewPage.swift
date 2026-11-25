@@ -22,6 +22,7 @@ struct OverviewPage: View {
         .background(Color(uiColor: .systemGroupedBackground))
         .navigationTitle("Overview")
         .navigationBarTitleDisplayMode(.inline)
+        .settingsButton()
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(model.isOn ? String(localized: "Turn Off") : String(localized: "Turn On"),
