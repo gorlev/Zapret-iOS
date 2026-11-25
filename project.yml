@@ -1,0 +1,73 @@
+name: ZapretiOS
+options:
+  bundleIdPrefix: com.gorlev
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+
+targets:
+  ZapretiOS:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      - Shared
+      - path: Icon/AppIcon.icon
+        buildPhase: resources
+      - path: Icon/Accent.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios
+        PRODUCT_NAME: ZapretiOS
+        INFOPLIST_KEY_CFBundleDisplayName: Zapret
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_ENTITLEMENTS: App/ZapretiOS.entitlements
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+    dependencies:
+      - target: ZapretTunnel
+        embed: true
+
+  ZapretTunnel:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Tunnel
+      - Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios.tunnel
+        PRODUCT_NAME: ZapretTunnel
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Zapret Tunnel
+        CODE_SIGN_ENTITLEMENTS: Tunnel/ZapretTunnel.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: Tunnel/Tunnel-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Native/include
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/Native/build/$(PLATFORM_NAME)
+        OTHER_LDFLAGS: -ltpws -lhev -lz
+    info:
+      path: Tunnel/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.networkextension.packet-tunnel
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PacketTunnelProvider
+    preBuildScripts:
+      - name: Build tpws and hev-socks5-tunnel
+        script: "\"$SRCROOT/tools/build-native.sh\""
+        basedOnDependencyAnalysis: false
