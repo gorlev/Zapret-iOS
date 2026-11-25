@@ -45,13 +45,17 @@ public struct TunnelConfig: Codable, Equatable, Sendable {
     /// Whether the include list has any entries (tpws refuses an empty hostlist file).
     public var hasHostlist: Bool
     public var hasExcludes: Bool
+    /// Subscribed lists, IP ranges, and the automatic list (nil: none).
+    public var lists: TunnelLists?
 
-    public init(strategy: [String], scope: Scope, dns: DNSChoice, hasHostlist: Bool, hasExcludes: Bool) {
+    public init(strategy: [String], scope: Scope, dns: DNSChoice, hasHostlist: Bool, hasExcludes: Bool,
+                lists: TunnelLists? = nil) {
         self.strategy = strategy
         self.scope = scope
         self.dns = dns
         self.hasHostlist = hasHostlist
         self.hasExcludes = hasExcludes
+        self.lists = lists
     }
 
     /// The port tpws listens on inside the extension; hev-socks5-tunnel connects to it.
@@ -61,11 +65,30 @@ public struct TunnelConfig: Codable, Equatable, Sendable {
     public var tpwsArguments: [String] {
         var out = ["tpws", "--socks", "--bind-addr=127.0.0.1", "--port=\(Self.socksPort)",
                    "--debug=@\(AppGroup.logURL.path)"]
-        // My list with nothing in it: tpws only passes traffic through.
-        if scope == .listOnly, !hasHostlist { return out }
-        var lists: [String] = []
-        if scope == .listOnly, hasHostlist { lists.append("--hostlist=\(AppGroup.hostlistURL.path)") }
-        if hasExcludes { lists.append("--hostlist-exclude=\(AppGroup.excludeURL.path)") }
+        let extra = lists ?? TunnelLists()
+        let path = { (name: String) in AppGroup.url(relative: name).path }
+        // Both exclude lists go into every profile.
+        var excludes: [String] = []
+        if hasExcludes { excludes.append("--hostlist-exclude=\(AppGroup.excludeURL.path)") }
+        excludes += extra.hostlistExcludes.map { "--hostlist-exclude=\(path($0))" }
+        excludes += extra.ipsetExcludes.map { "--ipset-exclude=\(path($0))" }
+        // In tpws a profile with both a hostlist and an ipset matches only when
+        // both match (tamper.c dp_match). My list means a site OR an address, so
+        // each strategy profile is written twice: once with the hostlists (the
+        // automatic list is one of them) and once with the ipsets.
+        var includes: [[String]] = []
+        if scope == .listOnly {
+            var sites: [String] = []
+            if hasHostlist { sites.append("--hostlist=\(AppGroup.hostlistURL.path)") }
+            sites += extra.hostlists.map { "--hostlist=\(path($0))" }
+            if extra.autoHostlist { sites += TunnelLists.autoHostlistArguments }
+            if !sites.isEmpty { includes.append(sites) }
+            if !extra.ipsets.isEmpty { includes.append(extra.ipsets.map { "--ipset=\(path($0))" }) }
+            // My list with nothing in it: tpws only passes traffic through.
+            if includes.isEmpty { return out }
+        } else {
+            includes = [[]]
+        }
         // Lists belong to a desync profile: every profile (split at --new) gets them.
         var profile: [String] = []
         var profiles: [[String]] = []
@@ -73,9 +96,13 @@ public struct TunnelConfig: Codable, Equatable, Sendable {
             if arg == "--new" { profiles.append(profile); profile = [] } else { profile.append(arg) }
         }
         profiles.append(profile)
-        for (i, p) in profiles.enumerated() {
-            if i > 0 { out.append("--new") }
-            out += lists + p
+        var first = true
+        for p in profiles {
+            for include in includes {
+                if !first { out.append("--new") }
+                first = false
+                out += include + excludes + p
+            }
         }
         return out
     }
