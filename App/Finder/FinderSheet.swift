@@ -96,25 +96,35 @@ struct FinderSheet: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
             .disabled(finder.isRunning)
-            HStack(alignment: .top, spacing: Space.sm) {
-                TextField("Blocked sites", text: $sitesText, prompt: Text(verbatim: "discord.com youtube.com"), axis: .vertical)
+            VStack(alignment: .leading, spacing: Space.sm) {
+                TextField("Blocked sites", text: $sitesText, prompt: Text(verbatim: "discord.com youtube.com"))
                     .textFieldStyle(.roundedBorder)
-                    .lineLimit(1...4)
+                    .submitLabel(.go)
+                    .onSubmit(start)
                     .keyboardType(.URL)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                     .focused($editing)
                     .disabled(finder.isRunning)
-                    .accessibilityHint("One site, or several separated by spaces. A strategy works only if every site opens.")
-                if finder.isRunning {
-                    Button("Stop", role: .cancel) { finder.stop() }
-                        .buttonStyle(.bordered)
-                        .disabled(finder.phase == .restoring)
-                } else {
-                    Button(finder.trials.isEmpty ? String(localized: "Start") : String(localized: "Test Again"), action: start)
+                Text("One site, or several separated by spaces. A strategy works only if every site opens.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+                Group {
+                    if finder.isRunning {
+                        Button(role: .cancel) { finder.stop() } label: { Text("Stop").frame(maxWidth: .infinity) }
+                            .buttonStyle(.bordered)
+                            .disabled(finder.phase == .restoring)
+                    } else {
+                        Button(action: start) {
+                            Text(finder.trials.isEmpty ? String(localized: "Start Test") : String(localized: "Test Again"))
+                                .frame(maxWidth: .infinity)
+                        }
                         .buttonStyle(.borderedProminent)
                         .disabled(FinderProbe.urls(from: sitesText).isEmpty)
+                    }
                 }
+                .controlSize(.large)
             }
         }
         .padding(Space.lg)
@@ -262,6 +272,7 @@ struct FinderSheet: View {
             }
             .buttonStyle(.bordered)
             .controlSize(.small)
+            .tint(Palette.accentText)
             .disabled(finder.isRunning)
         }
     }
@@ -289,12 +300,11 @@ private struct TrialRow<Action: View>: View {
                 Text(trial.name)
                     .font(.callout)
                     .foregroundStyle(trial.status == .waiting ? .secondary : .primary)
-                    .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text(verbatim: trial.arguments.joined(separator: " "))
                     .font(.caption.monospaced())
                     .foregroundStyle(.secondary)
-                    .lineLimit(1)
-                    .truncationMode(.middle)
+                    .fixedSize(horizontal: false, vertical: true)
                 if !trial.versions.isEmpty { TLSMarks(versions: trial.versions) }
                 if trial.worksOnlyWithTLS13 {
                     Text("Works in browsers; some older apps may not get through.")
@@ -322,9 +332,9 @@ private struct TrialRow<Action: View>: View {
         case .testing:
             Text("Testing…").font(.callout).foregroundStyle(.secondary)
         case .works(let ms):
-            HStack(spacing: Space.sm) {
-                Text("\(ms) ms").font(.callout).foregroundStyle(.secondary).monospacedDigit()
+            VStack(alignment: .trailing, spacing: Space.xs) {
                 action()
+                Text("\(ms) ms").font(.caption).foregroundStyle(.secondary).monospacedDigit()
             }
             .fixedSize()
         }
