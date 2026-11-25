@@ -4,3 +4,4 @@ build/
 Native/build/
 DerivedData/
 *.ipa
+.claude/
