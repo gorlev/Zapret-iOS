@@ -3,6 +3,7 @@ import SwiftUI
 /// The built-in strategies as cards, like ZapretMac's Strategies page.
 struct StrategiesPage: View {
     @Environment(AppModel.self) private var model
+    @State private var showFinder = false
 
     var body: some View {
         ScrollView {
@@ -25,6 +26,12 @@ struct StrategiesPage: View {
         }
         .background(Color(uiColor: .systemGroupedBackground))
         .navigationTitle("Strategies")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Find a Strategy", systemImage: "wand.and.sparkles") { showFinder = true }
+            }
+        }
+        .sheet(isPresented: $showFinder) { FinderSheet() }
     }
 }
 

@@ -274,6 +274,7 @@ private struct CheckCard: View {
     @State private var address = "https://discord.com"
     @State private var result: SiteCheck.Result?
     @State private var checking = false
+    @State private var showFinder = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.md) {
@@ -297,6 +298,10 @@ private struct CheckCard: View {
                 Label(result.text, systemImage: result.ok ? "checkmark.circle.fill" : "xmark.octagon.fill")
                     .font(.callout)
                     .foregroundStyle(result.ok ? AnyShapeStyle(.green) : AnyShapeStyle(.red))
+                if !result.ok {
+                    Button("Find a Strategy", systemImage: "wand.and.sparkles") { showFinder = true }
+                        .buttonStyle(.bordered)
+                }
             }
             Text(model.isOn ? String(localized: "Opens the address through the bypass.")
                             : String(localized: "The bypass is off: this opens the address directly."))
@@ -305,6 +310,10 @@ private struct CheckCard: View {
         }
         .padding(Space.lg)
         .card()
+        .sheet(isPresented: $showFinder) { FinderSheet(initialSites: address) }
+        #if DEBUG
+        .onAppear { if FinderSample.current != nil { showFinder = true } }
+        #endif
     }
 
     private func check() {

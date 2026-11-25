@@ -97,6 +97,7 @@ final class AppModel {
     }
 
     private func writeConfig() throws {
+        if let trialArguments { return try writeTrialConfig(trialArguments) }
         let include = includeSites.filter(\.isEnabled).map(\.domain)
         let exclude = excludeSites.filter(\.isEnabled).map(\.domain)
         try Domains.fileContents(include).write(to: AppGroup.hostlistURL, atomically: true, encoding: .utf8)
@@ -159,7 +160,8 @@ final class AppModel {
                 Task { await start() }
                 return
             }
-            if state == .starting {
+            // Find a Strategy reports a trial that did not start itself.
+            if state == .starting && trialArguments == nil {
                 connection.fetchLastDisconnectError { [weak self] error in
                     Task { @MainActor in
                         self?.state = .failed(error?.localizedDescription ?? String(localized: "The tunnel stopped."))
@@ -254,5 +256,132 @@ final class AppModel {
         guard let i = sites.firstIndex(of: entry) else { return }
         sites[i].isEnabled.toggle()
         restartIfRunning()
+    }
+
+    // MARK: - Find a Strategy trials
+
+    /// The flags a Find a Strategy trial runs in place of the chosen strategy; nil outside trials.
+    private var trialArguments: [String]?
+    /// Whether the bypass was on before the trials began; nil outside trials.
+    private var onBeforeTrials: Bool?
+
+    enum TrialError: LocalizedError {
+        case didNotStart(String), timedOut
+
+        var errorDescription: String? {
+            switch self {
+            case .didNotStart(let reason): reason
+            case .timedOut: String(localized: "The tunnel did not start in time")
+            }
+        }
+    }
+
+    /// Stops the tunnel before Find a Strategy opens the sites directly, and
+    /// remembers whether the bypass was on, for `endTrials()`.
+    func beginTrials() async {
+        if onBeforeTrials == nil { onBeforeTrials = isOn }
+        restartPending = false
+        await stopTunnelAndWait()
+    }
+
+    /// Restarts the tunnel with `arguments` in place of the chosen strategy (every
+    /// site, no lists) and returns once it is connected, so the app's own requests
+    /// go through tpws with these flags. tpws starts once per extension process,
+    /// so every trial is a full stop and start (2-4 s).
+    func runTrial(arguments: [String], timeout: Duration = .seconds(15)) async throws {
+        if onBeforeTrials == nil { onBeforeTrials = isOn }
+        try Task.checkCancellation()
+        await stopTunnelAndWait()
+        try Task.checkCancellation()
+        trialArguments = arguments
+        state = .starting
+        try writeConfig()
+        let manager = try await trialManager()
+        try manager.connection.startVPNTunnel()
+        let clock = ContinuousClock()
+        let deadline = clock.now + timeout
+        let grace = clock.now + .seconds(3)
+        var seenConnecting = false
+        while clock.now < deadline {
+            try await Task.sleep(for: .milliseconds(100))
+            switch manager.connection.status {
+            case .connected:
+                return
+            case .connecting, .reasserting:
+                seenConnecting = true
+            case .disconnected, .invalid:
+                if seenConnecting || clock.now > grace {
+                    throw TrialError.didNotStart(await Self.lastDisconnectReason(manager.connection))
+                }
+            default:
+                break
+            }
+        }
+        throw TrialError.timedOut
+    }
+
+    /// Puts back the chosen strategy and the on/off state from before the trials,
+    /// and returns once the bypass is back (or off).
+    func endTrials() async {
+        guard let wasOn = onBeforeTrials else { return }
+        onBeforeTrials = nil
+        await stopTunnelAndWait()
+        trialArguments = nil
+        state = .stopped
+        guard wasOn else { return }
+        await start()
+        let deadline = ContinuousClock.now + .seconds(15)
+        while ContinuousClock.now < deadline, state == .starting { await Self.pause(.milliseconds(200)) }
+    }
+
+    /// Find a Strategy's "Use": selects the built-in strategy with these flags.
+    /// Returns whether a built-in strategy had them.
+    @discardableResult
+    func adoptFoundStrategy(name: String, arguments: [String]) -> Bool {
+        if let preset = Preset.all.first(where: { $0.arguments == arguments }) {
+            presetID = preset.id
+            return true
+        }
+        // TODO(custom strategies): save as a custom strategy named `name` and select it.
+        // Until that store is merged in, the flags are kept here for it to pick up.
+        AppGroup.defaults.set(["name": name, "arguments": arguments.joined(separator: " ")], forKey: "foundStrategy")
+        return false
+    }
+
+    private func writeTrialConfig(_ arguments: [String]) throws {
+        try TunnelConfig(strategy: arguments, scope: .allSites, dns: dns, hasHostlist: false, hasExcludes: false).save()
+    }
+
+    /// The saved VPN configuration, without saving it again when it is already set up.
+    private func trialManager() async throws -> NETunnelProviderManager {
+        if let manager, manager.isEnabled { return manager }
+        return try await preparedManager()
+    }
+
+    private func stopTunnelAndWait() async {
+        guard let connection = manager?.connection else { return }
+        let stopped: (NEVPNStatus) -> Bool = { $0 == .disconnected || $0 == .invalid }
+        guard !stopped(connection.status) else { return }
+        connection.stopVPNTunnel()
+        let deadline = ContinuousClock.now + .seconds(8)
+        while ContinuousClock.now < deadline, !stopped(connection.status) { await Self.pause(.milliseconds(100)) }
+        // The extension quits half a second after it stops; the next start must get a new process, so a fresh tpws.
+        await Self.pause(.seconds(1))
+    }
+
+    /// A wait that also runs in a cancelled task, so stopping and restoring always finish.
+    private static func pause(_ duration: Duration) async {
+        let seconds = Double(duration.components.seconds) + Double(duration.components.attoseconds) / 1e18
+        await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) { continuation.resume() }
+        }
+    }
+
+    private static func lastDisconnectReason(_ connection: NEVPNConnection) async -> String {
+        await withCheckedContinuation { (continuation: CheckedContinuation<String, Never>) in
+            connection.fetchLastDisconnectError { @Sendable error in
+                continuation.resume(returning: error?.localizedDescription ?? String(localized: "The tunnel stopped"))
+            }
+        }
     }
 }
