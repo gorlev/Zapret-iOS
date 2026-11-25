@@ -1,7 +1,7 @@
 import Foundation
 
 /// Cleans what people paste into the domain lists.
-public enum Domains {
+nonisolated public enum Domains {
     /// "https://www.YouTube.com/watch?v=1" -> "youtube.com". Returns nil for
     /// text that is not a domain.
     public static func normalize(_ raw: String) -> String? {

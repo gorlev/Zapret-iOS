@@ -33,6 +33,8 @@ final class AppModel {
     var scope: Scope { didSet { save(); restartIfRunning() } }
     var dns: DNSChoice { didSet { save(); restartIfRunning() } }
     var sites: [SiteEntry] { didSet { save() } }
+    /// Subscriptions, the automatic list, and undo for the Sites page.
+    let lists = SiteLists()
 
     private var manager: NETunnelProviderManager?
     private var statusObserver: NSObjectProtocol?
@@ -57,6 +59,7 @@ final class AppModel {
             sites = ["discord.com", "discord.gg", "discordapp.com", "roblox.com", "wattpad.com"]
                 .map { SiteEntry(domain: $0) }
         }
+        lists.onChange = { [weak self] in self?.restartIfRunning() }
         Task { await loadManager() }
     }
 
@@ -97,12 +100,9 @@ final class AppModel {
     }
 
     private func writeConfig() throws {
-        let include = includeSites.filter(\.isEnabled).map(\.domain)
-        let exclude = excludeSites.filter(\.isEnabled).map(\.domain)
-        try Domains.fileContents(include).write(to: AppGroup.hostlistURL, atomically: true, encoding: .utf8)
-        try Domains.fileContents(exclude).write(to: AppGroup.excludeURL, atomically: true, encoding: .utf8)
+        let files = try writeListFiles()
         try TunnelConfig(strategy: preset.arguments, scope: scope, dns: dns,
-                         hasHostlist: !include.isEmpty, hasExcludes: !exclude.isEmpty).save()
+                         hasHostlist: files.hasHostlist, hasExcludes: files.hasExcludes, lists: files.lists).save()
     }
 
     // MARK: - The VPN configuration
@@ -235,11 +235,12 @@ final class AppModel {
 
     // MARK: - Sites
 
-    /// Adds every domain in the pasted text. Returns how many were new.
+    /// Adds every domain and IP address or range in the pasted text. Returns how many were new.
     @discardableResult
     func addSites(_ text: String, excluded: Bool) -> Int {
         let existing = Set(sites.filter { $0.isExcluded == excluded }.map(\.domain))
-        let new = Domains.parseList(text).filter { !existing.contains($0) }
+        let routed = IPRanges.route(text)
+        let new = (routed.domains + routed.addresses).filter { !existing.contains($0) }
         sites += new.map { SiteEntry(domain: $0, isExcluded: excluded) }
         if !new.isEmpty { restartIfRunning() }
         return new.count
