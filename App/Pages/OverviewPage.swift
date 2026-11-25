@@ -69,7 +69,7 @@ private struct Hero: View {
         switch model.state {
         case .stopped: String(localized: "Tap the button. Every app's traffic then goes through tpws on this iPhone, as a local VPN.")
         case .starting, .stopping: String(localized: "Setting up the local VPN and tpws.")
-        case .running: String(localized: "Every app goes through tpws with \(model.preset.name). Nothing leaves this iPhone through a server.")
+        case .running: String(localized: "Every app goes through tpws with \(model.activeStrategy.name). Nothing leaves this iPhone through a server.")
         case .failed(let message): message
         }
     }
@@ -195,14 +195,10 @@ private struct SetupCard: View {
             CardRow(title: "Strategy", symbol: "slider.horizontal.3",
                     caption: String(localized: "How tpws changes your traffic so the filter cannot read it.")) {
                 Menu {
-                    Picker("Strategy", selection: $model.presetID) {
-                        ForEach(Preset.all) { preset in
-                            Label(preset.name, systemImage: preset.symbol).tag(preset.id)
-                        }
-                    }
+                    StrategyPicker(selection: $model.selection, custom: model.customStrategies)
                 } label: {
                     HStack(spacing: Space.xs) {
-                        Text(model.preset.name).lineLimit(1)
+                        Text(model.activeStrategy.name).lineLimit(1)
                         Image(systemName: "chevron.up.chevron.down").font(.caption2.weight(.semibold))
                     }
                     .font(.callout.weight(.medium))

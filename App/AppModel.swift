@@ -29,7 +29,10 @@ final class AppModel {
     private(set) var debugSplits = 0
     private(set) var debugTLSRecords = 0
 
+    /// The chosen strategy as stored: a preset id or "custom:<UUID>". Use `selection`.
     var presetID: String { didSet { save(); restartIfRunning() } }
+    /// Strategies the person made (AppModel+Strategies.swift).
+    var customStrategies: [CustomStrategy] { didSet { CustomStrategy.save(customStrategies) } }
     var scope: Scope { didSet { save(); restartIfRunning() } }
     var dns: DNSChoice { didSet { save(); restartIfRunning() } }
     var sites: [SiteEntry] { didSet { save() } }
@@ -49,6 +52,7 @@ final class AppModel {
     init() {
         let d = AppGroup.defaults
         presetID = d.string(forKey: "presetID") ?? Preset.defaultID
+        customStrategies = CustomStrategy.load(from: d)
         scope = d.string(forKey: "scope").flatMap(Scope.init) ?? .allSites
         dns = d.string(forKey: "dns").flatMap(DNSChoice.init) ?? .cloudflare
         if let data = d.data(forKey: "sites"), let saved = try? JSONDecoder().decode([SiteEntry].self, from: data) {
@@ -101,7 +105,7 @@ final class AppModel {
         let exclude = excludeSites.filter(\.isEnabled).map(\.domain)
         try Domains.fileContents(include).write(to: AppGroup.hostlistURL, atomically: true, encoding: .utf8)
         try Domains.fileContents(exclude).write(to: AppGroup.excludeURL, atomically: true, encoding: .utf8)
-        try TunnelConfig(strategy: preset.arguments, scope: scope, dns: dns,
+        try TunnelConfig(strategy: activeStrategy.arguments, scope: scope, dns: dns,
                          hasHostlist: !include.isEmpty, hasExcludes: !exclude.isEmpty).save()
     }
 
