@@ -292,7 +292,7 @@ struct SitesPage: View {
             .padding(.bottom, Space.sm)
             .transition(.move(edge: .bottom).combined(with: .opacity))
             .task(id: undo.id) {
-                try? await Task.sleep(for: .seconds(6))
+                try? await Task.sleep(for: .seconds(8))
                 if model.lists.undo?.id == undo.id { model.lists.undo = nil }
             }
         }

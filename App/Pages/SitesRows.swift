@@ -37,28 +37,18 @@ struct SubscriptionRow: View {
                 .foregroundStyle(subscription.isEnabled ? AnyShapeStyle(Palette.accentText) : AnyShapeStyle(.tertiary))
                 .frame(width: 24)
             VStack(alignment: .leading, spacing: 2) {
-                HStack(alignment: .firstTextBaseline, spacing: Space.sm) {
-                    Text(subscription.displayName)
-                        .foregroundStyle(subscription.isEnabled ? .primary : .secondary)
-                        .lineLimit(1)
-                    Spacer(minLength: Space.xs)
-                    Group {
-                        if subscription.kind == .addresses {
-                            Text("\(subscription.count) IP addresses")
-                        } else {
-                            Text("\(subscription.count) sites")
-                        }
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .monospacedDigit()
+                Text(subscription.displayName)
+                    .foregroundStyle(subscription.isEnabled ? .primary : .secondary)
                     .lineLimit(1)
-                    .fixedSize()
+                // On a phone the count shares the line under the name with the status.
+                TimelineView(.periodic(from: .now, by: 30)) { _ in
+                    details
                 }
-                status
-                    .font(.caption)
-                    .lineLimit(2)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .lineLimit(3)
             }
+            Spacer(minLength: Space.xs)
             if isUpdating {
                 ProgressView()
             } else {
@@ -72,18 +62,22 @@ struct SubscriptionRow: View {
         }
     }
 
-    @ViewBuilder private var status: some View {
-        if isUpdating {
-            Text("Downloading…").foregroundStyle(.secondary)
-        } else if let error = subscription.lastError {
-            Label(error, systemImage: "exclamationmark.triangle.fill")
-                .foregroundStyle(.orange)
-        } else if let date = subscription.lastUpdated {
-            TimelineView(.periodic(from: .now, by: 30)) { _ in
-                Text("Updated \(date, format: .relative(presentation: .named, unitsStyle: .wide))")
-                    .foregroundStyle(.secondary)
-            }
+    private var countText: Text {
+        subscription.kind == .addresses
+            ? Text("\(subscription.count) IP addresses") : Text("\(subscription.count) sites")
+    }
+
+    /// "79,125 sites · Updated 2 minutes ago", or the count and why the last download failed.
+    private var details: Text {
+        if isUpdating { return Text("\(countText) · Downloading…") }
+        if let error = subscription.lastError {
+            let warning = Text("\(Image(systemName: "exclamationmark.triangle.fill")) \(error)").foregroundStyle(.orange)
+            return Text("\(countText)\n\(warning)")
         }
+        if let date = subscription.lastUpdated {
+            return Text("\(countText) · Updated \(date, format: .relative(presentation: .named, unitsStyle: .wide))")
+        }
+        return countText
     }
 }
 
