@@ -75,7 +75,7 @@ struct StrategiesPage: View {
         .task(id: deleted) {
             // The toast goes away by itself; shake to undo still works after.
             guard deleted != nil else { return }
-            try? await Task.sleep(for: .seconds(6))
+            try? await Task.sleep(for: .seconds(8))
             if !Task.isCancelled { deleted = nil }
         }
     }

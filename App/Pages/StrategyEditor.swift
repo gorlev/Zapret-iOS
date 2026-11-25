@@ -40,6 +40,7 @@ struct StrategyEditor: View {
                 advanced
                 command
             }
+            .scrollDismissesKeyboard(.interactively)
             .navigationTitle(draft.editing == nil ? "New Strategy" : "Edit Strategy")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -110,7 +111,7 @@ struct StrategyEditor: View {
                 .disabled(!draft.options.disorder)
             Picker("Out-of-band byte applies to", selection: $draft.options.oobScope) { scopeOptions }
                 .disabled(!draft.options.oob)
-            FlagField("Out-of-band byte value", text: $draft.options.oobData, prompt: "0x00")
+            FlagField("OOB byte value", text: $draft.options.oobData, prompt: "0x00")
                 .disabled(!draft.options.oob)
             FlagField("Start changing at", text: $draft.options.tamperStart, prompt: "0")
             FlagField("Stop changing after", text: $draft.options.tamperCutoff, prompt: "n2")
