@@ -51,67 +51,755 @@
     },
     "%@ is set by the app. Remove it." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ uygulama tarafından ayarlanıyor. Kaldırın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ setzt die App selbst. Entferne es."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lo establece la app. Quítalo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ è impostato dall’app. Rimuovilo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ est défini par l’app. Retirez-le."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ é definido pelo app. Remova."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ задаётся приложением. Удалите его."
+          }
+        }
+      }
     },
     "%@ must be between 1 and 300." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 1 ile 300 arasında olmalıdır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ muss zwischen 1 und 300 liegen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ debe estar entre 1 y 300."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ deve essere compreso tra 1 e 300."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ doit être compris entre 1 et 300."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ precisa estar entre 1 e 300."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ должно быть от 1 до 300."
+          }
+        }
+      }
     },
     "%@ needs a byte offset like 100, or n and a block number like n2." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ için 100 gibi bir bayt konumu ya da n2 gibi n ve bir blok numarası gerekir."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ braucht einen Byte-Offset wie 100 oder n mit einer Blocknummer wie n2."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ necesita un desplazamiento en bytes como 100, o n y un número de bloque como n2."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ richiede uno scostamento in byte come 100, oppure n e un numero di blocco come n2."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ demande un décalage en octets comme 100, ou n et un numéro de bloc comme n2."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ precisa de um deslocamento em bytes como 100, ou n e um número de bloco como n2."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ требует смещение в байтах, например 100, либо n и номер блока, например n2."
+          }
+        }
+      }
     },
     "%@ needs a number that is not 0." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ için 0 olmayan bir sayı gerekir."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ braucht eine Zahl ungleich 0."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ necesita un número distinto de 0."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ richiede un numero diverso da 0."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ demande un nombre différent de 0."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ precisa de um número diferente de 0."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ требует число, отличное от 0."
+          }
+        }
+      }
     },
     "%@ needs a value, like %@=…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ için bir değer gerekir, örneğin %@=…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ braucht einen Wert, z. B. %@=…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ necesita un valor, como %@=…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ richiede un valore, ad es. %@=…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ demande une valeur, comme %@=…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ precisa de um valor, como %@=…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ требует значение, например %@=…"
+          }
+        }
+      }
     },
     "%@ needs a whole number, like %@=1024." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ için bir tam sayı gerekir, örneğin %@=1024."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ braucht eine ganze Zahl, z. B. %@=1024."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ necesita un número entero, como %@=1024."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ richiede un numero intero, ad es. %@=1024."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ demande un nombre entier, comme %@=1024."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ precisa de um número inteiro, como %@=1024."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ требует целое число, например %@=1024."
+          }
+        }
+      }
     },
     "%@ only works on Linux. tpws on iPhone does not know it." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ yalnızca Linux'ta çalışır. iPhone'daki tpws bunu tanımaz."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ funktioniert nur unter Linux. tpws auf dem iPhone kennt es nicht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ solo funciona en Linux. tpws en iPhone no lo conoce."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ funziona solo su Linux. tpws su iPhone non lo conosce."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ne fonctionne que sous Linux. tpws sur iPhone ne le connaît pas."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ só funciona no Linux. O tpws no iPhone não o conhece."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ работает только в Linux. tpws на iPhone его не знает."
+          }
+        }
+      }
     },
     "%@ takes http, tls, or unknown, separated by commas." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ virgülle ayrılmış http, tls ya da unknown alır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ nimmt http, tls oder unknown, durch Kommas getrennt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ admite http, tls o unknown, separados por comas."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accetta http, tls o unknown, separati da virgole."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accepte http, tls ou unknown, séparés par des virgules."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ aceita http, tls ou unknown, separados por vírgula."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ принимает http, tls или unknown через запятую."
+          }
+        }
+      }
     },
     "%@ takes ipv4, ipv6, or both." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ipv4, ipv6 ya da ikisini birden alır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ nimmt ipv4, ipv6 oder both."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ admite ipv4, ipv6 o ambos."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accetta ipv4, ipv6 o entrambi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accepte ipv4, ipv6 ou both."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ aceita ipv4, ipv6 ou both."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ принимает ipv4, ipv6 или оба сразу."
+          }
+        }
+      }
     },
     "%@ takes no value, http, or tls." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ değer almaz ya da http veya tls alır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ nimmt keinen Wert, http oder tls."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ admite sin valor, http o tls."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accetta nessun valore, http o tls."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ accepte aucune valeur, http ou tls."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ aceita nenhum valor, http ou tls."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ принимает http, tls или ничего."
+          }
+        }
+      }
     },
     "%@ takes no value." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ değer almaz."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ nimmt keinen Wert."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ no admite ningún valor."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ non accetta valori."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ n’accepte pas de valeur."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ não aceita valor."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ не принимает значение."
+          }
+        }
+      }
     },
     "%@ · Downloading…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · İndiriliyor…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Wird geladen …"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Descargando…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Download in corso…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Téléchargement…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Baixando…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Загрузка…"
+          }
+        }
+      }
     },
     "%@ · Updated %@" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ güncellendi"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Aktualisiert %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Actualizada %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Aggiornata %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Mis à jour %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Atualizada %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Обновлено %@"
+          }
+        }
+      }
     },
     "%@=%@ is not a list of positions. Use numbers (not 0) or markers like 1,midsld or sniext+1." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ bir konum listesi değil. Sayı (0 olmamalı) ya da 1,midsld veya sniext+1 gibi işaretler kullanın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ ist keine Liste von Positionen. Verwende Zahlen (nicht 0) oder Marker wie 1,midsld oder sniext+1."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ no es una lista de posiciones. Usa números (distintos de 0) o marcadores como 1,midsld o sniext+1."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ non è un elenco di posizioni. Usa numeri (diversi da 0) o marcatori come 1,midsld o sniext+1."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ n’est pas une liste de positions. Utilisez des nombres (pas 0) ou des repères comme 1,midsld ou sniext+1."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ não é uma lista de posições. Use números (diferentes de 0) ou marcadores como 1,midsld ou sniext+1."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ — не список позиций. Укажите числа (не 0) или маркеры, например 1,midsld или sniext+1."
+          }
+        }
+      }
     },
     "%@=%@ is not a port list. Use ports and ranges like 80,443 or 1000-2000." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ bir bağlantı noktası listesi değil. 80,443 veya 1000-2000 gibi bağlantı noktaları ve aralıkları kullanın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ ist keine Portliste. Verwende Ports und Bereiche wie 80,443 oder 1000-2000."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ no es una lista de puertos. Usa puertos y rangos como 80,443 o 1000-2000."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ non è un elenco di porte. Usa porte e intervalli come 80,443 o 1000-2000."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ n’est pas une liste de ports. Utilisez des ports et des plages comme 80,443 ou 1000-2000."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ não é uma lista de portas. Use portas e intervalos como 80,443 ou 1000-2000."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ — не список портов. Укажите порты и диапазоны, например 80,443 или 1000-2000."
+          }
+        }
+      }
     },
     "%@=%@ is not a position. Use a number or a marker like sniext+1." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ bir konum değil. Bir sayı ya da sniext+1 gibi bir işaret kullanın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ ist keine Position. Verwende eine Zahl oder einen Marker wie sniext+1."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ no es una posición. Usa un número o un marcador como sniext+1."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ non è una posizione. Usa un numero o un marcatore come sniext+1."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ n’est pas une position. Utilisez un nombre ou un repère comme sniext+1."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ não é uma posição. Use um número ou um marcador como sniext+1."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@=%@ — не позиция. Укажите число или маркер, например sniext+1."
+          }
+        }
+      }
     },
     "%lld HTTP tricks" : {
       "extractionState" : "manual",
@@ -1347,11 +2035,97 @@
     },
     "A text file with one IP address or range per line, like 203.0.113.0/24 or 2001:db8::/32. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her satırda bir IP adresi ya da aralığı bulunan bir metin dosyası, örneğin 203.0.113.0/24 veya 2001:db8::/32. # ile başlayan satırlar atlanır, gzip dosyaları da olur. Zapret dosyayı her gün yeniden indirir."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine Textdatei mit einer IP-Adresse oder einem Bereich pro Zeile, z. B. 203.0.113.0/24 oder 2001:db8::/32. Zeilen mit # am Anfang werden übersprungen, gzip-Dateien funktionieren. Zapret lädt sie jeden Tag neu."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un archivo de texto con una dirección IP o un rango por línea, como 203.0.113.0/24 o 2001:db8::/32. Las líneas que empiezan por # se omiten y los archivos gzip también sirven. Zapret lo descarga de nuevo cada día."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un file di testo con un indirizzo IP o un intervallo per riga, ad es. 203.0.113.0/24 o 2001:db8::/32. Le righe che iniziano con # vengono ignorate e i file gzip sono supportati. Zapret lo scarica di nuovo ogni giorno."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un fichier texte avec une adresse IP ou une plage par ligne, comme 203.0.113.0/24 ou 2001:db8::/32. Les lignes qui commencent par # sont ignorées, et les fichiers gzip fonctionnent. Zapret le télécharge de nouveau chaque jour."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um arquivo de texto com um endereço IP ou faixa por linha, como 203.0.113.0/24 ou 2001:db8::/32. Linhas que começam com # são ignoradas, e arquivos gzip funcionam. O Zapret baixa a lista de novo todo dia."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текстовый файл с одним IP-адресом или диапазоном в строке, например 203.0.113.0/24 или 2001:db8::/32. Строки, начинающиеся с #, пропускаются; файлы gzip тоже подходят. Zapret скачивает его заново каждый день."
+          }
+        }
+      }
     },
     "A text file with one domain per line, like zapret's lists. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her satırda bir alan adı bulunan bir metin dosyası, zapret'in listeleri gibi. # ile başlayan satırlar atlanır, gzip dosyaları da olur. Zapret dosyayı her gün yeniden indirir."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine Textdatei mit einer Domain pro Zeile, wie die Listen von zapret. Zeilen mit # am Anfang werden übersprungen, gzip-Dateien funktionieren. Zapret lädt sie jeden Tag neu."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un archivo de texto con un dominio por línea, como las listas de zapret. Las líneas que empiezan por # se omiten y los archivos gzip también sirven. Zapret lo descarga de nuevo cada día."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un file di testo con un dominio per riga, come le liste di zapret. Le righe che iniziano con # vengono ignorate e i file gzip sono supportati. Zapret lo scarica di nuovo ogni giorno."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un fichier texte avec un domaine par ligne, comme les listes de zapret. Les lignes qui commencent par # sont ignorées, et les fichiers gzip fonctionnent. Zapret le télécharge de nouveau chaque jour."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um arquivo de texto com um domínio por linha, como as listas do zapret. Linhas que começam com # são ignoradas, e arquivos gzip funcionam. O Zapret baixa a lista de novo todo dia."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текстовый файл с одним доменом в строке, как в списках zapret. Строки, начинающиеся с #, пропускаются; файлы gzip тоже подходят. Zapret скачивает его заново каждый день."
+          }
+        }
+      }
     },
     "About" : {
       "extractionState" : "manual",
@@ -1590,7 +2364,50 @@
     },
     "Add a site or IP range never to touch" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokunulmayacak bir site ya da IP aralığı ekleyin"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Website oder IP-Bereich als Ausnahme hinzufügen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añade un sitio o rango de IP que nunca se deba modificar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi un sito o un intervallo IP da escludere"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez un site ou une plage d’IP à exclure"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar um site ou faixa de IP para nunca alterar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте сайт или диапазон IP-адресов, который не нужно трогать"
+          }
+        }
+      }
     },
     "Add an out-of-band byte (oob)" : {
       "extractionState" : "manual",
@@ -1688,7 +2505,50 @@
     },
     "Add sites or IP addresses" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Site ya da IP adresi ekleyin"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Websites oder IP-Adressen hinzufügen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir sitios o direcciones IP"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi siti o indirizzi IP"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter des sites ou des adresses IP"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar sites ou endereços IP"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавьте сайты или IP-адреса"
+          }
+        }
+      }
     },
     "Add the sites that do not open, like youtube.com or discord.com. Paste many at once." : {
       "extractionState" : "manual",
@@ -1786,7 +2646,50 @@
     },
     "Add to My list" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listeme ekle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu „Meine Liste“ hinzufügen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir a Mi lista"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi a La mia lista"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter à Ma liste"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar à Minha lista"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить в «Мой список»"
+          }
+        }
+      }
     },
     "Added %lld sites." : {
       "extractionState" : "manual",
@@ -2280,7 +3183,50 @@
     },
     "An out-of-band byte and disorder together break connections on iPhone, and tpws refuses them. Turn on only one of them." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone'da bant dışı bayt ile karışık sıra birlikte bağlantıları bozar ve tpws bunları reddeder. Yalnızca birini açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Out-of-Band-Byte und Disorder zusammen brechen auf dem iPhone die Verbindungen ab, tpws lehnt sie ab. Schalte nur eines von beiden ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un byte fuera de banda y el desorden juntos cortan las conexiones en iPhone, y tpws los rechaza. Activa solo uno de los dos."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su iPhone un byte out-of-band e disorder insieme interrompono le connessioni e tpws li rifiuta. Attiva solo uno dei due."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un octet hors bande et le désordre ensemble coupent les connexions sur iPhone, et tpws les refuse. N’activez que l’un des deux."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um byte fora de banda e o disorder juntos quebram as conexões no iPhone, e o tpws os recusa. Ative só um dos dois."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На iPhone внеполосный байт и disorder вместе ломают соединения, и tpws их не принимает. Включите что-то одно."
+          }
+        }
+      }
     },
     "Appearance" : {
       "extractionState" : "manual",
@@ -2473,7 +3419,50 @@
     },
     "Bypass is off." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma kapalı."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung ist aus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El desbloqueo está desactivado."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il bypass è disattivato."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le contournement est désactivé."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio desativado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход выключен."
+          }
+        }
+      }
     },
     "Bypass is on" : {
       "extractionState" : "manual",
@@ -2525,16 +3514,145 @@
     },
     "Bypass is on." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma açık."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung ist an."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El desbloqueo está activado."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il bypass è attivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le contournement est activé."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio ativado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход включён."
+          }
+        }
+      }
     },
     "Bypass off" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma kapalı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung aus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueo desactivado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bypass spento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contournement désactivé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio inativo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход выкл."
+          }
+        }
+      },
       "comment" : "Widget: Lock Screen and inline text. Very short."
     },
     "Bypass on" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma açık"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung an"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueo activado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bypass attivo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contournement activé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio ativo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход вкл."
+          }
+        }
+      },
       "comment" : "Widget: Lock Screen and inline text. Very short."
     },
     "Cancel" : {
@@ -2586,7 +3704,50 @@
     },
     "Cancelled" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal edildi"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgebrochen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annullato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменено"
+          }
+        }
+      }
     },
     "Changes how the Host header is written, for sites that still use plain HTTP." : {
       "extractionState" : "manual",
@@ -2731,7 +3892,50 @@
     },
     "Checked on this iPhone against tpws's rules. Paste replaces the options with tpws flags from the clipboard." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu iPhone'da tpws'in kurallarına göre denetlenir. Yapıştırma, seçenekleri panodaki tpws parametreleriyle değiştirir."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird auf diesem iPhone anhand der tpws-Regeln geprüft. „Einsetzen“ ersetzt die Optionen durch tpws-Flags aus der Zwischenablage."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se comprueba en este iPhone según las reglas de tpws. Pegar reemplaza las opciones por los parámetros de tpws del portapapeles."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificato su questo iPhone con le regole di tpws. Incolla sostituisce le opzioni con i flag di tpws degli appunti."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifié sur cet iPhone selon les règles de tpws. Coller remplace les options par celles du presse-papiers."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificado neste iPhone com as regras do tpws. Colar substitui as opções pelos parâmetros do tpws da área de transferência."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверяется на этом iPhone по правилам tpws. Вставка заменяет параметры флагами tpws из буфера обмена."
+          }
+        }
+      }
     },
     "Chosen" : {
       "extractionState" : "manual",
@@ -2876,7 +4080,50 @@
     },
     "Cleared the automatic list" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik liste temizlendi"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatische Liste geleert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se vació la lista automática"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista automatica svuotata"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste automatique vidée"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista automática limpa"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоматический список очищен"
+          }
+        }
+      }
     },
     "Command" : {
       "extractionState" : "manual",
@@ -3115,7 +4362,50 @@
     },
     "Copy Command" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komutu Kopyala"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Befehl kopieren"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar comando"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia comando"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier la commande"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar Comando"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать команду"
+          }
+        }
+      }
     },
     "Copy Flags" : {
       "extractionState" : "manual",
@@ -3448,16 +4738,145 @@
     },
     "Delete %lld" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Öğeyi Sil"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld löschen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar %lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer (%lld)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar %lld"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить (%lld)"
+          }
+        }
+      },
       "comment" : "Bottom-bar button while selecting rows; %lld is how many rows are selected."
     },
     "Delete Strategy" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stratejiyi Sil"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strategie löschen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar estrategia"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina strategia"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer la stratégie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar Estratégia"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить стратегию"
+          }
+        }
+      }
     },
     "Deleted %@" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ silindi"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ gelöscht"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se eliminó %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ eliminato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ supprimé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ apagado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалено: %@"
+          }
+        }
+      }
     },
     "Deleted %lld sites" : {
       "extractionState" : "manual",
@@ -3475,6 +4894,144 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Deleted %lld sites"
+                }
+              }
+            }
+          }
+        },
+        "tr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 site silindi"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld site silindi"
+                }
+              }
+            }
+          }
+        },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 Website gelöscht"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Websites gelöscht"
+                }
+              }
+            }
+          }
+        },
+        "es" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se eliminó 1 sitio"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se eliminaron %lld sitios"
+                }
+              }
+            }
+          }
+        },
+        "it" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 sito eliminato"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld siti eliminati"
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Site supprimé"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld sites supprimés"
+                }
+              }
+            }
+          }
+        },
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 site apagado"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld sites apagados"
+                }
+              }
+            }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалён %lld сайт"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld сайта"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld сайтов"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld сайтов"
                 }
               }
             }
@@ -3502,12 +5059,193 @@
               }
             }
           }
+        },
+        "tr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 abonelik silindi"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld abonelik silindi"
+                }
+              }
+            }
+          }
+        },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 Abo gelöscht"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Abos gelöscht"
+                }
+              }
+            }
+          }
+        },
+        "es" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se eliminó 1 suscripción"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se eliminaron %lld suscripciones"
+                }
+              }
+            }
+          }
+        },
+        "it" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 iscrizione eliminata"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld iscrizioni eliminate"
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Abonnement supprimé"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld abonnements supprimés"
+                }
+              }
+            }
+          }
+        },
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "1 assinatura apagada"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld assinaturas apagadas"
+                }
+              }
+            }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалена %lld подписка"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld подписки"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld подписок"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Удалено %lld подписок"
+                }
+              }
+            }
+          }
         }
       }
     },
     "Deleted “%@”" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” silindi"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ gelöscht"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se eliminó “%@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» eliminata"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "« %@ » supprimée"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” apagada"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалено: «%@»"
+          }
+        }
+      }
     },
     "Disorder" : {
       "extractionState" : "manual",
@@ -3934,19 +5672,191 @@
     },
     "Duplicate and Edit" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çoğalt ve Düzenle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplizieren und bearbeiten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplicar y editar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplica e modifica"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dupliquer et modifier"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplicar e Editar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дублировать и изменить"
+          }
+        }
+      }
     },
     "Edit" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить"
+          }
+        }
+      }
     },
     "Edit Strategy" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stratejiyi Düzenle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strategie bearbeiten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar estrategia"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica strategia"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier la stratégie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar Estratégia"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменение стратегии"
+          }
+        }
+      }
     },
     "Encrypted DNS" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreli DNS"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verschlüsseltes DNS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS cifrado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS cifrato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS chiffré"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS criptografado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зашифрованный DNS"
+          }
+        }
+      }
     },
     "Enter an address that starts with https://" : {
       "extractionState" : "manual",
@@ -3997,11 +5907,97 @@
     },
     "Errors Only" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca Hatalar"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur Fehler"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo errores"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo errori"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreurs seulement"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Só Erros"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Только ошибки"
+          }
+        }
+      }
     },
     "Every app goes through tpws with %@. Nothing leaves this iPhone through a server." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm uygulamalar %@ ile tpws üzerinden geçer. Hiçbir şey bir sunucu üzerinden bu iPhone'dan çıkmaz."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Apps laufen mit %@ über tpws. Nichts läuft über einen fremden Server."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas las apps pasan por tpws con %@. Nada sale de este iPhone a través de un servidor."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutte le app passano da tpws con %@. Niente passa da un server esterno."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les apps passent par tpws avec %@. Rien ne quitte cet iPhone via un serveur."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos os apps passam pelo tpws com %@. Nada sai deste iPhone por um servidor."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все приложения работают через tpws со стратегией «%@». Трафик не уходит ни на какой сервер."
+          }
+        }
+      }
     },
     "Every protocol" : {
       "extractionState" : "manual",
@@ -4193,7 +6189,50 @@
     },
     "Filter by site or text" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siteye ya da metne göre süz"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach Website oder Text filtern"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrar por sitio o texto"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtra per sito o testo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrer par site ou texte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrar por site ou texto"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фильтр по сайту или тексту"
+          }
+        }
+      }
     },
     "Find a Strategy" : {
       "extractionState" : "manual",
@@ -4291,7 +6330,50 @@
     },
     "For sites that still use plain HTTP. Host spelling is exactly 4 letters; padding adds that many bytes of dummy headers before Host, so the filter gives up before it reaches the site name." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hâlâ şifresiz HTTP kullanan siteler için. Host yazımı tam 4 harf olmalıdır; dolgu, Host'tan önce o kadar bayt sahte başlık ekler, böylece filtre site adına ulaşmadan vazgeçer."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für Websites, die noch einfaches HTTP nutzen. Die Host-Schreibweise hat genau 4 Buchstaben; die Füllung setzt so viele Bytes Platzhalter-Header vor Host, sodass der Filter aufgibt, bevor er den Websitenamen erreicht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para sitios que aún usan HTTP sin cifrar. La escritura de Host son exactamente 4 letras; el relleno añade esa cantidad de bytes de cabeceras falsas antes de Host, de modo que el filtro se rinde antes de llegar al nombre del sitio."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per i siti che usano ancora HTTP semplice. La scrittura di Host è di esattamente 4 lettere; il padding aggiunge altrettanti byte di intestazioni fittizie prima di Host, così il filtro si arrende prima di arrivare al nome del sito."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour les sites qui utilisent encore HTTP simple. L’orthographe de Host fait exactement 4 lettres ; le remplissage ajoute ce nombre d’octets d’en-têtes factices avant Host, pour que le filtre abandonne avant d’atteindre le nom du site."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para sites que ainda usam HTTP puro. A grafia do Host tem exatamente 4 letras; o enchimento acrescenta essa quantidade de bytes de cabeçalhos falsos antes do Host, e o filtro desiste antes de chegar ao nome do site."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для сайтов, которые ещё работают по обычному HTTP. Написание Host — ровно 4 буквы; заполнение добавляет перед Host столько байт лишних заголовков, что DPI сдаётся, не дойдя до имени сайта."
+          }
+        }
+      }
     },
     "From the address" : {
       "extractionState" : "manual",
@@ -4718,11 +6800,97 @@
     },
     "Host spelling" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Host yazımı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Host-Schreibweise"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escritura de Host"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrittura di Host"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orthographe de Host"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grafia do Host"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написание Host"
+          }
+        }
+      }
     },
     "Host spelling must be exactly 4 letters, like hoSt." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Host yazımı tam 4 harf olmalıdır, örneğin hoSt."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Host-Schreibweise muss genau 4 Buchstaben haben, z. B. hoSt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La escritura de Host debe tener exactamente 4 letras, como hoSt."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La scrittura di Host deve essere di esattamente 4 lettere, ad es. hoSt."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’orthographe de Host doit faire exactement 4 lettres, comme hoSt."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A grafia do Host precisa ter exatamente 4 letras, como hoSt."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написание Host — ровно 4 буквы, например hoSt."
+          }
+        }
+      }
     },
     "How tpws changes your traffic so the filter cannot read it." : {
       "extractionState" : "manual",
@@ -5008,7 +7176,50 @@
     },
     "Import from File…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dosyadan İçe Aktar…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus Datei importieren …"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importar desde archivo…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importa da file…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer depuis un fichier…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importar de Arquivo…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Импортировать из файла…"
+          }
+        }
+      }
     },
     "In use" : {
       "extractionState" : "manual",
@@ -5059,7 +7270,50 @@
     },
     "Keep the bypass on" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma hep açık kalsın"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung eingeschaltet lassen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantener el desbloqueo activado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantieni il bypass attivo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garder le contournement activé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manter o desbloqueio ativo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Держать обход включённым"
+          }
+        }
+      }
     },
     "Kind" : {
       "extractionState" : "manual",
@@ -5110,15 +7364,144 @@
     },
     "Lets a computer, tablet, or TV on your Wi-Fi use this iPhone as a SOCKS5 proxy. Off by default." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wi-Fi ağınızdaki bir bilgisayarın, tabletin ya da TV'nin bu iPhone'u SOCKS5 proxy olarak kullanmasını sağlar. Varsayılan olarak kapalıdır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lässt einen Computer, ein Tablet oder einen Fernseher in deinem WLAN dieses iPhone als SOCKS5-Proxy nutzen. Standardmäßig aus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permite que un ordenador, una tablet o una tele de tu red Wi-Fi use este iPhone como proxy SOCKS5. Desactivado por defecto."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permette a un computer, un tablet o una TV sul tuo Wi-Fi di usare questo iPhone come proxy SOCKS5. Disattivata per impostazione predefinita."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permet à un ordinateur, une tablette ou un téléviseur de votre réseau Wi-Fi d’utiliser cet iPhone comme proxy SOCKS5. Désactivé par défaut."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permite que um computador, tablet ou TV no seu Wi-Fi use este iPhone como proxy SOCKS5. Desligado por padrão."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позволяет компьютеру, планшету или телевизору в вашей сети Wi-Fi использовать этот iPhone как прокси SOCKS5. По умолчанию выключено."
+          }
+        }
+      }
     },
     "Licenses" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisanslar"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lizenzen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licencias"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licenze"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licences"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licenças"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лицензии"
+          }
+        }
+      }
     },
     "Light and dark mode follow your iPhone." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık ve koyu görünüm iPhone'unuzu izler."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hell und Dunkel folgen dem iPhone."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El modo claro y oscuro sigue el de tu iPhone."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il modo chiaro e scuro segue l’iPhone."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’aspect clair ou sombre suit celui de votre iPhone."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os modos claro e escuro seguem o iPhone."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Светлое и тёмное оформление следуют настройкам iPhone."
+          }
+        }
+      }
     },
     "Line break before method" : {
       "extractionState" : "manual",
@@ -5310,7 +7693,50 @@
     },
     "Looks up site names over HTTPS, so DNS blocks do not apply." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Site adlarını HTTPS üzerinden sorgular, bu yüzden DNS engelleri işlemez."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löst Websitenamen über HTTPS auf, DNS-Sperren greifen daher nicht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resuelve los nombres de sitios por HTTPS, así que los bloqueos de DNS no afectan."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Risolve i nomi dei siti via HTTPS, quindi i blocchi DNS non hanno effetto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résout les noms de sites via HTTPS, donc les blocages DNS ne s’appliquent pas."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulta os nomes dos sites por HTTPS, então bloqueios de DNS não valem."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Адреса сайтов определяются по HTTPS, поэтому блокировки DNS не мешают."
+          }
+        }
+      }
     },
     "MiXeD domain case" : {
       "extractionState" : "manual",
@@ -5925,11 +8351,97 @@
     },
     "No Wi-Fi address. Connect this iPhone to Wi-Fi to share." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wi-Fi adresi yok. Paylaşmak için bu iPhone'u Wi-Fi'ye bağlayın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine WLAN-Adresse. Verbinde dieses iPhone mit dem WLAN, um zu teilen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay dirección Wi-Fi. Conecta este iPhone a una red Wi-Fi para compartir."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun indirizzo Wi-Fi. Collega questo iPhone al Wi-Fi per condividere."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas d’adresse Wi-Fi. Connectez cet iPhone au Wi-Fi pour partager."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem endereço Wi-Fi. Conecte este iPhone ao Wi-Fi para compartilhar."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет адреса Wi-Fi. Подключите iPhone к Wi-Fi, чтобы поделиться обходом."
+          }
+        }
+      }
     },
     "No block found: the site opens without Zapret." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel bulunamadı: site Zapret olmadan açılıyor."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Sperre gefunden: Die Website lädt auch ohne Zapret."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay bloqueo: el sitio carga sin Zapret."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun blocco trovato: il sito si apre anche senza Zapret."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun blocage détecté : le site s’ouvre sans Zapret."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum bloqueio encontrado: o site abre sem o Zapret."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блокировки нет: сайт открывается и без Zapret."
+          }
+        }
+      }
     },
     "No changes to traffic" : {
       "extractionState" : "manual",
@@ -6074,11 +8586,97 @@
     },
     "No protocol picked means every protocol; Other is anything that is not HTTP or TLS. Start and stop take a byte offset, or n and a data block, like n2. The out-of-band byte is one character or 0x and two hex digits. Any tpws desync flag works under More tpws flags." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protokol seçilmezse tüm protokoller geçerlidir; Diğer, HTTP ya da TLS olmayan her şeydir. Başlangıç ve bitiş bir bayt konumu ya da n ve bir veri bloğu alır, örneğin n2. Bant dışı bayt tek bir karakter ya da 0x ve iki onaltılık rakamdır. Her tpws desync parametresi Diğer tpws parametreleri içinde çalışır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne Auswahl gilt jedes Protokoll; „Andere“ ist alles außer HTTP und TLS. Start und Stopp nehmen einen Byte-Offset oder n mit einer Blocknummer, z. B. n2. Das Out-of-Band-Byte ist ein Zeichen oder 0x mit zwei Hex-Ziffern. Jedes tpws-Desync-Flag funktioniert unter „Weitere tpws-Flags“."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si no eliges ningún protocolo, se aplican todos; Otro es cualquiera que no sea HTTP ni TLS. Inicio y fin admiten un desplazamiento en bytes, o n y un bloque de datos, como n2. El byte fuera de banda es un carácter o 0x y dos dígitos hexadecimales. En Otros parámetros de tpws sirve cualquier parámetro de desincronización de tpws."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se non scegli nessun protocollo vale per tutti; Altro è tutto ciò che non è HTTP o TLS. Inizio e fine accettano uno scostamento in byte, oppure n e un blocco di dati, ad es. n2. Il byte out-of-band è un carattere oppure 0x e due cifre esadecimali. Qualsiasi flag desync di tpws funziona in Altri flag di tpws."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sans protocole choisi, tous les protocoles sont concernés ; Autre désigne tout ce qui n’est ni HTTP ni TLS. Début et fin prennent un décalage en octets, ou n et un bloc de données, comme n2. L’octet hors bande est un caractère ou 0x suivi de deux chiffres hexadécimaux. Toute option de désynchronisation tpws fonctionne dans Autres options tpws."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem nenhum protocolo escolhido, vale para todos; Outro é tudo que não é HTTP nem TLS. Início e fim aceitam um deslocamento em bytes, ou n e um bloco de dados, como n2. O byte fora de banda é um caractere ou 0x e dois dígitos hexadecimais. Qualquer parâmetro de desync do tpws funciona em Mais parâmetros do tpws."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если протокол не выбран, подходят все; «Другие» — всё, что не HTTP и не TLS. Начало и конец задаются смещением в байтах либо n и номером блока данных, например n2. Внеполосный байт — один символ или 0x и две шестнадцатеричные цифры. Любой desync-флаг tpws можно указать в поле «Другие флаги tpws»."
+          }
+        }
+      }
     },
     "No sites. Type one above." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Site yok. Yukarıya bir site yazın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Websites. Gib oben eine ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay sitios. Escribe uno arriba."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun sito. Scrivine uno qui sopra."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun site. Saisissez-en un ci-dessus."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum site. Digite um acima."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сайтов нет. Введите адрес выше."
+          }
+        }
+      }
     },
     "No space after Host:" : {
       "extractionState" : "manual",
@@ -6270,7 +8868,50 @@
     },
     "Nothing yet" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz bir şey yok"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch nichts"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aún no hay nada"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ancora niente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rien pour l’instant"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nada ainda"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока пусто"
+          }
+        }
+      }
     },
     "Nothing yet. A site appears here when its connections keep failing." : {
       "extractionState" : "manual",
@@ -6415,7 +9056,50 @@
     },
     "OOB byte value" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OOB bayt değeri"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OOB-Bytewert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valor del byte OOB"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valore del byte OOB"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valeur de l’octet hors bande"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valor do byte OOB"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Значение OOB-байта"
+          }
+        }
+      }
     },
     "Off" : {
       "extractionState" : "manual",
@@ -6467,7 +9151,50 @@
     },
     "Off logs only errors, which also stops the connection count on Overview." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalıyken yalnızca hatalar günlüğe yazılır; bu, Genel Bakış'taki bağlantı sayısını da durdurur."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus protokolliert nur Fehler und stoppt auch die Verbindungszählung in der Übersicht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si está desactivado, solo se registran los errores, y el recuento de conexiones de Resumen también se detiene."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se è disattivato, nel log restano solo gli errori e il conteggio delle connessioni in Panoramica si ferma."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactivé, seules les erreurs sont consignées, ce qui arrête aussi le compteur de connexions dans Aperçu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desligado, registra só os erros, o que também para a contagem de conexões na Visão Geral."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если выключить, в журнал попадают только ошибки, а счётчик соединений на экране «Обзор» перестаёт считать."
+          }
+        }
+      }
     },
     "On" : {
       "extractionState" : "manual",
@@ -6519,11 +9246,97 @@
     },
     "On iPhone, an out-of-band byte and disorder together break connections. Turn on only one of them." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone'da bant dışı bayt ile karışık sıra birlikte bağlantıları bozar. Yalnızca birini açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf dem iPhone brechen Out-of-Band-Byte und Disorder zusammen die Verbindungen ab. Schalte nur eines von beiden ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En iPhone, un byte fuera de banda y el desorden juntos cortan las conexiones. Activa solo uno de los dos."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su iPhone un byte out-of-band e disorder insieme interrompono le connessioni. Attiva solo uno dei due."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur iPhone, un octet hors bande et le désordre ensemble coupent les connexions. N’activez que l’un des deux."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No iPhone, um byte fora de banda e o disorder juntos quebram as conexões. Ative só um dos dois."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На iPhone внеполосный байт и disorder вместе ломают соединения. Включите что-то одно."
+          }
+        }
+      }
     },
     "On this iPhone" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu iPhone'da"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf diesem iPhone"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En este iPhone"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su questo iPhone"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur cet iPhone"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste iPhone"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На этом iPhone"
+          }
+        }
+      }
     },
     "Once" : {
       "extractionState" : "manual",
@@ -6574,7 +9387,50 @@
     },
     "One site, or several separated by spaces. A strategy works only if every site opens." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir site ya da boşlukla ayrılmış birkaç site. Bir strateji yalnızca tüm siteler açılırsa işe yarar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine Website oder mehrere, durch Leerzeichen getrennt. Eine Strategie gilt nur, wenn jede Website lädt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un sitio, o varios separados por espacios. Una estrategia solo sirve si cargan todos los sitios."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un sito, o più siti separati da spazi. Una strategia funziona solo se si aprono tutti i siti."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un site, ou plusieurs séparés par des espaces. Une stratégie ne fonctionne que si tous les sites s’ouvrent."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um site, ou vários separados por espaço. Uma estratégia só funciona se todos os sites abrirem."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Один сайт или несколько через пробел. Стратегия подходит, только если открываются все сайты."
+          }
+        }
+      }
     },
     "Only the %lld sites in your list." : {
       "extractionState" : "manual",
@@ -6880,7 +9736,50 @@
     },
     "Open Zapret and turn the bypass on once first." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önce Zapret'i açın ve engel aşmayı bir kez açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne zuerst Zapret und schalte die Umgehung einmal ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre Zapret y activa el desbloqueo una vez antes."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri prima Zapret e attiva il bypass una volta."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrez d’abord Zapret et activez le contournement une fois."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra o Zapret e ative o desbloqueio uma vez antes."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сначала откройте Zapret и один раз включите обход."
+          }
+        }
+      }
     },
     "Open the List's Page" : {
       "extractionState" : "manual",
@@ -6978,11 +9877,97 @@
     },
     "Opened in %lld ms (HTTP %lld)." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ms'de açıldı (HTTP %lld)."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In %lld ms geöffnet (HTTP %lld)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abierto en %lld ms (HTTP %lld)."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto in %lld ms (HTTP %lld)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvert en %lld ms (HTTP %lld)."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abriu em %lld ms (HTTP %lld)."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открылся за %lld мс (HTTP %lld)."
+          }
+        }
+      }
     },
     "Opens the address through the bypass." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresi engel aşma üzerinden açar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die Adresse über die Umgehung."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre la dirección con el desbloqueo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre l’indirizzo tramite il bypass."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre l’adresse avec le contournement."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre o endereço pelo desbloqueio."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открывает адрес через обход."
+          }
+        }
+      }
     },
     "Opens · %lld · %lld ms" : {
       "extractionState" : "manual",
@@ -7268,11 +10253,97 @@
     },
     "Padding before Host" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Host'tan önce dolgu"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Füllung vor Host"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relleno antes de Host"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padding prima di Host"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remplissage avant Host"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enchimento antes do Host"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заполнение перед Host"
+          }
+        }
+      }
     },
     "Paste Sites" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siteleri Yapıştır"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Websites einsetzen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pegar sitios"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incolla siti"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coller des sites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colar Sites"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставить сайты"
+          }
+        }
+      }
     },
     "Pick tpws options in a form" : {
       "extractionState" : "manual",
@@ -7370,7 +10441,50 @@
     },
     "Putting your strategy back…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stratejiniz geri yükleniyor…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Strategie wird wiederhergestellt …"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurando tu estrategia…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristino della tua strategia…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rétablissement de votre stratégie…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurando sua estratégia…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возвращаем вашу стратегию…"
+          }
+        }
+      }
     },
     "QR code" : {
       "extractionState" : "manual",
@@ -7844,7 +10958,50 @@
     },
     "Scan it in a proxy app on another device." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başka bir cihazdaki proxy uygulamasıyla tarayın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanne ihn mit einer Proxy-App auf einem anderen Gerät."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escanéalo con una app de proxy en otro dispositivo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inquadralo con un’app proxy su un altro dispositivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scannez-le dans une app de proxy sur un autre appareil."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escaneie em um app de proxy em outro dispositivo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсканируйте его в приложении для прокси на другом устройстве."
+          }
+        }
+      }
     },
     "Secure connection failed" : {
       "extractionState" : "manual",
@@ -7895,7 +11052,50 @@
     },
     "Select" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seç"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auswählen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleccionar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionner"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать"
+          }
+        }
+      }
     },
     "Send pieces out of order (disorder)" : {
       "extractionState" : "manual",
@@ -7946,16 +11146,145 @@
     },
     "Set Bypass" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel Aşmayı Ayarla"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung festlegen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustar desbloqueo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imposta bypass"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir le contournement"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir Desbloqueio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задать обход"
+          }
+        }
+      },
       "comment" : "Shortcuts action name used by the Control Center switch."
     },
     "Setting up the local VPN and tpws." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yerel VPN ve tpws hazırlanıyor."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokales VPN und tpws werden eingerichtet."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurando la VPN local y tpws."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurazione della VPN locale e di tpws."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration du VPN local et de tpws."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurando a VPN local e o tpws."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настраиваем локальный VPN и tpws."
+          }
+        }
+      }
     },
     "Settings" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
     },
     "Share with devices on this network" : {
       "extractionState" : "manual",
@@ -8053,7 +11382,50 @@
     },
     "Shows whether the bypass is on, and its strategy. Tap to turn it on or off." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşmanın açık olup olmadığını ve stratejisini gösterir. Açmak veya kapatmak için dokunun."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt, ob die Umgehung an ist, und ihre Strategie. Tippe, um sie ein- oder auszuschalten."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra si el desbloqueo está activado y su estrategia. Toca para activarlo o desactivarlo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra se il bypass è attivo e la sua strategia. Tocca per attivarlo o disattivarlo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indique si le contournement est activé, et sa stratégie. Touchez pour l’activer ou le désactiver."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra se o desbloqueio está ativo e qual é a estratégia. Toque para ativar ou desativar."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывает, включён ли обход, и его стратегию. Коснитесь, чтобы включить или выключить."
+          }
+        }
+      }
     },
     "Site not found" : {
       "extractionState" : "manual",
@@ -8339,7 +11711,50 @@
     },
     "Source" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaynak"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origen"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origine"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origem"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Источник"
+          }
+        }
+      }
     },
     "Split + Disorder" : {
       "extractionState" : "manual",
@@ -9142,7 +12557,50 @@
     },
     "Stopping…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durduruluyor…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird beendet …"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deteniendo…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arresto…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrêt en cours…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parando…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Остановка…"
+          }
+        }
+      }
     },
     "Strategies" : {
       "extractionState" : "manual",
@@ -9804,7 +13262,50 @@
     },
     "Tap the button. Every app's traffic then goes through tpws on this iPhone, as a local VPN." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düğmeye dokunun. Tüm uygulamaların trafiği, yerel bir VPN olarak bu iPhone'daki tpws üzerinden geçer."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippe auf den Schalter. Danach läuft der Datenverkehr aller Apps als lokales VPN über tpws auf diesem iPhone."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca el botón. El tráfico de todas las apps pasará entonces por tpws en este iPhone, como una VPN local."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca il pulsante. Il traffico di tutte le app passerà da tpws su questo iPhone, come una VPN locale."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez le bouton. Le trafic de toutes les apps passe alors par tpws sur cet iPhone, via un VPN local."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no botão. O tráfego de todos os apps passa então pelo tpws neste iPhone, como uma VPN local."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коснитесь кнопки. Трафик всех приложений пойдёт через tpws на этом iPhone, как через локальный VPN."
+          }
+        }
+      }
     },
     "Test Again" : {
       "extractionState" : "manual",
@@ -9949,19 +13450,191 @@
     },
     "That is not a web address." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu bir web adresi değil."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das ist keine Webadresse."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eso no es una dirección web."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non è un indirizzo web."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce n’est pas une adresse web."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isto não é um endereço da web."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это не веб-адрес."
+          }
+        }
+      }
     },
     "The bypass engine is tpws from zapret by bol-van, MIT license. hev-socks5-tunnel by heiher turns the tunnel's packets into connections, also MIT." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma motoru, bol-van'ın zapret projesindeki tpws'tir (MIT lisansı). heiher'in hev-socks5-tunnel aracı tünelin paketlerini bağlantılara çevirir, o da MIT lisanslıdır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Umgehung läuft mit tpws aus zapret von bol-van (MIT-Lizenz). hev-socks5-tunnel von heiher macht aus den Paketen des Tunnels Verbindungen, ebenfalls MIT."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El motor del desbloqueo es tpws, de zapret de bol-van, con licencia MIT. hev-socks5-tunnel, de heiher, convierte los paquetes del túnel en conexiones, también con licencia MIT."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il motore del bypass è tpws di zapret, di bol-van, con licenza MIT. hev-socks5-tunnel di heiher trasforma i pacchetti del tunnel in connessioni, anch’esso con licenza MIT."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le moteur de contournement est tpws de zapret, par bol-van, sous licence MIT. hev-socks5-tunnel, par heiher, transforme les paquets du tunnel en connexions, également sous licence MIT."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O motor do desbloqueio é o tpws, do zapret, de bol-van, com licença MIT. O hev-socks5-tunnel, de heiher, transforma os pacotes do túnel em conexões, também com licença MIT."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход работает на tpws из zapret от bol-van, лицензия MIT. hev-socks5-tunnel от heiher превращает пакеты туннеля в соединения, тоже под лицензией MIT."
+          }
+        }
+      }
     },
     "The bypass is off" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma kapalı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Umgehung ist aus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El desbloqueo está desactivado"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il bypass è disattivato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le contournement est désactivé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O desbloqueio está desligado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход выключен"
+          }
+        }
+      }
     },
     "The bypass is off: this opens the address directly." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma kapalı: adres doğrudan açılır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Umgehung ist aus: Die Adresse wird direkt geöffnet."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El desbloqueo está desactivado: esto abre la dirección directamente."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il bypass è disattivato: l’indirizzo si apre direttamente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le contournement est désactivé : l’adresse s’ouvre directement."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O desbloqueio está desligado: isto abre o endereço direto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход выключен: адрес откроется напрямую."
+          }
+        }
+      }
     },
     "The bypass is on for all sites now. This list is used when Sites is set to My list." : {
       "extractionState" : "manual",
@@ -10012,11 +13685,97 @@
     },
     "The bypass stopped" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel aşma durdu"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Umgehung wurde beendet"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El desbloqueo se detuvo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il bypass si è fermato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le contournement s’est arrêté"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O desbloqueio parou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход остановился"
+          }
+        }
+      }
     },
     "The clipboard does not hold tpws flags. Copy flags that start with --." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pano tpws parametresi içermiyor. -- ile başlayan parametreleri kopyalayın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In der Zwischenablage sind keine tpws-Flags. Kopiere Flags, die mit -- beginnen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El portapapeles no contiene parámetros de tpws. Copia parámetros que empiecen por --."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli appunti non contengono flag di tpws. Copia flag che iniziano con --."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le presse-papiers ne contient pas d’options tpws. Copiez des options qui commencent par --."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A área de transferência não tem parâmetros do tpws. Copie parâmetros que começam com --."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В буфере обмена нет флагов tpws. Скопируйте флаги, которые начинаются с --."
+          }
+        }
+      }
     },
     "The filter reads the site name. A strategy can get around this." : {
       "extractionState" : "manual",
@@ -10208,7 +13967,50 @@
     },
     "The out-of-band byte must be one character or 0x and two hex digits, like 0x01." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bant dışı bayt tek bir karakter ya da 0x ve iki onaltılık rakam olmalıdır, örneğin 0x01."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Out-of-Band-Byte muss ein Zeichen oder 0x mit zwei Hex-Ziffern sein, z. B. 0x01."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El byte fuera de banda debe ser un carácter o 0x y dos dígitos hexadecimales, como 0x01."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il byte out-of-band deve essere un carattere oppure 0x e due cifre esadecimali, ad es. 0x01."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’octet hors bande doit être un caractère ou 0x suivi de deux chiffres hexadécimaux, comme 0x01."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O byte fora de banda precisa ser um caractere ou 0x e dois dígitos hexadecimais, como 0x01."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Внеполосный байт — один символ или 0x и две шестнадцатеричные цифры, например 0x01."
+          }
+        }
+      }
     },
     "The server answered with error %lld." : {
       "extractionState" : "manual",
@@ -10259,29 +14061,287 @@
     },
     "The tunnel could not be opened." : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünel açılamadı."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Tunnel konnte nicht geöffnet werden."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo abrir el túnel."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile aprire il tunnel."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible d’ouvrir le tunnel."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível abrir o túnel."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось открыть туннель."
+          }
+        }
+      },
       "comment" : "Error from the VPN extension shown by iOS."
     },
     "The tunnel did not start in time" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünel zamanında başlamadı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Tunnel wurde nicht rechtzeitig gestartet"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El túnel no se inició a tiempo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tunnel non si è avviato in tempo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tunnel n’a pas démarré à temps"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O túnel não iniciou a tempo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Туннель не запустился вовремя"
+          }
+        }
+      }
     },
     "The tunnel has no settings. Open Zapret and turn it on again." : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünelin ayarları yok. Zapret'i açıp yeniden açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Tunnel hat keine Einstellungen. Öffne Zapret und schalte ihn erneut ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El túnel no tiene ajustes. Abre Zapret y vuelve a activarlo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tunnel non ha impostazioni. Apri Zapret e riattivalo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tunnel n’a aucun réglage. Ouvrez Zapret et réactivez-le."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O túnel não tem ajustes. Abra o Zapret e ative de novo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У туннеля нет настроек. Откройте Zapret и включите обход снова."
+          }
+        }
+      },
       "comment" : "Error from the VPN extension shown by iOS."
     },
     "The tunnel stopped" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünel durdu"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Tunnel wurde beendet"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El túnel se detuvo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tunnel si è fermato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tunnel s’est arrêté"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O túnel parou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Туннель остановился"
+          }
+        }
+      }
     },
     "The tunnel stopped." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünel durdu."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Tunnel wurde beendet."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El túnel se detuvo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tunnel si è fermato."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tunnel s’est arrêté."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O túnel parou."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Туннель остановился."
+          }
+        }
+      }
     },
     "These lists hold %lld entries. The VPN on iPhone has little memory, so very large lists can keep it from starting. Turn off the ones you do not need." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu listelerde %lld kayıt var. iPhone'daki VPN'in belleği azdır; çok büyük listeler başlamasını engelleyebilir. İhtiyacınız olmayanları kapatın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Listen enthalten %lld Einträge. Das VPN hat auf dem iPhone wenig Speicher, sehr große Listen können den Start verhindern. Schalte aus, was du nicht brauchst."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estas listas tienen %lld entradas. La VPN del iPhone dispone de poca memoria, así que las listas muy grandes pueden impedir que se inicie. Desactiva las que no necesites."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Queste liste contengono %lld voci. La VPN su iPhone ha poca memoria, quindi liste molto grandi possono impedirne l’avvio. Disattiva quelle che non ti servono."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ces listes contiennent %lld entrées. Le VPN sur iPhone dispose de peu de mémoire : des listes très volumineuses peuvent l’empêcher de démarrer. Désactivez celles dont vous n’avez pas besoin."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estas listas têm %lld entradas. A VPN no iPhone tem pouca memória, então listas muito grandes podem impedir que ela inicie. Desative as que você não precisa."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В этих списках записей: %lld. У VPN на iPhone мало памяти, и слишком большие списки могут помешать запуску. Выключите ненужные."
+          }
+        }
+      }
     },
     "This address is not a site list." : {
       "extractionState" : "manual",
@@ -10473,11 +14533,97 @@
     },
     "This site's address is blocked. Zapret cannot get around that." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu sitenin adresi engellenmiş. Zapret bunu aşamaz."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Adresse dieser Website ist gesperrt. Das kann Zapret nicht umgehen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La dirección de este sitio está bloqueada. Zapret no puede evitarlo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’indirizzo di questo sito è bloccato. Zapret non può aggirarlo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’adresse de ce site est bloquée. Zapret ne peut pas la contourner."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O endereço deste site está bloqueado. O Zapret não consegue contornar isso."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Адрес сайта заблокирован. Zapret не может это обойти."
+          }
+        }
+      }
     },
     "This strategy has a separate part for HTTP and HTTPS; it is kept in More tpws flags." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu stratejinin HTTP ve HTTPS için ayrı bir bölümü var; Diğer tpws parametreleri içinde tutulur."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Strategie hat einen eigenen Teil für HTTP und HTTPS; er bleibt unter „Weitere tpws-Flags“ erhalten."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta estrategia tiene una parte aparte para HTTP y HTTPS; se conserva en Otros parámetros de tpws."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa strategia ha una parte separata per HTTP e HTTPS, che resta in Altri flag di tpws."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette stratégie a une partie distincte pour HTTP et HTTPS ; elle est conservée dans Autres options tpws."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta estratégia tem uma parte separada para HTTP e HTTPS; ela fica em Mais parâmetros do tpws."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У этой стратегии отдельные части для HTTP и HTTPS; они сохранены в поле «Другие флаги tpws»."
+          }
+        }
+      }
     },
     "Thorough" : {
       "extractionState" : "manual",
@@ -10575,12 +14721,98 @@
     },
     "Toggle Bypass" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel Aşmayı Değiştir"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung umschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar desbloqueo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inverti bypass"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basculer le contournement"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alternar Desbloqueio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переключить обход"
+          }
+        }
+      },
       "comment" : "Shortcuts action name and App Shortcut tile title (short)."
     },
     "Too many split positions. tpws takes at most %lld." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok fazla bölme noktası var. tpws en fazla %lld tane alır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu viele Split-Positionen. tpws erlaubt höchstens %lld."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demasiadas posiciones de división. tpws admite como máximo %lld."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Troppe posizioni di split. tpws ne accetta al massimo %lld."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trop de positions de découpe. tpws en accepte %lld au maximum."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posições de divisão demais. O tpws aceita no máximo %lld."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слишком много позиций сплита. tpws принимает не больше %lld."
+          }
+        }
+      }
     },
     "Tries every split and TLS-record combination zapret's blockcheck tests, with TLS 1.3 and TLS 1.2 separately. Takes a few minutes." : {
       "extractionState" : "manual",
@@ -10631,24 +14863,239 @@
     },
     "Tries the %lld built-in strategies. About a minute." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazır %lld stratejiyi dener. Yaklaşık bir dakika sürer."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testet die %lld mitgelieferten Strategien. Dauert etwa eine Minute."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prueba las %lld estrategias incluidas. Tarda alrededor de un minuto."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova le %lld strategie incluse. Circa un minuto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essaie les %lld stratégies intégrées. Environ une minute."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testa as %lld estratégias incluídas. Cerca de um minuto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пробует %lld встроенных стратегий. Около минуты."
+          }
+        }
+      }
     },
     "Try %lld of %lld…" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deneme %lld / %lld…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versuch %lld von %lld …"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prueba %lld de %lld…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prova %lld di %lld…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essai %lld sur %lld…"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teste %lld de %lld…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Попытка %lld из %lld…"
+          }
+        }
+      }
     },
     "Tunnel" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tünel"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Túnel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnel"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnel"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Túnel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Туннель"
+          }
+        }
+      }
     },
     "Turn Bypass Off" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel Aşmayı Kapat"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung ausschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar desbloqueo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva bypass"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver le contournement"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativar Desbloqueio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить обход"
+          }
+        }
+      },
       "comment" : "Shortcuts action name and App Shortcut tile title (short)."
     },
     "Turn Bypass On" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engel Aşmayı Aç"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung einschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar desbloqueo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva bypass"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le contournement"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar Desbloqueio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить обход"
+          }
+        }
+      },
       "comment" : "Shortcuts action name and App Shortcut tile title (short)."
     },
     "Turn Off" : {
@@ -10841,39 +15288,426 @@
     },
     "Turn it on to see what tpws does." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws'in ne yaptığını görmek için engel aşmayı açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schalte sie ein, um zu sehen, was tpws tut."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actívalo para ver qué hace tpws."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attivalo per vedere cosa fa tpws."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activez-le pour voir ce que fait tpws."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligue para ver o que o tpws faz."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включите обход, чтобы увидеть, что делает tpws."
+          }
+        }
+      }
     },
     "Turn off" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить"
+          }
+        }
+      }
     },
     "Turn on" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aç"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить"
+          }
+        }
+      }
     },
     "Turn the bypass on when Zapret opens" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret açılınca engel aşmayı aç"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgehung beim Öffnen von Zapret einschalten"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar el desbloqueo al abrir Zapret"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva il bypass all’apertura di Zapret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le contournement à l’ouverture de Zapret"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar o desbloqueio ao abrir o Zapret"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включать обход при открытии Zapret"
+          }
+        }
+      }
     },
     "Turns the Zapret bypass off." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret engel aşmayı kapatır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schaltet die Zapret-Umgehung aus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactiva el desbloqueo de Zapret."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva il bypass di Zapret."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactive le contournement Zapret."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativa o desbloqueio do Zapret."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключает обход Zapret."
+          }
+        }
+      }
     },
     "Turns the Zapret bypass on if it is off, and off if it is on." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret engel aşma kapalıysa açar, açıksa kapatır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schaltet die Zapret-Umgehung ein, wenn sie aus ist, und aus, wenn sie an ist."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa el desbloqueo de Zapret si está desactivado y lo desactiva si está activado."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva il bypass di Zapret se è disattivato, e lo disattiva se è attivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active le contournement Zapret s’il est désactivé, et le désactive s’il est activé."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativa o desbloqueio do Zapret se estiver desativado e desativa se estiver ativado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включает обход Zapret, если он выключен, и выключает, если включён."
+          }
+        }
+      }
     },
     "Turns the Zapret bypass on or off." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret engel aşmayı açar veya kapatır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schaltet die Zapret-Umgehung ein oder aus."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa o desactiva el desbloqueo de Zapret."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva o disattiva il bypass di Zapret."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active ou désactive le contournement Zapret."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativa ou desativa o desbloqueio do Zapret."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включает или выключает обход Zapret."
+          }
+        }
+      }
     },
     "Turns the Zapret bypass on." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret engel aşmayı açar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schaltet die Zapret-Umgehung ein."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa el desbloqueo de Zapret."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva il bypass di Zapret."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active le contournement Zapret."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativa o desbloqueio do Zapret."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включает обход Zapret."
+          }
+        }
+      }
     },
     "Undo" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri Al"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widerrufen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deshacer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desfazer"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить"
+          }
+        }
+      }
     },
     "Unix line endings" : {
       "extractionState" : "manual",
@@ -10971,7 +15805,50 @@
     },
     "Update Subscriptions" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonelikleri Güncelle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abos aktualisieren"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar suscripciones"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiorna iscrizioni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mettre à jour les abonnements"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atualizar Assinaturas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обновить подписки"
+          }
+        }
+      }
     },
     "Use" : {
       "extractionState" : "manual",
@@ -11069,19 +15946,191 @@
     },
     "Where to cut the first packet. A number is a byte offset; markers: method, host, endhost, sld (the site name), midsld (its middle), endsld, sniext (the TLS server-name field). Add +N or -N." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk paketin nereden kesileceği. Sayı bir bayt konumudur; işaretler: method, host, endhost, sld (site adı), midsld (ortası), endsld, sniext (TLS sunucu adı alanı). +N ya da -N ekleyebilirsiniz."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wo das erste Paket getrennt wird. Eine Zahl ist ein Byte-Offset; Marker: method, host, endhost, sld (der Websitename), midsld (dessen Mitte), endsld, sniext (das TLS-Servername-Feld). Mit +N oder -N verschieben."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dónde cortar el primer paquete. Un número es un desplazamiento en bytes; marcadores: method, host, endhost, sld (el nombre del sitio), midsld (su mitad), endsld, sniext (el campo de nombre de servidor TLS). Añade +N o -N."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dove tagliare il primo pacchetto. Un numero è uno scostamento in byte; marcatori: method, host, endhost, sld (il nome del sito), midsld (il suo centro), endsld, sniext (il campo server name di TLS). Aggiungi +N o -N."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Où couper le premier paquet. Un nombre est un décalage en octets ; repères : method, host, endhost, sld (le nom du site), midsld (son milieu), endsld, sniext (le champ du nom de serveur TLS). Ajoutez +N ou -N."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onde cortar o primeiro pacote. Um número é um deslocamento em bytes; marcadores: method, host, endhost, sld (o nome do site), midsld (o meio dele), endsld, sniext (o campo de nome do servidor do TLS). Acrescente +N ou -N."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Где разрезать первый пакет. Число — смещение в байтах; маркеры: method, host, endhost, sld (имя сайта), midsld (его середина), endsld, sniext (поле имени сервера в TLS). Можно добавить +N или -N."
+          }
+        }
+      }
     },
     "While it is on, iOS turns the bypass back on by itself after a dropped connection or a network change. Turning it off in Zapret, Control Center, or Shortcuts stops it until you turn it on again." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açıkken iOS, bağlantı koptuktan ya da ağ değiştikten sonra engel aşmayı kendiliğinden yeniden açar. Zapret'ten, Kontrol Merkezi'nden veya Kısayollar'dan kapatırsanız siz yeniden açana kadar kapalı kalır."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solange das aktiv ist, schaltet iOS die Umgehung nach einem Verbindungsabbruch oder Netzwechsel selbst wieder ein. Wenn du sie in Zapret, im Kontrollzentrum oder in Kurzbefehle ausschaltest, bleibt sie aus, bis du sie wieder einschaltest."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mientras esté activado, iOS vuelve a activar el desbloqueo por sí solo tras perder la conexión o cambiar de red. Si lo desactivas en Zapret, en el Centro de control o en Atajos, se queda desactivado hasta que lo actives de nuevo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se è attivo, iOS riattiva il bypass da solo dopo una connessione persa o un cambio di rete. Se lo disattivi da Zapret, dal Centro di Controllo o da Comandi Rapidi, resta spento finché non lo riattivi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tant que cette option est activée, iOS réactive le contournement tout seul après une connexion perdue ou un changement de réseau. Le désactiver dans Zapret, le centre de contrôle ou Raccourcis l’arrête jusqu’à ce que vous le réactiviez."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enquanto estiver ativo, o iOS reativa o desbloqueio sozinho depois de uma queda de conexão ou de uma troca de rede. Desativar no Zapret, na Central de Controle ou nos Atalhos interrompe isso até você ativar de novo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока параметр включён, iOS сама снова включает обход после обрыва соединения или смены сети. Если выключить обход в Zapret, Пункте управления или Быстрых командах, он останется выключенным, пока вы не включите его снова."
+          }
+        }
+      }
     },
     "While sharing is on, anyone on this Wi-Fi network can use this iPhone's bypass. Use an app that supports SOCKS5 proxies on the other device and enter this address there. Turn the bypass on to start sharing." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paylaşım açıkken bu Wi-Fi ağındaki herkes bu iPhone'un engel aşmasını kullanabilir. Diğer cihazda SOCKS5 proxy destekleyen bir uygulama kullanın ve bu adresi oraya girin. Paylaşımı başlatmak için engel aşmayı açın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solange das Teilen aktiv ist, kann jeder in diesem WLAN die Umgehung dieses iPhones nutzen. Verwende auf dem anderen Gerät eine App mit SOCKS5-Proxy-Unterstützung und gib dort diese Adresse ein. Schalte die Umgehung ein, um das Teilen zu starten."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mientras se comparta, cualquiera en esta red Wi-Fi puede usar el desbloqueo de este iPhone. En el otro dispositivo, usa una app compatible con proxies SOCKS5 e introduce esta dirección. Activa el desbloqueo para empezar a compartir."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finché la condivisione è attiva, chiunque sia su questa rete Wi-Fi può usare il bypass di questo iPhone. Sull’altro dispositivo usa un’app che supporti i proxy SOCKS5 e inserisci questo indirizzo. Attiva il bypass per iniziare a condividere."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tant que le partage est activé, toute personne sur ce réseau Wi-Fi peut utiliser le contournement de cet iPhone. Utilisez sur l’autre appareil une app compatible avec les proxys SOCKS5 et saisissez cette adresse. Activez le contournement pour démarrer le partage."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com o compartilhamento ativo, qualquer pessoa nesta rede Wi-Fi pode usar o desbloqueio deste iPhone. No outro dispositivo, use um app que aceite proxies SOCKS5 e digite este endereço. Ative o desbloqueio para começar a compartilhar."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пока общий доступ включён, обходом на этом iPhone может пользоваться любой, кто подключён к этой сети Wi-Fi. На другом устройстве возьмите приложение с поддержкой прокси SOCKS5 и введите там этот адрес. Чтобы начать, включите обход."
+          }
+        }
+      }
     },
     "Without Zapret" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret olmadan"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne Zapret"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin Zapret"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senza Zapret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sans Zapret"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem o Zapret"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без Zapret"
+          }
+        }
+      }
     },
     "Works in browsers; some older apps may not get through." : {
       "extractionState" : "manual",
@@ -11226,7 +16275,50 @@
     },
     "Your provider changes this site's DNS answers. While the bypass is on, Zapret looks names up with encrypted DNS (DNS over HTTPS), which gets around this." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operatörünüz bu sitenin DNS yanıtlarını değiştiriyor. Engel aşma açıkken Zapret adları şifreli DNS (DNS over HTTPS) ile sorgular, bu da engeli aşar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Anbieter verfälscht die DNS-Antworten für diese Website. Bei eingeschalteter Umgehung löst Zapret Namen über verschlüsseltes DNS (DNS over HTTPS) auf und umgeht das."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu proveedor altera las respuestas DNS de este sitio. Con el desbloqueo activado, Zapret resuelve los nombres con DNS cifrado (DNS sobre HTTPS), que evita este bloqueo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo provider altera le risposte DNS di questo sito. Con il bypass attivo, Zapret risolve i nomi con il DNS cifrato (DNS over HTTPS), che aggira il problema."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre fournisseur d’accès modifie les réponses DNS de ce site. Tant que le contournement est activé, Zapret résout les noms avec un DNS chiffré (DNS over HTTPS), ce qui contourne ce blocage."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua operadora altera as respostas de DNS deste site. Com o desbloqueio ligado, o Zapret consulta os nomes com DNS criptografado (DNS sobre HTTPS), o que contorna isso."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Провайдер подменяет DNS-ответы для этого сайта. Пока обход включён, Zapret узнаёт адреса через зашифрованный DNS (DNS over HTTPS), и подмена не мешает."
+          }
+        }
+      }
     },
     "Yours" : {
       "extractionState" : "manual",
@@ -11277,12 +16369,98 @@
     },
     "Zapret Bypass" : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret Engel Aşma"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret-Umgehung"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueo de Zapret"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bypass di Zapret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contournement Zapret"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio Zapret"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход Zapret"
+          }
+        }
+      },
       "comment" : "Widget and Control Center control name."
     },
     "Zapret turns the bypass on with each strategy in turn and opens the sites through it. When it is done, your strategy and the switch go back to how they were." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret engel aşmayı her stratejiyle sırayla açar ve siteleri bunlarla açmayı dener. Bittiğinde stratejiniz ve anahtar eski durumuna döner."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret schaltet die Umgehung nacheinander mit jeder Strategie ein und öffnet die Websites damit. Danach sind deine Strategie und der Schalter wieder so wie vorher."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret activa el desbloqueo con cada estrategia, una tras otra, y abre los sitios con ella. Al terminar, tu estrategia y el interruptor vuelven a como estaban."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret attiva il bypass con una strategia alla volta e apre i siti. Al termine, la tua strategia e l’interruttore tornano come prima."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret active le contournement avec chaque stratégie à tour de rôle et ouvre les sites avec. Une fois terminé, votre stratégie et l’interrupteur reviennent comme avant."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Zapret liga o desbloqueio com cada estratégia, uma de cada vez, e abre os sites por ela. Quando termina, sua estratégia e o botão voltam ao que eram."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapret по очереди включает обход с каждой стратегией и открывает сайты через него. Когда проверка закончится, ваша стратегия и переключатель вернутся как были."
+          }
+        }
+      }
     },
     "fails" : {
       "extractionState" : "manual",
@@ -11333,7 +16511,50 @@
     },
     "hev-socks5-tunnel license" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hev-socks5-tunnel lisansı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lizenz von hev-socks5-tunnel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licencia de hev-socks5-tunnel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licenza di hev-socks5-tunnel"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licence de hev-socks5-tunnel"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licença do hev-socks5-tunnel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лицензия hev-socks5-tunnel"
+          }
+        }
+      }
     },
     "host: lowercase" : {
       "extractionState" : "manual",
@@ -11639,16 +16860,145 @@
     },
     "tpws did not start. See the log." : {
       "extractionState" : "manual",
-      "localizations" : {},
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws başlamadı. Günlüğe bakın."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws wurde nicht gestartet. Siehe Protokoll."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws no se inició. Consulta el registro."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws non si è avviato. Controlla il log."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws n’a pas démarré. Consultez le journal."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tpws não iniciou. Veja o registro."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws не запустился. Загляните в журнал."
+          }
+        }
+      },
       "comment" : "Error from the VPN extension shown by iOS."
     },
     "tpws does not know %@." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws %@ parametresini tanımıyor."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws kennt %@ nicht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws no conoce %@."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws non conosce %@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws ne connaît pas %@."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tpws não conhece %@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws не знает %@."
+          }
+        }
+      }
     },
     "tpws writes a line for every connection." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws her bağlantı için bir satır yazar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws schreibt für jede Verbindung eine Zeile."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws escribe una línea por cada conexión."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws scrive una riga per ogni connessione."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws écrit une ligne pour chaque connexion."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tpws escreve uma linha para cada conexão."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tpws записывает строку для каждого соединения."
+          }
+        }
+      }
     },
     "works" : {
       "extractionState" : "manual",
@@ -11699,11 +17049,97 @@
     },
     "zapret license" : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "zapret lisansı"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lizenz von zapret"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licencia de zapret"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licenza di zapret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licence de zapret"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licença do zapret"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лицензия zapret"
+          }
+        }
+      }
     },
     "“%@” is not a tpws flag. Flags start with --." : {
       "extractionState" : "manual",
-      "localizations" : {}
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” bir tpws parametresi değil. Parametreler -- ile başlar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ ist kein tpws-Flag. Flags beginnen mit --."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” no es un parámetro de tpws. Los parámetros empiezan por --."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» non è un flag di tpws. I flag iniziano con --."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "« %@ » n’est pas une option tpws. Les options commencent par --."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” não é um parâmetro do tpws. Parâmetros começam com --."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» — не флаг tpws. Флаги начинаются с --."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
