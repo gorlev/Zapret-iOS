@@ -9,7 +9,6 @@ struct OverviewPage: View {
             VStack(spacing: Space.xxl) {
                 Hero()
                 StatsRow()
-                DebugTamperCard() // TEMPORARY
                 SetupCard()
                 CheckCard()
                 if !model.hostsSeen.isEmpty { RecentSitesCard() }

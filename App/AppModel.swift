@@ -25,9 +25,6 @@ final class AppModel {
     private(set) var hostsSeen: [String] = []
     private(set) var logLines: [LogLine] = []
     private(set) var tunnelLog: [String] = []
-    // TEMPORARY (debug): how often tpws changed a packet. Remove with DebugTamperCard.swift.
-    private(set) var debugSplits = 0
-    private(set) var debugTLSRecords = 0
 
     /// The chosen strategy as stored: a preset id or "custom:<UUID>". Use `selection`.
     var presetID: String { didSet { save(); restartIfRunning() } }
@@ -196,8 +193,6 @@ final class AppModel {
         logLines = []
         connections = 0
         hostsSeen = []
-        debugSplits = 0
-        debugTLSRecords = 0
         readLog()
         logTimer?.invalidate()
         logTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
@@ -230,8 +225,6 @@ final class AppModel {
             let line = LogLine(id: nextLineID, text: String(raw))
             nextLineID += 1
             if line.kind == .connection { connections += 1 }
-            if line.text.hasPrefix("multisplit pos:") { debugSplits += 1 }
-            if line.text.hasPrefix("making 2 TLS records") { debugTLSRecords += 1 }
             if let host = line.host, seen.insert(host).inserted { hostsSeen.insert(host, at: 0) }
             logLines.append(line)
         }
