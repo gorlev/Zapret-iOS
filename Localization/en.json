@@ -1,0 +1,1787 @@
+{
+  "On this iPhone": {
+    "en": "On this iPhone",
+    "where": "App/AppModel.swift:133",
+    "line": "proto.serverAddress = String(localized: \"On this iPhone\")"
+  },
+  "The tunnel stopped.": {
+    "en": "The tunnel stopped.",
+    "where": "App/AppModel.swift:179",
+    "line": "self?.state = .failed(error?.localizedDescription ?? String(localized: \"The tunnel stopped.\"))"
+  },
+  "The tunnel did not start in time": {
+    "en": "The tunnel did not start in time",
+    "where": "App/AppModel.swift:287",
+    "line": "case .timedOut: String(localized: \"The tunnel did not start in time\")"
+  },
+  "The tunnel stopped": {
+    "en": "The tunnel stopped",
+    "where": "App/AppModel.swift:401",
+    "line": "continuation.resume(returning: error?.localizedDescription ?? String(localized: \"The tunnel stopped\"))"
+  },
+  "Your provider changes this site's DNS answers. While the bypass is on, Zapret looks names up with encrypted DNS (DNS over HTTPS), which gets around this.": {
+    "en": "Your provider changes this site's DNS answers. While the bypass is on, Zapret looks names up with encrypted DNS (DNS over HTTPS), which gets around this.",
+    "where": "App/Finder/BlockDiagnosis.swift:30",
+    "line": "case .dns: String(localized: \"Your provider changes this site's DNS answers. While the bypass is on, Zapret looks names up with encrypted DNS (DNS over HTTPS), "
+  },
+  "This site's address is blocked. Zapret cannot get around that.": {
+    "en": "This site's address is blocked. Zapret cannot get around that.",
+    "where": "App/Finder/BlockDiagnosis.swift:31",
+    "line": "case .ip: String(localized: \"This site's address is blocked. Zapret cannot get around that.\")"
+  },
+  "The filter reads the site name. A strategy can get around this.": {
+    "en": "The filter reads the site name. A strategy can get around this.",
+    "where": "App/Finder/BlockDiagnosis.swift:32",
+    "line": "case .dpi: String(localized: \"The filter reads the site name. A strategy can get around this.\")"
+  },
+  "No block found: the site opens without Zapret.": {
+    "en": "No block found: the site opens without Zapret.",
+    "where": "App/Finder/BlockDiagnosis.swift:33",
+    "line": "case .none: String(localized: \"No block found: the site opens without Zapret.\")"
+  },
+  "Timed out": {
+    "en": "Timed out",
+    "where": "App/Finder/FinderProbe.swift:71",
+    "line": "case .timedOut: String(localized: \"Timed out\")"
+  },
+  "Connection reset": {
+    "en": "Connection reset",
+    "where": "App/Finder/FinderProbe.swift:72",
+    "line": "case .networkConnectionLost: String(localized: \"Connection reset\")"
+  },
+  "Secure connection failed": {
+    "en": "Secure connection failed",
+    "where": "App/Finder/FinderProbe.swift:74",
+    "line": "String(localized: \"Secure connection failed\")"
+  },
+  "Site not found": {
+    "en": "Site not found",
+    "where": "App/Finder/FinderProbe.swift:75",
+    "line": "case .cannotFindHost, .dnsLookupFailed: String(localized: \"Site not found\")"
+  },
+  "Could not connect": {
+    "en": "Could not connect",
+    "where": "App/Finder/FinderProbe.swift:76",
+    "line": "case .cannotConnectToHost: String(localized: \"Could not connect\")"
+  },
+  "No internet": {
+    "en": "No internet",
+    "where": "App/Finder/FinderProbe.swift:77",
+    "line": "case .notConnectedToInternet: String(localized: \"No internet\")"
+  },
+  "Cancelled": {
+    "en": "Cancelled",
+    "where": "App/Finder/FinderProbe.swift:78",
+    "line": "case .cancelled: String(localized: \"Cancelled\")"
+  },
+  "Find a Strategy": {
+    "en": "Find a Strategy",
+    "where": "App/Finder/FinderSheet.swift:36",
+    "line": ".navigationTitle(\"Find a Strategy\")"
+  },
+  "Done": {
+    "en": "Done",
+    "where": "App/Finder/FinderSheet.swift:40",
+    "line": "Button(\"Done\") {"
+  },
+  "Zapret turns the bypass on with each strategy in turn and opens the sites through it. When it is done, your strategy and the switch go back to how they were.": {
+    "en": "Zapret turns the bypass on with each strategy in turn and opens the sites through it. When it is done, your strategy and the switch go back to how they were.",
+    "where": "App/Finder/FinderSheet.swift:63",
+    "line": "Text(\"Zapret turns the bypass on with each strategy in turn and opens the sites through it. When it is done, your strategy and the switch go back to how they we"
+  },
+  "Scan": {
+    "en": "Scan",
+    "where": "App/Finder/FinderSheet.swift:69",
+    "line": "Picker(\"Scan\", selection: $depth) {"
+  },
+  "Quick": {
+    "en": "Quick",
+    "where": "App/Finder/FinderSheet.swift:70",
+    "line": "Text(\"Quick\").tag(ScanDepth.quick)"
+  },
+  "Thorough": {
+    "en": "Thorough",
+    "where": "App/Finder/FinderSheet.swift:71",
+    "line": "Text(\"Thorough\").tag(ScanDepth.thorough)"
+  },
+  "Once": {
+    "en": "Once",
+    "where": "App/Finder/FinderSheet.swift:78",
+    "line": "Text(\"Once\").tag(1)"
+  },
+  "3 times": {
+    "en": "3 times",
+    "where": "App/Finder/FinderSheet.swift:79",
+    "line": "Text(\"3 times\").tag(3)"
+  },
+  "Repeat each try": {
+    "en": "Repeat each try",
+    "where": "App/Finder/FinderSheet.swift:89",
+    "line": ".accessibilityLabel(\"Repeat each try\")"
+  },
+  "Blocked sites": {
+    "en": "Blocked sites",
+    "where": "App/Finder/FinderSheet.swift:100",
+    "line": "TextField(\"Blocked sites\", text: $sitesText, prompt: Text(verbatim: \"discord.com youtube.com\"))"
+  },
+  "One site, or several separated by spaces. A strategy works only if every site opens.": {
+    "en": "One site, or several separated by spaces. A strategy works only if every site opens.",
+    "where": "App/Finder/FinderSheet.swift:109",
+    "line": "Text(\"One site, or several separated by spaces. A strategy works only if every site opens.\")"
+  },
+  "Stop": {
+    "en": "Stop",
+    "where": "App/Finder/FinderSheet.swift:115",
+    "line": "Button(role: .cancel) { finder.stop() } label: { Text(\"Stop\").frame(maxWidth: .infinity) }"
+  },
+  "Start Test": {
+    "en": "Start Test",
+    "where": "App/Finder/FinderSheet.swift:120",
+    "line": "Text(finder.trials.isEmpty ? String(localized: \"Start Test\") : String(localized: \"Test Again\"))"
+  },
+  "Test Again": {
+    "en": "Test Again",
+    "where": "App/Finder/FinderSheet.swift:120",
+    "line": "Text(finder.trials.isEmpty ? String(localized: \"Start Test\") : String(localized: \"Test Again\"))"
+  },
+  "Tries the %lld built-in strategies. About a minute.": {
+    "en": "Tries the %lld built-in strategies. About a minute.",
+    "where": "App/Finder/FinderSheet.swift:137",
+    "line": "String(localized: \"Tries the \\(Preset.all.count) built-in strategies. About a minute.\")"
+  },
+  "Tries every split and TLS-record combination zapret's blockcheck tests, with TLS 1.3 and TLS 1.2 separately. Takes a few minutes.": {
+    "en": "Tries every split and TLS-record combination zapret's blockcheck tests, with TLS 1.3 and TLS 1.2 separately. Takes a few minutes.",
+    "where": "App/Finder/FinderSheet.swift:139",
+    "line": "String(localized: \"Tries every split and TLS-record combination zapret's blockcheck tests, with TLS 1.3 and TLS 1.2 separately. Takes a few minutes.\")"
+  },
+  "Without Zapret": {
+    "en": "Without Zapret",
+    "where": "App/Finder/FinderSheet.swift:151",
+    "line": "Text(\"Without Zapret\")"
+  },
+  "Finding out what kind of block it is…": {
+    "en": "Finding out what kind of block it is…",
+    "where": "App/Finder/FinderSheet.swift:175",
+    "line": "Text(\"Finding out what kind of block it is…\").foregroundStyle(.secondary)"
+  },
+  "Try %lld of %lld…": {
+    "en": "Try %lld of %lld…",
+    "where": "App/Finder/FinderSheet.swift:228",
+    "line": "if let n = finder.currentNumber { return String(localized: \"Try \\(n) of \\(total)…\") }"
+  },
+  "%lld of %lld tried…": {
+    "en": "%lld of %lld tried…",
+    "where": "App/Finder/FinderSheet.swift:229",
+    "line": "return String(localized: \"\\(done) of \\(total) tried…\")"
+  },
+  "Putting your strategy back…": {
+    "en": "Putting your strategy back…",
+    "where": "App/Finder/FinderSheet.swift:230",
+    "line": "case .restoring: return String(localized: \"Putting your strategy back…\")"
+  },
+  "Stopped after %lld of %lld.": {
+    "en": "Stopped after %lld of %lld.",
+    "where": "App/Finder/FinderSheet.swift:231",
+    "line": "case .stopped: return String(localized: \"Stopped after \\(done) of \\(total).\")"
+  },
+  "No strategy opened every site.": {
+    "en": "No strategy opened every site.",
+    "where": "App/Finder/FinderSheet.swift:234",
+    "line": "if finder.workingCount == 0 { return String(localized: \"No strategy opened every site.\") }"
+  },
+  "%lld strategies open every site.": {
+    "en": {
+      "one": "1 strategy opens every site.",
+      "other": "%lld strategies open every site."
+    },
+    "where": "App/Finder/FinderSheet.swift:235",
+    "line": "return String(localized: \"\\(finder.workingCount) strategies open every site.\")"
+  },
+  "No strategy opened %@.": {
+    "en": "No strategy opened %@.",
+    "where": "App/Finder/FinderSheet.swift:237",
+    "line": "if finder.workingCount == 0 { return String(localized: \"No strategy opened \\(finder.site).\") }"
+  },
+  "%lld strategies open %@.": {
+    "en": {
+      "one": "1 strategy opens %@.",
+      "other": "%lld strategies open %@."
+    },
+    "where": "App/Finder/FinderSheet.swift:238",
+    "line": "return String(localized: \"\\(finder.workingCount) strategies open \\(finder.site).\")"
+  },
+  "In use": {
+    "en": "In use",
+    "where": "App/Finder/FinderSheet.swift:263",
+    "line": "Text(String(localized: \"In use\"))"
+  },
+  "Use": {
+    "en": "Use",
+    "where": "App/Finder/FinderSheet.swift:267",
+    "line": "Button(\"Use\") {"
+  },
+  "Works in browsers; some older apps may not get through.": {
+    "en": "Works in browsers; some older apps may not get through.",
+    "where": "App/Finder/FinderSheet.swift:308",
+    "line": "Text(\"Works in browsers; some older apps may not get through.\")"
+  },
+  "Opened %lld of %lld": {
+    "en": "Opened %lld of %lld",
+    "where": "App/Finder/FinderSheet.swift:314",
+    "line": "Text(trial.isPartial ? String(localized: \"Opened \\(trial.openCount) of \\(trial.sites.count)\") : reason)"
+  },
+  "Testing…": {
+    "en": "Testing…",
+    "where": "App/Finder/FinderSheet.swift:331",
+    "line": "Text(\"Testing…\").font(.callout).foregroundStyle(.secondary)"
+  },
+  "%lld ms": {
+    "en": "%lld ms",
+    "where": "App/Finder/FinderSheet.swift:335",
+    "line": "Text(\"\\(ms) ms\").font(.caption).foregroundStyle(.secondary).monospacedDigit()",
+    "note": "Milliseconds after a response time, short unit."
+  },
+  "works": {
+    "en": "works",
+    "where": "App/Finder/FinderSheet.swift:362",
+    "line": ".accessibilityLabel(result.opens ? Text(\"works\") : Text(\"fails\"))"
+  },
+  "fails": {
+    "en": "fails",
+    "where": "App/Finder/FinderSheet.swift:362",
+    "line": ".accessibilityLabel(result.opens ? Text(\"works\") : Text(\"fails\"))"
+  },
+  "Opens · %lld · %lld ms": {
+    "en": "Opens · %lld · %lld ms",
+    "where": "App/Finder/FinderSheet.swift:414",
+    "line": "Label(\"Opens · \\(status) · \\(ms) ms\", systemImage: \"checkmark.circle.fill\")"
+  },
+  "OOB": {
+    "en": "OOB",
+    "where": "App/Finder/ScanPlan.swift:79",
+    "line": "case \"--oob\": return String(localized: \"OOB\")"
+  },
+  "Host case": {
+    "en": "Host case",
+    "where": "App/Finder/ScanPlan.swift:81",
+    "line": "case \"--hostcase\": return String(localized: \"Host case\")"
+  },
+  "Host spelled %@": {
+    "en": "Host spelled %@",
+    "where": "App/Finder/ScanPlan.swift:82",
+    "line": "case \"--hostspell\": return String(localized: \"Host spelled \\(value)\")"
+  },
+  "Dot after host": {
+    "en": "Dot after host",
+    "where": "App/Finder/ScanPlan.swift:83",
+    "line": "case \"--hostdot\": return String(localized: \"Dot after host\")"
+  },
+  "Tab after host": {
+    "en": "Tab after host",
+    "where": "App/Finder/ScanPlan.swift:84",
+    "line": "case \"--hosttab\": return String(localized: \"Tab after host\")"
+  },
+  "No space after Host:": {
+    "en": "No space after Host:",
+    "where": "App/Finder/ScanPlan.swift:85",
+    "line": "case \"--hostnospace\": return String(localized: \"No space after Host:\")"
+  },
+  "MiXeD domain case": {
+    "en": "MiXeD domain case",
+    "where": "App/Finder/ScanPlan.swift:86",
+    "line": "case \"--domcase\": return String(localized: \"MiXeD domain case\")"
+  },
+  "Host padding %@": {
+    "en": "Host padding %@",
+    "where": "App/Finder/ScanPlan.swift:87",
+    "line": "case \"--hostpad\": return String(localized: \"Host padding \\(value)\")"
+  },
+  "Extra space after method": {
+    "en": "Extra space after method",
+    "where": "App/Finder/ScanPlan.swift:88",
+    "line": "case \"--methodspace\": return String(localized: \"Extra space after method\")"
+  },
+  "Unix line endings": {
+    "en": "Unix line endings",
+    "where": "App/Finder/ScanPlan.swift:89",
+    "line": "case \"--unixeol\": return String(localized: \"Unix line endings\")"
+  },
+  "Line break before method": {
+    "en": "Line break before method",
+    "where": "App/Finder/ScanPlan.swift:90",
+    "line": "case \"--methodeol\": return String(localized: \"Line break before method\")"
+  },
+  "Deleted %@": {
+    "en": "Deleted %@",
+    "where": "App/Lists/AppModel+Lists.swift:61",
+    "line": "? String(localized: \"Deleted \\(removed[0].element.domain)\")"
+  },
+  "Deleted %lld sites": {
+    "en": {
+      "one": "Deleted 1 site",
+      "other": "Deleted %lld sites"
+    },
+    "where": "App/Lists/AppModel+Lists.swift:62",
+    "line": ": String(localized: \"Deleted \\(removed.count) sites\")) { [weak self] in"
+  },
+  "Cleared the automatic list": {
+    "en": "Cleared the automatic list",
+    "where": "App/Lists/AppModel+Lists.swift:127",
+    "line": "lists.removeAutoSites(Set(lists.autoSites), undoTitle: String(localized: \"Cleared the automatic list\"))"
+  },
+  "This list is already in your subscriptions.": {
+    "en": "This list is already in your subscriptions.",
+    "where": "App/Lists/SiteLists.swift:106",
+    "line": "return String(localized: \"This list is already in your subscriptions.\")"
+  },
+  "Deleted %lld subscriptions": {
+    "en": {
+      "one": "Deleted 1 subscription",
+      "other": "Deleted %lld subscriptions"
+    },
+    "where": "App/Lists/SiteLists.swift:178",
+    "line": ": String(localized: \"Deleted \\(removed.count) subscriptions\")) { [weak self] in"
+  },
+  "The server answered with error %lld.": {
+    "en": "The server answered with error %lld.",
+    "where": "App/Lists/SiteLists.swift:254",
+    "line": "case DownloadError.status(let code): String(localized: \"The server answered with error \\(code).\")"
+  },
+  "This address is not a site list.": {
+    "en": "This address is not a site list.",
+    "where": "App/Lists/SiteLists.swift:255",
+    "line": "case SiteListSubscription.Failure.notText: String(localized: \"This address is not a site list.\")"
+  },
+  "The list has no sites in it.": {
+    "en": "The list has no sites in it.",
+    "where": "App/Lists/SiteLists.swift:256",
+    "line": "case SiteListSubscription.Failure.empty: String(localized: \"The list has no sites in it.\")"
+  },
+  "The list is too large.": {
+    "en": "The list is too large.",
+    "where": "App/Lists/SiteLists.swift:257",
+    "line": "case SiteListSubscription.Failure.tooLarge: String(localized: \"The list is too large.\")"
+  },
+  "This list has IP addresses, not sites. Choose IP Addresses as its kind.": {
+    "en": "This list has IP addresses, not sites. Choose IP Addresses as its kind.",
+    "where": "App/Lists/SiteLists.swift:259",
+    "line": "String(localized: \"This list has IP addresses, not sites. Choose IP Addresses as its kind.\")"
+  },
+  "This list has sites, not IP addresses. Choose Sites as its kind.": {
+    "en": "This list has sites, not IP addresses. Choose Sites as its kind.",
+    "where": "App/Lists/SiteLists.swift:261",
+    "line": "String(localized: \"This list has sites, not IP addresses. Choose Sites as its kind.\")"
+  },
+  "The gzip file is damaged.": {
+    "en": "The gzip file is damaged.",
+    "where": "App/Lists/SiteLists.swift:262",
+    "line": "case is Gzip.Failure: String(localized: \"The gzip file is damaged.\")"
+  },
+  "Domains blocked in Russia: the registry, cleaned up, plus sites blocked without it.": {
+    "en": "Domains blocked in Russia: the registry, cleaned up, plus sites blocked without it.",
+    "where": "App/Lists/SuggestedLists.swift:30",
+    "line": "summary: String(localized: \"Domains blocked in Russia: the registry, cleaned up, plus sites blocked without it.\"),"
+  },
+  "Domains blocked in Russia, as the AntiZapret project collects them. A large list.": {
+    "en": "Domains blocked in Russia, as the AntiZapret project collects them. A large list.",
+    "where": "App/Lists/SuggestedLists.swift:36",
+    "line": "summary: String(localized: \"Domains blocked in Russia, as the AntiZapret project collects them. A large list.\"),"
+  },
+  "Domains from Russia's block registry that still resolve.": {
+    "en": "Domains from Russia's block registry that still resolve.",
+    "where": "App/Lists/SuggestedLists.swift:42",
+    "line": "summary: String(localized: \"Domains from Russia's block registry that still resolve.\"),"
+  },
+  "IP ranges blocked in Russia, summarized into subnets.": {
+    "en": "IP ranges blocked in Russia, summarized into subnets.",
+    "where": "App/Lists/SuggestedLists.swift:48",
+    "line": "summary: String(localized: \"IP ranges blocked in Russia, summarized into subnets.\"),"
+  },
+  "IP ranges blocked in Russia: blocked addresses and subnets in one list.": {
+    "en": "IP ranges blocked in Russia: blocked addresses and subnets in one list.",
+    "where": "App/Lists/SuggestedLists.swift:54",
+    "line": "summary: String(localized: \"IP ranges blocked in Russia: blocked addresses and subnets in one list.\"),"
+  },
+  "IP addresses blocked in Russia, joined into /24 ranges.": {
+    "en": "IP addresses blocked in Russia, joined into /24 ranges.",
+    "where": "App/Lists/SuggestedLists.swift:60",
+    "line": "summary: String(localized: \"IP addresses blocked in Russia, joined into /24 ranges.\"),"
+  },
+  "IP addresses blocked in Russia, joined into ranges from /32 to /22.": {
+    "en": "IP addresses blocked in Russia, joined into ranges from /32 to /22.",
+    "where": "App/Lists/SuggestedLists.swift:66",
+    "line": "summary: String(localized: \"IP addresses blocked in Russia, joined into ranges from /32 to /22.\"),"
+  },
+  "Address": {
+    "en": "Address",
+    "where": "App/Pages/AddSubscriptionSheet.swift:26",
+    "line": "TextField(\"Address\", text: $address, prompt: Text(verbatim: \"https://example.com/list.txt\"))"
+  },
+  "Name": {
+    "en": "Name",
+    "where": "App/Pages/AddSubscriptionSheet.swift:34",
+    "line": "TextField(\"Name\", text: $name,"
+  },
+  "From the address": {
+    "en": "From the address",
+    "where": "App/Pages/AddSubscriptionSheet.swift:35",
+    "line": "prompt: Text(url.map(SiteListSubscription.defaultName) ?? String(localized: \"From the address\")))"
+  },
+  "Kind": {
+    "en": "Kind",
+    "where": "App/Pages/AddSubscriptionSheet.swift:36",
+    "line": "Picker(\"Kind\", selection: $kind) {"
+  },
+  "Sites": {
+    "en": "Sites",
+    "where": "App/Pages/AddSubscriptionSheet.swift:37",
+    "line": "Text(\"Sites\").tag(ListKind.domains)"
+  },
+  "IP Addresses": {
+    "en": "IP Addresses",
+    "where": "App/Pages/AddSubscriptionSheet.swift:38",
+    "line": "Text(\"IP Addresses\").tag(ListKind.addresses)"
+  },
+  "Add to": {
+    "en": "Add to",
+    "where": "App/Pages/AddSubscriptionSheet.swift:40",
+    "line": "Picker(\"Add to\", selection: $excluded) {"
+  },
+  "Sites to Unblock": {
+    "en": "Sites to Unblock",
+    "where": "App/Pages/AddSubscriptionSheet.swift:41",
+    "line": "Text(\"Sites to Unblock\").tag(false)"
+  },
+  "Never Touch": {
+    "en": "Never Touch",
+    "where": "App/Pages/AddSubscriptionSheet.swift:42",
+    "line": "Text(\"Never Touch\").tag(true)"
+  },
+  "A text file with one domain per line, like zapret's lists. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day.": {
+    "en": "A text file with one domain per line, like zapret's lists. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day.",
+    "where": "App/Pages/AddSubscriptionSheet.swift:46",
+    "line": "Text(\"A text file with one domain per line, like zapret's lists. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day.\")"
+  },
+  "A text file with one IP address or range per line, like 203.0.113.0/24 or 2001:db8::/32. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day.": {
+    "en": "A text file with one IP address or range per line, like 203.0.113.0/24 or 2001:db8::/32. Lines starting with # are skipped, and gzip files work. Zapret downloads it again every day.",
+    "where": "App/Pages/AddSubscriptionSheet.swift:48",
+    "line": "Text(\"A text file with one IP address or range per line, like 203.0.113.0/24 or 2001:db8::/32. Lines starting with # are skipped, and gzip files work. Zapret do"
+  },
+  "Enter an address that starts with https://": {
+    "en": "Enter an address that starts with https://",
+    "where": "App/Pages/AddSubscriptionSheet.swift:52",
+    "line": "Label(\"Enter an address that starts with https://\", systemImage: \"exclamationmark.circle\")"
+  },
+  "Suggested Lists": {
+    "en": "Suggested Lists",
+    "where": "App/Pages/AddSubscriptionSheet.swift:63",
+    "line": "Text(\"Suggested Lists\")"
+  },
+  "Lists that zapret's own scripts download. Choose one to fill in the form.": {
+    "en": "Lists that zapret's own scripts download. Choose one to fill in the form.",
+    "where": "App/Pages/AddSubscriptionSheet.swift:65",
+    "line": "Text(\"Lists that zapret's own scripts download. Choose one to fill in the form.\")"
+  },
+  "Add Subscription": {
+    "en": "Add Subscription",
+    "where": "App/Pages/AddSubscriptionSheet.swift:68",
+    "line": ".navigationTitle(\"Add Subscription\")"
+  },
+  "Cancel": {
+    "en": "Cancel",
+    "where": "App/Pages/AddSubscriptionSheet.swift:72",
+    "line": "Button(\"Cancel\", role: .cancel) { dismiss() }"
+  },
+  "Subscribe": {
+    "en": "Subscribe",
+    "where": "App/Pages/AddSubscriptionSheet.swift:78",
+    "line": "Button(\"Subscribe\", action: add)"
+  },
+  "Downloading…": {
+    "en": "Downloading…",
+    "where": "App/Pages/AddSubscriptionSheet.swift:85",
+    "line": "Label(\"Downloading…\", systemImage: \"arrow.down.circle\")"
+  },
+  "Chosen": {
+    "en": "Chosen",
+    "where": "App/Pages/AddSubscriptionSheet.swift:155",
+    "line": ".accessibilityLabel(Text(\"Chosen\"))"
+  },
+  "A list of sites": {
+    "en": "A list of sites",
+    "where": "App/Pages/AddSubscriptionSheet.swift:161",
+    "line": ".accessibilityHint(list.kind == .domains ? Text(\"A list of sites\") : Text(\"A list of IP addresses\"))"
+  },
+  "A list of IP addresses": {
+    "en": "A list of IP addresses",
+    "where": "App/Pages/AddSubscriptionSheet.swift:161",
+    "line": ".accessibilityHint(list.kind == .domains ? Text(\"A list of sites\") : Text(\"A list of IP addresses\"))"
+  },
+  "Open the List's Page": {
+    "en": "Open the List's Page",
+    "where": "App/Pages/AddSubscriptionSheet.swift:163",
+    "line": "Label(\"Open the List's Page\", systemImage: \"arrow.up.right.square\")"
+  },
+  "Nothing yet": {
+    "en": "Nothing yet",
+    "where": "App/Pages/LogPage.swift:24",
+    "line": "ContentUnavailableView(model.isOn ? \"Nothing yet\" : \"The bypass is off\","
+  },
+  "The bypass is off": {
+    "en": "The bypass is off",
+    "where": "App/Pages/LogPage.swift:24",
+    "line": "ContentUnavailableView(model.isOn ? \"Nothing yet\" : \"The bypass is off\","
+  },
+  "tpws writes a line for every connection.": {
+    "en": "tpws writes a line for every connection.",
+    "where": "App/Pages/LogPage.swift:26",
+    "line": "description: Text(model.isOn ? \"tpws writes a line for every connection.\" : \"Turn it on to see what tpws does.\"))"
+  },
+  "Turn it on to see what tpws does.": {
+    "en": "Turn it on to see what tpws does.",
+    "where": "App/Pages/LogPage.swift:26",
+    "line": "description: Text(model.isOn ? \"tpws writes a line for every connection.\" : \"Turn it on to see what tpws does.\"))"
+  },
+  "Filter by site or text": {
+    "en": "Filter by site or text",
+    "where": "App/Pages/LogPage.swift:50",
+    "line": ".searchable(text: $filter, prompt: \"Filter by site or text\")"
+  },
+  "Log": {
+    "en": "Log",
+    "where": "App/Pages/LogPage.swift:51",
+    "line": ".navigationTitle(\"Log\")"
+  },
+  "Source": {
+    "en": "Source",
+    "where": "App/Pages/LogPage.swift:55",
+    "line": "Picker(\"Source\", selection: $source) {"
+  },
+  "Tunnel": {
+    "en": "Tunnel",
+    "where": "App/Pages/LogPage.swift:57",
+    "line": "Text(\"Tunnel\").tag(Source.tunnel)"
+  },
+  "More": {
+    "en": "More",
+    "where": "App/Pages/LogPage.swift:63",
+    "line": "Menu(\"More\", systemImage: \"ellipsis\") {"
+  },
+  "Errors Only": {
+    "en": "Errors Only",
+    "where": "App/Pages/LogPage.swift:64",
+    "line": "Toggle(\"Errors Only\", systemImage: \"exclamationmark.triangle\", isOn: $errorsOnly)"
+  },
+  "Copy Command": {
+    "en": "Copy Command",
+    "where": "App/Pages/LogPage.swift:65",
+    "line": "Button(\"Copy Command\", systemImage: \"doc.on.doc\") {"
+  },
+  "Clear": {
+    "en": "Clear",
+    "where": "App/Pages/LogPage.swift:69",
+    "line": "Button(\"Clear\", systemImage: \"trash\", role: .destructive) { model.clearLog() }"
+  },
+  "Overview": {
+    "en": "Overview",
+    "where": "App/Pages/OverviewPage.swift:23",
+    "line": ".navigationTitle(\"Overview\")"
+  },
+  "Turn Off": {
+    "en": "Turn Off",
+    "where": "App/Pages/OverviewPage.swift:28",
+    "line": "Button(model.isOn ? String(localized: \"Turn Off\") : String(localized: \"Turn On\"),"
+  },
+  "Turn On": {
+    "en": "Turn On",
+    "where": "App/Pages/OverviewPage.swift:28",
+    "line": "Button(model.isOn ? String(localized: \"Turn Off\") : String(localized: \"Turn On\"),"
+  },
+  "Starting…": {
+    "en": "Starting…",
+    "where": "App/Pages/OverviewPage.swift:62",
+    "line": "case .starting: String(localized: \"Starting…\")"
+  },
+  "Stopping…": {
+    "en": "Stopping…",
+    "where": "App/Pages/OverviewPage.swift:63",
+    "line": "case .stopping: String(localized: \"Stopping…\")"
+  },
+  "The bypass stopped": {
+    "en": "The bypass stopped",
+    "where": "App/Pages/OverviewPage.swift:65",
+    "line": "case .failed: String(localized: \"The bypass stopped\")"
+  },
+  "Tap the button. Every app's traffic then goes through tpws on this iPhone, as a local VPN.": {
+    "en": "Tap the button. Every app's traffic then goes through tpws on this iPhone, as a local VPN.",
+    "where": "App/Pages/OverviewPage.swift:71",
+    "line": "case .stopped: String(localized: \"Tap the button. Every app's traffic then goes through tpws on this iPhone, as a local VPN.\")"
+  },
+  "Setting up the local VPN and tpws.": {
+    "en": "Setting up the local VPN and tpws.",
+    "where": "App/Pages/OverviewPage.swift:72",
+    "line": "case .starting, .stopping: String(localized: \"Setting up the local VPN and tpws.\")"
+  },
+  "Every app goes through tpws with %@. Nothing leaves this iPhone through a server.": {
+    "en": "Every app goes through tpws with %@. Nothing leaves this iPhone through a server.",
+    "where": "App/Pages/OverviewPage.swift:73",
+    "line": "case .running: String(localized: \"Every app goes through tpws with \\(model.activeStrategy.name). Nothing leaves this iPhone through a server.\")"
+  },
+  "Turn bypass off": {
+    "en": "Turn bypass off",
+    "where": "App/Pages/OverviewPage.swift:121",
+    "line": ".accessibilityLabel(isOn ? String(localized: \"Turn bypass off\") : String(localized: \"Turn bypass on\"))"
+  },
+  "Turn bypass on": {
+    "en": "Turn bypass on",
+    "where": "App/Pages/OverviewPage.swift:121",
+    "line": ".accessibilityLabel(isOn ? String(localized: \"Turn bypass off\") : String(localized: \"Turn bypass on\"))"
+  },
+  "Running for": {
+    "en": "Running for",
+    "where": "App/Pages/OverviewPage.swift:149",
+    "line": "StatTile(title: \"Running for\", symbol: \"clock\","
+  },
+  "Connections": {
+    "en": "Connections",
+    "where": "App/Pages/OverviewPage.swift:152",
+    "line": "StatTile(title: \"Connections\", symbol: \"arrow.left.arrow.right\","
+  },
+  "Sites seen": {
+    "en": "Sites seen",
+    "where": "App/Pages/OverviewPage.swift:154",
+    "line": "StatTile(title: \"Sites seen\", symbol: \"globe\","
+  },
+  "Strategy": {
+    "en": "Strategy",
+    "where": "App/Pages/OverviewPage.swift:196",
+    "line": "CardRow(title: \"Strategy\", symbol: \"slider.horizontal.3\","
+  },
+  "How tpws changes your traffic so the filter cannot read it.": {
+    "en": "How tpws changes your traffic so the filter cannot read it.",
+    "where": "App/Pages/OverviewPage.swift:197",
+    "line": "caption: String(localized: \"How tpws changes your traffic so the filter cannot read it.\")) {"
+  },
+  "Your list is empty. Add sites on the Sites page, or choose All sites.": {
+    "en": "Your list is empty. Add sites on the Sites page, or choose All sites.",
+    "where": "App/Pages/OverviewPage.swift:212",
+    "line": "? String(localized: \"Your list is empty. Add sites on the Sites page, or choose All sites.\")"
+  },
+  "Every site goes through the bypass.": {
+    "en": "Every site goes through the bypass.",
+    "where": "App/Pages/OverviewPage.swift:213",
+    "line": ": (model.scope == .allSites ? String(localized: \"Every site goes through the bypass.\")"
+  },
+  "Only the %lld sites in your list.": {
+    "en": {
+      "one": "Only the one site in your list.",
+      "other": "Only the %lld sites in your list."
+    },
+    "where": "App/Pages/OverviewPage.swift:214",
+    "line": ": String(localized: \"Only the \\(includeCount) sites in your list.\"))) {"
+  },
+  "All sites": {
+    "en": "All sites",
+    "where": "App/Pages/OverviewPage.swift:216",
+    "line": "Text(\"All sites\").tag(Scope.allSites)"
+  },
+  "My list": {
+    "en": "My list",
+    "where": "App/Pages/OverviewPage.swift:217",
+    "line": "Text(\"My list\").tag(Scope.listOnly)"
+  },
+  "Encrypted DNS": {
+    "en": "Encrypted DNS",
+    "where": "App/Pages/OverviewPage.swift:224",
+    "line": "CardRow(title: \"Encrypted DNS\", symbol: \"lock.shield\","
+  },
+  "Looks up site names over HTTPS, so DNS blocks do not apply.": {
+    "en": "Looks up site names over HTTPS, so DNS blocks do not apply.",
+    "where": "App/Pages/OverviewPage.swift:225",
+    "line": "caption: String(localized: \"Looks up site names over HTTPS, so DNS blocks do not apply.\")) {"
+  },
+  "Check a site": {
+    "en": "Check a site",
+    "where": "App/Pages/OverviewPage.swift:278",
+    "line": "Label(\"Check a site\", systemImage: \"checkmark.seal\")"
+  },
+  "Check": {
+    "en": "Check",
+    "where": "App/Pages/OverviewPage.swift:288",
+    "line": "Button(\"Check\", action: check)"
+  },
+  "Opens the address through the bypass.": {
+    "en": "Opens the address through the bypass.",
+    "where": "App/Pages/OverviewPage.swift:303",
+    "line": "Text(model.isOn ? String(localized: \"Opens the address through the bypass.\")"
+  },
+  "The bypass is off: this opens the address directly.": {
+    "en": "The bypass is off: this opens the address directly.",
+    "where": "App/Pages/OverviewPage.swift:304",
+    "line": ": String(localized: \"The bypass is off: this opens the address directly.\"))"
+  },
+  "That is not a web address.": {
+    "en": "That is not a web address.",
+    "where": "App/Pages/OverviewPage.swift:332",
+    "line": "guard let url = URL(string: text) else { return Result(ok: false, text: String(localized: \"That is not a web address.\")) }"
+  },
+  "Opened in %lld ms (HTTP %lld).": {
+    "en": "Opened in %lld ms (HTTP %lld).",
+    "where": "App/Pages/OverviewPage.swift:340",
+    "line": "return Result(ok: true, text: String(localized: \"Opened in \\(ms) ms (HTTP \\(code)).\"))"
+  },
+  "Recent sites": {
+    "en": "Recent sites",
+    "where": "App/Pages/OverviewPage.swift:354",
+    "line": "Label(\"Recent sites\", systemImage: \"clock.arrow.circlepath\")"
+  },
+  "Add to My list": {
+    "en": "Add to My list",
+    "where": "App/Pages/OverviewPage.swift:361",
+    "line": "Button(\"Add to My list\", systemImage: \"plus.circle\") { model.addSites(host, excluded: false) }"
+  },
+  "No sites. Type one above.": {
+    "en": "No sites. Type one above.",
+    "where": "App/Pages/SitesPage.swift:35",
+    "line": "Text(\"No sites. Type one above.\")"
+  },
+  "My List": {
+    "en": "My List",
+    "where": "App/Pages/SitesPage.swift:41",
+    "line": "Text(excluded ? \"Never Touch\" : \"My List\")"
+  },
+  "Added %lld sites.": {
+    "en": {
+      "one": "Added 1 site.",
+      "other": "Added %lld sites."
+    },
+    "where": "App/Pages/SitesPage.swift:63",
+    "line": "note = String(localized: \"Added \\(added) sites.\")"
+  },
+  "Add a site or IP range never to touch": {
+    "en": "Add a site or IP range never to touch",
+    "where": "App/Pages/SitesPage.swift:81",
+    "line": "TextField(excluded ? \"Add a site or IP range never to touch\" : \"Add sites or IP addresses\","
+  },
+  "Add sites or IP addresses": {
+    "en": "Add sites or IP addresses",
+    "where": "App/Pages/SitesPage.swift:81",
+    "line": "TextField(excluded ? \"Add a site or IP range never to touch\" : \"Add sites or IP addresses\","
+  },
+  "Add": {
+    "en": "Add",
+    "where": "App/Pages/SitesPage.swift:90",
+    "line": "Button(\"Add\", action: add)"
+  },
+  "Use My List": {
+    "en": "Use My List",
+    "where": "App/Pages/SitesPage.swift:102",
+    "line": "Button(\"Use My List\") { model.scope = .listOnly }"
+  },
+  "%lld sites": {
+    "en": {
+      "one": "1 site",
+      "other": "%lld sites"
+    },
+    "where": "App/Pages/SitesPage.swift:107",
+    "line": "Text(\"\\(siteEntries.count) sites\")"
+  },
+  "%lld IP addresses": {
+    "en": {
+      "one": "1 IP address",
+      "other": "%lld IP addresses"
+    },
+    "where": "App/Pages/SitesPage.swift:108",
+    "line": "if !addressEntries.isEmpty { Text(\"\\(addressEntries.count) IP addresses\") }"
+  },
+  "Delete": {
+    "en": "Delete",
+    "where": "App/Pages/SitesPage.swift:121",
+    "line": "Button(\"Delete\", systemImage: \"trash\", role: .destructive) {"
+  },
+  "Update Now": {
+    "en": "Update Now",
+    "where": "App/Pages/SitesPage.swift:124",
+    "line": "Button(\"Update Now\", systemImage: \"arrow.clockwise\") {"
+  },
+  "Subscriptions": {
+    "en": "Subscriptions",
+    "where": "App/Pages/SitesPage.swift:132",
+    "line": "Text(\"Subscriptions\")"
+  },
+  "These lists hold %lld entries. The VPN on iPhone has little memory, so very large lists can keep it from starting. Turn off the ones you do not need.": {
+    "en": "These lists hold %lld entries. The VPN on iPhone has little memory, so very large lists can keep it from starting. Turn off the ones you do not need.",
+    "where": "App/Pages/SitesPage.swift:135",
+    "line": "Label(\"These lists hold \\(model.lists.enabledEntryCount) entries. The VPN on iPhone has little memory, so very large lists can keep it from starting. Turn off t"
+  },
+  "Copy Address": {
+    "en": "Copy Address",
+    "where": "App/Pages/SitesPage.swift:149",
+    "line": "Button(\"Copy Address\", systemImage: \"doc.on.doc\") { UIPasteboard.general.string = subscription.url }"
+  },
+  "Add blocked sites automatically": {
+    "en": "Add blocked sites automatically",
+    "where": "App/Pages/SitesPage.swift:157",
+    "line": "Toggle(\"Add blocked sites automatically\","
+  },
+  "Nothing yet. A site appears here when its connections keep failing.": {
+    "en": "Nothing yet. A site appears here when its connections keep failing.",
+    "where": "App/Pages/SitesPage.swift:161",
+    "line": "Text(\"Nothing yet. A site appears here when its connections keep failing.\")"
+  },
+  "Move to My List": {
+    "en": "Move to My List",
+    "where": "App/Pages/SitesPage.swift:170",
+    "line": "Button(\"Move to My List\", systemImage: \"plus.circle\") {"
+  },
+  "Added Automatically": {
+    "en": "Added Automatically",
+    "where": "App/Pages/SitesPage.swift:180",
+    "line": "Text(\"Added Automatically\")"
+  },
+  "Clear All": {
+    "en": "Clear All",
+    "where": "App/Pages/SitesPage.swift:184",
+    "line": "Button(\"Clear All\") { model.clearAutoSites() }"
+  },
+  "Works with My list. All sites already changes every site, so there is nothing to add.": {
+    "en": "Works with My list. All sites already changes every site, so there is nothing to add.",
+    "where": "App/Pages/SitesPage.swift:196",
+    "line": "return String(localized: \"Works with My list. All sites already changes every site, so there is nothing to add.\")"
+  },
+  "tpws adds a site after %lld failed connections within a minute.": {
+    "en": {
+      "one": "tpws adds a site after 1 failed connection within a minute.",
+      "other": "tpws adds a site after %lld failed connections within a minute."
+    },
+    "where": "App/Pages/SitesPage.swift:198",
+    "line": "return String(localized: \"tpws adds a site after \\(TunnelLists.autoFailThreshold) failed connections within a minute.\")"
+  },
+  "Move to Sites to Unblock": {
+    "en": "Move to Sites to Unblock",
+    "where": "App/Pages/SitesPage.swift:209",
+    "line": "Button(excluded ? \"Move to Sites to Unblock\" : \"Move to Never Touch\","
+  },
+  "Move to Never Touch": {
+    "en": "Move to Never Touch",
+    "where": "App/Pages/SitesPage.swift:209",
+    "line": "Button(excluded ? \"Move to Sites to Unblock\" : \"Move to Never Touch\","
+  },
+  "Nothing Excluded": {
+    "en": "Nothing Excluded",
+    "where": "App/Pages/SitesPage.swift:231",
+    "line": "Label(excluded ? \"Nothing Excluded\" : \"No Sites Yet\", systemImage: excluded ? \"hand.raised\" : \"globe\")"
+  },
+  "No Sites Yet": {
+    "en": "No Sites Yet",
+    "where": "App/Pages/SitesPage.swift:231",
+    "line": "Label(excluded ? \"Nothing Excluded\" : \"No Sites Yet\", systemImage: excluded ? \"hand.raised\" : \"globe\")"
+  },
+  "Sites here are never changed, even with All sites on. Add banks or sites the strategy breaks.": {
+    "en": "Sites here are never changed, even with All sites on. Add banks or sites the strategy breaks.",
+    "where": "App/Pages/SitesPage.swift:234",
+    "line": "? \"Sites here are never changed, even with All sites on. Add banks or sites the strategy breaks.\""
+  },
+  "Add the sites that do not open, like youtube.com or discord.com. Paste many at once.": {
+    "en": "Add the sites that do not open, like youtube.com or discord.com. Paste many at once.",
+    "where": "App/Pages/SitesPage.swift:235",
+    "line": ": \"Add the sites that do not open, like youtube.com or discord.com. Paste many at once.\")"
+  },
+  "Add Subscription…": {
+    "en": "Add Subscription…",
+    "where": "App/Pages/SitesPage.swift:237",
+    "line": "Button(\"Add Subscription…\") { addingSubscription = true }"
+  },
+  "List": {
+    "en": "List",
+    "where": "App/Pages/SitesPage.swift:245",
+    "line": "Picker(\"List\", selection: $list) {"
+  },
+  "Import from File…": {
+    "en": "Import from File…",
+    "where": "App/Pages/SitesPage.swift:258",
+    "line": "Button(\"Import from File…\", systemImage: \"square.and.arrow.down\") { importing = true }"
+  },
+  "Paste Sites": {
+    "en": "Paste Sites",
+    "where": "App/Pages/SitesPage.swift:259",
+    "line": "Button(\"Paste Sites\", systemImage: \"doc.on.clipboard\") { pasteSites() }"
+  },
+  "Update Subscriptions": {
+    "en": "Update Subscriptions",
+    "where": "App/Pages/SitesPage.swift:261",
+    "line": "Button(\"Update Subscriptions\", systemImage: \"arrow.clockwise\") { model.lists.updateAll() }"
+  },
+  "Select": {
+    "en": "Select",
+    "where": "App/Pages/SitesPage.swift:263",
+    "line": "Button(\"Select\", systemImage: \"checkmark.circle\") { editMode = .active }"
+  },
+  "Delete %lld": {
+    "en": "Delete %lld",
+    "where": "App/Pages/SitesPage.swift:270",
+    "line": "Button(\"Delete \\(selection.count)\", systemImage: \"trash\", role: .destructive, action: deleteSelection)",
+    "note": "Bottom-bar button while selecting rows; %lld is how many rows are selected."
+  },
+  "Undo": {
+    "en": "Undo",
+    "where": "App/Pages/SitesPage.swift:282",
+    "line": "Button(\"Undo\") {"
+  },
+  "Sites here always go straight through, whatever the strategy.": {
+    "en": "Sites here always go straight through, whatever the strategy.",
+    "where": "App/Pages/SitesPage.swift:304",
+    "line": "if excluded { return String(localized: \"Sites here always go straight through, whatever the strategy.\") }"
+  },
+  "Only these sites go through the bypass. Subdomains are included.": {
+    "en": "Only these sites go through the bypass. Subdomains are included.",
+    "where": "App/Pages/SitesPage.swift:306",
+    "line": "? String(localized: \"Only these sites go through the bypass. Subdomains are included.\")"
+  },
+  "The bypass is on for all sites now. This list is used when Sites is set to My list.": {
+    "en": "The bypass is on for all sites now. This list is used when Sites is set to My list.",
+    "where": "App/Pages/SitesPage.swift:307",
+    "line": ": String(localized: \"The bypass is on for all sites now. This list is used when Sites is set to My list.\")"
+  },
+  "That does not look like a site or IP address.": {
+    "en": "That does not look like a site or IP address.",
+    "where": "App/Pages/SitesPage.swift:312",
+    "line": "if !draft.isEmpty { note = String(localized: \"That does not look like a site or IP address.\") }"
+  },
+  "Already in the list.": {
+    "en": "Already in the list.",
+    "where": "App/Pages/SitesPage.swift:316",
+    "line": "note = count == 0 ? String(localized: \"Already in the list.\") : String(localized: \"Added \\(count) sites.\")"
+  },
+  "%@ · Downloading…": {
+    "en": "%@ · Downloading…",
+    "where": "App/Pages/SitesRows.swift:72",
+    "line": "if isUpdating { return Text(\"\\(countText) · Downloading…\") }"
+  },
+  "%@ · Updated %@": {
+    "en": "%@ · Updated %@",
+    "where": "App/Pages/SitesRows.swift:78",
+    "line": "return Text(\"\\(countText) · Updated \\(date, format: .relative(presentation: .named, unitsStyle: .wide))\")"
+  },
+  "Turn off": {
+    "en": "Turn off",
+    "where": "App/Pages/SitesRows.swift:128",
+    "line": ".accessibilityLabel(isOn ? \"Turn off\" : \"Turn on\")"
+  },
+  "Turn on": {
+    "en": "Turn on",
+    "where": "App/Pages/SitesRows.swift:128",
+    "line": ".accessibilityLabel(isOn ? \"Turn off\" : \"Turn on\")"
+  },
+  "Built-in": {
+    "en": "Built-in",
+    "where": "App/Pages/StrategiesPage.swift:17",
+    "line": "section(\"Built-in\", caption: \"Ready-made strategies from zapret. Start with the first one; if a site still does not open, try the next.\") {"
+  },
+  "Ready-made strategies from zapret. Start with the first one; if a site still does not open, try the next.": {
+    "en": "Ready-made strategies from zapret. Start with the first one; if a site still does not open, try the next.",
+    "where": "App/Pages/StrategiesPage.swift:17",
+    "line": "section(\"Built-in\", caption: \"Ready-made strategies from zapret. Start with the first one; if a site still does not open, try the next.\") {"
+  },
+  "Copy Flags": {
+    "en": "Copy Flags",
+    "where": "App/Pages/StrategiesPage.swift:26",
+    "line": "Button(\"Copy Flags\", systemImage: \"doc.on.doc\") { model.copyFlags(preset.commandLine) }"
+  },
+  "Duplicate and Edit": {
+    "en": "Duplicate and Edit",
+    "where": "App/Pages/StrategiesPage.swift:27",
+    "line": "Button(\"Duplicate and Edit\", systemImage: \"plus.square.on.square\") {"
+  },
+  "%@ Copy": {
+    "en": "%@ Copy",
+    "where": "App/Pages/StrategiesPage.swift:28",
+    "line": "draft = .new(from: preset.options, name: String(localized: \"\\(preset.name) Copy\"))",
+    "note": "Default name for a duplicated strategy; %@ is the original strategy name."
+  },
+  "Yours": {
+    "en": "Yours",
+    "where": "App/Pages/StrategiesPage.swift:33",
+    "line": "section(\"Yours\", caption: \"Strategies you made from tpws options.\") {"
+  },
+  "Strategies you made from tpws options.": {
+    "en": "Strategies you made from tpws options.",
+    "where": "App/Pages/StrategiesPage.swift:33",
+    "line": "section(\"Yours\", caption: \"Strategies you made from tpws options.\") {"
+  },
+  "Edit": {
+    "en": "Edit",
+    "where": "App/Pages/StrategiesPage.swift:42",
+    "line": "Button(\"Edit\", systemImage: \"pencil\") { draft = .edit(strategy) }"
+  },
+  "Duplicate": {
+    "en": "Duplicate",
+    "where": "App/Pages/StrategiesPage.swift:44",
+    "line": "Button(\"Duplicate\", systemImage: \"plus.square.on.square\") {"
+  },
+  "Strategies": {
+    "en": "Strategies",
+    "where": "App/Pages/StrategiesPage.swift:58",
+    "line": ".navigationTitle(\"Strategies\")"
+  },
+  "New Strategy": {
+    "en": "New Strategy",
+    "where": "App/Pages/StrategiesPage.swift:64",
+    "line": "Button(\"New Strategy\", systemImage: \"plus\") { draft = .new() }"
+  },
+  "Delete Strategy": {
+    "en": "Delete Strategy",
+    "where": "App/Pages/StrategiesPage.swift:108",
+    "line": "undoManager?.setActionName(String(localized: \"Delete Strategy\"))"
+  },
+  "no flags": {
+    "en": "no flags",
+    "where": "App/Pages/StrategiesPage.swift:150",
+    "line": "Text(commandLine.isEmpty ? String(localized: \"no flags\") : commandLine)"
+  },
+  "Pick tpws options in a form": {
+    "en": "Pick tpws options in a form",
+    "where": "App/Pages/StrategiesPage.swift:184",
+    "line": "Text(\"Pick tpws options in a form\")"
+  },
+  "Deleted “%@”": {
+    "en": "Deleted “%@”",
+    "where": "App/Pages/StrategiesPage.swift:205",
+    "line": "Text(\"Deleted “\\(name)”\")"
+  },
+  "My Provider": {
+    "en": "My Provider",
+    "where": "App/Pages/StrategyEditor.swift:36",
+    "line": "TextField(\"Name\", text: $draft.name, prompt: Text(\"My Provider\"))"
+  },
+  "Edit Strategy": {
+    "en": "Edit Strategy",
+    "where": "App/Pages/StrategyEditor.swift:44",
+    "line": ".navigationTitle(draft.editing == nil ? \"New Strategy\" : \"Edit Strategy\")"
+  },
+  "Create": {
+    "en": "Create",
+    "where": "App/Pages/StrategyEditor.swift:51",
+    "line": "Button(draft.editing == nil ? \"Create\" : \"Save\", role: .confirm) { save() }"
+  },
+  "Save": {
+    "en": "Save",
+    "where": "App/Pages/StrategyEditor.swift:51",
+    "line": "Button(draft.editing == nil ? \"Create\" : \"Save\", role: .confirm) { save() }"
+  },
+  "Split at": {
+    "en": "Split at",
+    "where": "App/Pages/StrategyEditor.swift:63",
+    "line": "FlagField(\"Split at\", text: $draft.options.splitPositions, prompt: \"1,midsld\")"
+  },
+  "TLS record split": {
+    "en": "TLS record split",
+    "where": "App/Pages/StrategyEditor.swift:64",
+    "line": "FlagField(\"TLS record split\", text: $draft.options.tlsRecord, prompt: \"sniext+1\")"
+  },
+  "Send pieces out of order (disorder)": {
+    "en": "Send pieces out of order (disorder)",
+    "where": "App/Pages/StrategyEditor.swift:65",
+    "line": "Toggle(\"Send pieces out of order (disorder)\", isOn: $draft.options.disorder)"
+  },
+  "Add an out-of-band byte (oob)": {
+    "en": "Add an out-of-band byte (oob)",
+    "where": "App/Pages/StrategyEditor.swift:66",
+    "line": "Toggle(\"Add an out-of-band byte (oob)\", isOn: $draft.options.oob)"
+  },
+  "On iPhone, an out-of-band byte and disorder together break connections. Turn on only one of them.": {
+    "en": "On iPhone, an out-of-band byte and disorder together break connections. Turn on only one of them.",
+    "where": "App/Pages/StrategyEditor.swift:68",
+    "line": "WarningNote(\"On iPhone, an out-of-band byte and disorder together break connections. Turn on only one of them.\")"
+  },
+  "Split every protocol, not only HTTP and TLS": {
+    "en": "Split every protocol, not only HTTP and TLS",
+    "where": "App/Pages/StrategyEditor.swift:70",
+    "line": "Toggle(\"Split every protocol, not only HTTP and TLS\", isOn: $draft.options.splitAnyProtocol)"
+  },
+  "Splitting": {
+    "en": "Splitting",
+    "where": "App/Pages/StrategyEditor.swift:72",
+    "line": "Text(\"Splitting\")"
+  },
+  "Where to cut the first packet. A number is a byte offset; markers: method, host, endhost, sld (the site name), midsld (its middle), endsld, sniext (the TLS server-name field). Add +N or -N.": {
+    "en": "Where to cut the first packet. A number is a byte offset; markers: method, host, endhost, sld (the site name), midsld (its middle), endsld, sniext (the TLS server-name field). Add +N or -N.",
+    "where": "App/Pages/StrategyEditor.swift:74",
+    "line": "Text(\"Where to cut the first packet. A number is a byte offset; markers: method, host, endhost, sld (the site name), midsld (its middle), endsld, sniext (the TL"
+  },
+  "host: lowercase": {
+    "en": "host: lowercase",
+    "where": "App/Pages/StrategyEditor.swift:80",
+    "line": "Toggle(\"host: lowercase\", isOn: $draft.options.hostCase)"
+  },
+  "Host spelling": {
+    "en": "Host spelling",
+    "where": "App/Pages/StrategyEditor.swift:88",
+    "line": "FlagField(\"Host spelling\", text: $draft.options.hostSpell, prompt: \"hoSt\")"
+  },
+  "Padding before Host": {
+    "en": "Padding before Host",
+    "where": "App/Pages/StrategyEditor.swift:89",
+    "line": "FlagField(\"Padding before Host\", text: $draft.options.hostPad, prompt: \"1024\", keyboard: .numberPad)"
+  },
+  "HTTP header tricks": {
+    "en": "HTTP header tricks",
+    "where": "App/Pages/StrategyEditor.swift:91",
+    "line": "Text(\"HTTP header tricks\")"
+  },
+  "For sites that still use plain HTTP. Host spelling is exactly 4 letters; padding adds that many bytes of dummy headers before Host, so the filter gives up before it reaches the site name.": {
+    "en": "For sites that still use plain HTTP. Host spelling is exactly 4 letters; padding adds that many bytes of dummy headers before Host, so the filter gives up before it reaches the site name.",
+    "where": "App/Pages/StrategyEditor.swift:93",
+    "line": "Text(\"For sites that still use plain HTTP. Host spelling is exactly 4 letters; padding adds that many bytes of dummy headers before Host, so the filter gives up"
+  },
+  "Only these ports": {
+    "en": "Only these ports",
+    "where": "App/Pages/StrategyEditor.swift:99",
+    "line": "FlagField(\"Only these ports\", text: $draft.options.tcpPorts, prompt: \"80,443\")"
+  },
+  "Only these protocols": {
+    "en": "Only these protocols",
+    "where": "App/Pages/StrategyEditor.swift:100",
+    "line": "LabeledContent(\"Only these protocols\") {"
+  },
+  "HTTP": {
+    "en": "HTTP",
+    "where": "App/Pages/StrategyEditor.swift:102",
+    "line": "Toggle(\"HTTP\", isOn: protocolBinding(.http))"
+  },
+  "TLS": {
+    "en": "TLS",
+    "where": "App/Pages/StrategyEditor.swift:103",
+    "line": "Toggle(\"TLS\", isOn: protocolBinding(.tls))"
+  },
+  "Other": {
+    "en": "Other",
+    "where": "App/Pages/StrategyEditor.swift:104",
+    "line": "Toggle(\"Other\", isOn: protocolBinding(.unknown))"
+  },
+  "Disorder applies to": {
+    "en": "Disorder applies to",
+    "where": "App/Pages/StrategyEditor.swift:110",
+    "line": "Picker(\"Disorder applies to\", selection: $draft.options.disorderScope) { scopeOptions }"
+  },
+  "Out-of-band byte applies to": {
+    "en": "Out-of-band byte applies to",
+    "where": "App/Pages/StrategyEditor.swift:112",
+    "line": "Picker(\"Out-of-band byte applies to\", selection: $draft.options.oobScope) { scopeOptions }"
+  },
+  "OOB byte value": {
+    "en": "OOB byte value",
+    "where": "App/Pages/StrategyEditor.swift:114",
+    "line": "FlagField(\"OOB byte value\", text: $draft.options.oobData, prompt: \"0x00\")"
+  },
+  "Start changing at": {
+    "en": "Start changing at",
+    "where": "App/Pages/StrategyEditor.swift:116",
+    "line": "FlagField(\"Start changing at\", text: $draft.options.tamperStart, prompt: \"0\")"
+  },
+  "Stop changing after": {
+    "en": "Stop changing after",
+    "where": "App/Pages/StrategyEditor.swift:117",
+    "line": "FlagField(\"Stop changing after\", text: $draft.options.tamperCutoff, prompt: \"n2\")"
+  },
+  "More tpws flags": {
+    "en": "More tpws flags",
+    "where": "App/Pages/StrategyEditor.swift:119",
+    "line": "Text(\"More tpws flags\")"
+  },
+  "This strategy has a separate part for HTTP and HTTPS; it is kept in More tpws flags.": {
+    "en": "This strategy has a separate part for HTTP and HTTPS; it is kept in More tpws flags.",
+    "where": "App/Pages/StrategyEditor.swift:128",
+    "line": "Label(\"This strategy has a separate part for HTTP and HTTPS; it is kept in More tpws flags.\","
+  },
+  "No protocol picked means every protocol; Other is anything that is not HTTP or TLS. Start and stop take a byte offset, or n and a data block, like n2. The out-of-band byte is one character or 0x and two hex digits. Any tpws desync flag works under More tpws flags.": {
+    "en": "No protocol picked means every protocol; Other is anything that is not HTTP or TLS. Start and stop take a byte offset, or n and a data block, like n2. The out-of-band byte is one character or 0x and two hex digits. Any tpws desync flag works under More tpws flags.",
+    "where": "App/Pages/StrategyEditor.swift:136",
+    "line": "Text(\"No protocol picked means every protocol; Other is anything that is not HTTP or TLS. Start and stop take a byte offset, or n and a data block, like n2. The"
+  },
+  "No flags: traffic is passed through unchanged.": {
+    "en": "No flags: traffic is passed through unchanged.",
+    "where": "App/Pages/StrategyEditor.swift:142",
+    "line": "Text(options.commandLine.isEmpty ? String(localized: \"No flags: traffic is passed through unchanged.\") : options.commandLine)"
+  },
+  "tpws accepts these flags.": {
+    "en": "tpws accepts these flags.",
+    "where": "App/Pages/StrategyEditor.swift:148",
+    "line": "Label(\"tpws accepts these flags.\", systemImage: \"checkmark.circle.fill\")"
+  },
+  "The clipboard does not hold tpws flags. Copy flags that start with --.": {
+    "en": "The clipboard does not hold tpws flags. Copy flags that start with --.",
+    "where": "App/Pages/StrategyEditor.swift:167",
+    "line": "Text(\"The clipboard does not hold tpws flags. Copy flags that start with --.\")"
+  },
+  "Command": {
+    "en": "Command",
+    "where": "App/Pages/StrategyEditor.swift:172",
+    "line": "Text(\"Command\")"
+  },
+  "Checked on this iPhone against tpws's rules. Paste replaces the options with tpws flags from the clipboard.": {
+    "en": "Checked on this iPhone against tpws's rules. Paste replaces the options with tpws flags from the clipboard.",
+    "where": "App/Pages/StrategyEditor.swift:174",
+    "line": "Text(\"Checked on this iPhone against tpws's rules. Paste replaces the options with tpws flags from the clipboard.\")"
+  },
+  "Every protocol": {
+    "en": "Every protocol",
+    "where": "App/Pages/StrategyEditor.swift:179",
+    "line": "Text(\"Every protocol\").tag(ProtocolScope.all)"
+  },
+  "HTTP only": {
+    "en": "HTTP only",
+    "where": "App/Pages/StrategyEditor.swift:180",
+    "line": "Text(\"HTTP only\").tag(ProtocolScope.http)"
+  },
+  "TLS only": {
+    "en": "TLS only",
+    "where": "App/Pages/StrategyEditor.swift:181",
+    "line": "Text(\"TLS only\").tag(ProtocolScope.tls)"
+  },
+  "Turn on ${applicationName}": {
+    "en": "Turn on ${applicationName}",
+    "where": "App/Settings/BypassShortcuts.swift:5",
+    "line": "static var appShortcuts: [AppShortcut] {",
+    "table": "AppShortcuts",
+    "note": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written; it becomes the app name (Zapret). Write a phrase a person would say aloud."
+  },
+  "Turn ${applicationName} bypass on": {
+    "en": "Turn ${applicationName} bypass on",
+    "where": "App/Settings/BypassShortcuts.swift:5",
+    "line": "static var appShortcuts: [AppShortcut] {",
+    "table": "AppShortcuts",
+    "note": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+  },
+  "Turn off ${applicationName}": {
+    "en": "Turn off ${applicationName}",
+    "where": "App/Settings/BypassShortcuts.swift:5",
+    "line": "static var appShortcuts: [AppShortcut] {",
+    "table": "AppShortcuts",
+    "note": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+  },
+  "Turn ${applicationName} bypass off": {
+    "en": "Turn ${applicationName} bypass off",
+    "where": "App/Settings/BypassShortcuts.swift:5",
+    "line": "static var appShortcuts: [AppShortcut] {",
+    "table": "AppShortcuts",
+    "note": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+  },
+  "Toggle ${applicationName}": {
+    "en": "Toggle ${applicationName}",
+    "where": "App/Settings/BypassShortcuts.swift:5",
+    "line": "static var appShortcuts: [AppShortcut] {",
+    "table": "AppShortcuts",
+    "note": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+  },
+  "QR code for %@": {
+    "en": "QR code for %@",
+    "where": "App/Settings/QRCode.swift:18",
+    "line": ".accessibilityLabel(Text(\"QR code for \\(text)\"))"
+  },
+  "Settings": {
+    "en": "Settings",
+    "where": "App/Settings/SettingsView.swift:12",
+    "line": "Button(\"Settings\", systemImage: \"gearshape\") { showing = true }"
+  },
+  "Accent color": {
+    "en": "Accent color",
+    "where": "App/Settings/SettingsView.swift:61",
+    "line": "Text(\"Accent color\")"
+  },
+  "Appearance": {
+    "en": "Appearance",
+    "where": "App/Settings/SettingsView.swift:73",
+    "line": "Text(\"Appearance\")"
+  },
+  "Light and dark mode follow your iPhone.": {
+    "en": "Light and dark mode follow your iPhone.",
+    "where": "App/Settings/SettingsView.swift:75",
+    "line": "Text(\"Light and dark mode follow your iPhone.\")"
+  },
+  "Preview of the accent color": {
+    "en": "Preview of the accent color",
+    "where": "App/Settings/SettingsView.swift:113",
+    "line": ".accessibilityLabel(\"Preview of the accent color\")"
+  },
+  "Turn the bypass on when Zapret opens": {
+    "en": "Turn the bypass on when Zapret opens",
+    "where": "App/Settings/SettingsView.swift:152",
+    "line": "Toggle(\"Turn the bypass on when Zapret opens\", isOn: $prefs.startOnLaunch)"
+  },
+  "Keep the bypass on": {
+    "en": "Keep the bypass on",
+    "where": "App/Settings/SettingsView.swift:153",
+    "line": "Toggle(\"Keep the bypass on\", isOn: $prefs.keepOn)"
+  },
+  "General": {
+    "en": "General",
+    "where": "App/Settings/SettingsView.swift:156",
+    "line": "Text(\"General\")"
+  },
+  "While it is on, iOS turns the bypass back on by itself after a dropped connection or a network change. Turning it off in Zapret, Control Center, or Shortcuts stops it until you turn it on again.": {
+    "en": "While it is on, iOS turns the bypass back on by itself after a dropped connection or a network change. Turning it off in Zapret, Control Center, or Shortcuts stops it until you turn it on again.",
+    "where": "App/Settings/SettingsView.swift:158",
+    "line": "Text(\"While it is on, iOS turns the bypass back on by itself after a dropped connection or a network change. Turning it off in Zapret, Control Center, or Shortc"
+  },
+  "Show every connection in the log": {
+    "en": "Show every connection in the log",
+    "where": "App/Settings/SettingsView.swift:161",
+    "line": "Toggle(\"Show every connection in the log\", isOn: $prefs.verboseLog)"
+  },
+  "Off logs only errors, which also stops the connection count on Overview.": {
+    "en": "Off logs only errors, which also stops the connection count on Overview.",
+    "where": "App/Settings/SettingsView.swift:166",
+    "line": "Text(\"Off logs only errors, which also stops the connection count on Overview.\")"
+  },
+  "Share with devices on this network": {
+    "en": "Share with devices on this network",
+    "where": "App/Settings/SettingsView.swift:180",
+    "line": "Toggle(\"Share with devices on this network\", isOn: $prefs.shareOnNetwork)"
+  },
+  "SOCKS5 address": {
+    "en": "SOCKS5 address",
+    "where": "App/Settings/SettingsView.swift:185",
+    "line": "LabeledContent(\"SOCKS5 address\") {"
+  },
+  "Copy": {
+    "en": "Copy",
+    "where": "App/Settings/SettingsView.swift:188",
+    "line": "Button(\"Copy\", systemImage: \"doc.on.doc\") { UIPasteboard.general.string = text }"
+  },
+  "QR code": {
+    "en": "QR code",
+    "where": "App/Settings/SettingsView.swift:196",
+    "line": "Text(\"QR code\")"
+  },
+  "Scan it in a proxy app on another device.": {
+    "en": "Scan it in a proxy app on another device.",
+    "where": "App/Settings/SettingsView.swift:197",
+    "line": "Text(\"Scan it in a proxy app on another device.\").font(.caption).foregroundStyle(.secondary)"
+  },
+  "No Wi-Fi address. Connect this iPhone to Wi-Fi to share.": {
+    "en": "No Wi-Fi address. Connect this iPhone to Wi-Fi to share.",
+    "where": "App/Settings/SettingsView.swift:200",
+    "line": "Label(\"No Wi-Fi address. Connect this iPhone to Wi-Fi to share.\", systemImage: \"wifi.slash\")"
+  },
+  "Advanced": {
+    "en": "Advanced",
+    "where": "App/Settings/SettingsView.swift:205",
+    "line": "Text(\"Advanced\")"
+  },
+  "While sharing is on, anyone on this Wi-Fi network can use this iPhone's bypass. Use an app that supports SOCKS5 proxies on the other device and enter this address there. Turn the bypass on to start sharing.": {
+    "en": "While sharing is on, anyone on this Wi-Fi network can use this iPhone's bypass. Use an app that supports SOCKS5 proxies on the other device and enter this address there. Turn the bypass on to start sharing.",
+    "where": "App/Settings/SettingsView.swift:208",
+    "line": "Text(\"While sharing is on, anyone on this Wi-Fi network can use this iPhone's bypass. Use an app that supports SOCKS5 proxies on the other device and enter this"
+  },
+  "Lets a computer, tablet, or TV on your Wi-Fi use this iPhone as a SOCKS5 proxy. Off by default.": {
+    "en": "Lets a computer, tablet, or TV on your Wi-Fi use this iPhone as a SOCKS5 proxy. Off by default.",
+    "where": "App/Settings/SettingsView.swift:210",
+    "line": "Text(\"Lets a computer, tablet, or TV on your Wi-Fi use this iPhone as a SOCKS5 proxy. Off by default.\")"
+  },
+  "About": {
+    "en": "About",
+    "where": "App/Settings/SettingsView.swift:232",
+    "line": "Text(\"About\")"
+  },
+  "The bypass engine is tpws from zapret by bol-van, MIT license. hev-socks5-tunnel by heiher turns the tunnel's packets into connections, also MIT.": {
+    "en": "The bypass engine is tpws from zapret by bol-van, MIT license. hev-socks5-tunnel by heiher turns the tunnel's packets into connections, also MIT.",
+    "where": "App/Settings/SettingsView.swift:234",
+    "line": "Text(\"The bypass engine is tpws from zapret by bol-van, MIT license. hev-socks5-tunnel by heiher turns the tunnel's packets into connections, also MIT.\")"
+  },
+  "Licenses": {
+    "en": "Licenses",
+    "where": "App/Settings/SettingsView.swift:236",
+    "line": "Section(\"Licenses\") {"
+  },
+  "zapret license": {
+    "en": "zapret license",
+    "where": "App/Settings/SettingsView.swift:237",
+    "line": "Link(\"zapret license\", destination: URL(string: \"https://github.com/bol-van/zapret/blob/master/docs/LICENSE.txt\")!)"
+  },
+  "hev-socks5-tunnel license": {
+    "en": "hev-socks5-tunnel license",
+    "where": "App/Settings/SettingsView.swift:238",
+    "line": "Link(\"hev-socks5-tunnel license\", destination: URL(string: \"https://github.com/heiher/hev-socks5-tunnel/blob/master/LICENSE\")!)"
+  },
+  "Open Zapret and turn the bypass on once first.": {
+    "en": "Open Zapret and turn the bypass on once first.",
+    "where": "Intents/BypassControl.swift:16",
+    "line": "case .needsSetup: String(localized: \"Open Zapret and turn the bypass on once first.\")"
+  },
+  "Turn Bypass On": {
+    "en": "Turn Bypass On",
+    "where": "Intents/BypassIntents.swift:6",
+    "line": "static let title: LocalizedStringResource = \"Turn Bypass On\"",
+    "note": "Shortcuts action name and App Shortcut tile title (short)."
+  },
+  "Turns the Zapret bypass on.": {
+    "en": "Turns the Zapret bypass on.",
+    "where": "Intents/BypassIntents.swift:7",
+    "line": "static let description = IntentDescription(\"Turns the Zapret bypass on.\")"
+  },
+  "Bypass is on.": {
+    "en": "Bypass is on.",
+    "where": "Intents/BypassIntents.swift:12",
+    "line": "return .result(dialog: \"Bypass is on.\")"
+  },
+  "Turn Bypass Off": {
+    "en": "Turn Bypass Off",
+    "where": "Intents/BypassIntents.swift:17",
+    "line": "static let title: LocalizedStringResource = \"Turn Bypass Off\"",
+    "note": "Shortcuts action name and App Shortcut tile title (short)."
+  },
+  "Turns the Zapret bypass off.": {
+    "en": "Turns the Zapret bypass off.",
+    "where": "Intents/BypassIntents.swift:18",
+    "line": "static let description = IntentDescription(\"Turns the Zapret bypass off.\")"
+  },
+  "Bypass is off.": {
+    "en": "Bypass is off.",
+    "where": "Intents/BypassIntents.swift:23",
+    "line": "return .result(dialog: \"Bypass is off.\")"
+  },
+  "Toggle Bypass": {
+    "en": "Toggle Bypass",
+    "where": "Intents/BypassIntents.swift:28",
+    "line": "static let title: LocalizedStringResource = \"Toggle Bypass\"",
+    "note": "Shortcuts action name and App Shortcut tile title (short)."
+  },
+  "Turns the Zapret bypass on if it is off, and off if it is on.": {
+    "en": "Turns the Zapret bypass on if it is off, and off if it is on.",
+    "where": "Intents/BypassIntents.swift:29",
+    "line": "static let description = IntentDescription(\"Turns the Zapret bypass on if it is off, and off if it is on.\")"
+  },
+  "Set Bypass": {
+    "en": "Set Bypass",
+    "where": "Intents/BypassIntents.swift:44",
+    "line": "static let title: LocalizedStringResource = \"Set Bypass\"",
+    "note": "Shortcuts action name used by the Control Center switch."
+  },
+  "On": {
+    "en": "On",
+    "where": "Intents/BypassIntents.swift:46",
+    "line": "@Parameter(title: \"On\")",
+    "note": "Parameter name of the Set Bypass action (a yes/no value); also the Control Center label when the bypass is on."
+  },
+  "%lld s": {
+    "en": "%lld s",
+    "where": "Shared/LogLine.swift:45",
+    "line": "if s < 60 { return String(localized: \"\\(s) s\", bundle: .main) }",
+    "note": "Running time in a stat tile, seconds, short unit."
+  },
+  "%lld min": {
+    "en": "%lld min",
+    "where": "Shared/LogLine.swift:46",
+    "line": "if s < 3600 { return String(localized: \"\\(s / 60) min\", bundle: .main) }",
+    "note": "Running time in a stat tile, short unit."
+  },
+  "%lld h %@ min": {
+    "en": "%lld h %@ min",
+    "where": "Shared/LogLine.swift:48",
+    "line": "return String(localized: \"\\(s / 3600) h \\(minutes) min\", bundle: .main)",
+    "note": "Running time, e.g. '1 h 05 min'. %@ is two-digit minutes. Use your language's usual short units."
+  },
+  "TLS Record + Split": {
+    "en": "TLS Record + Split",
+    "where": "Shared/Presets.swift:14",
+    "line": "Preset(id: \"tlsrec-split\", name: String(localized: \"TLS Record + Split\", bundle: .main), symbol: \"square.split.2x1\","
+  },
+  "Cuts the TLS hello into two records, then splits the packet at the domain. Works on most providers.": {
+    "en": "Cuts the TLS hello into two records, then splits the packet at the domain. Works on most providers.",
+    "where": "Shared/Presets.swift:15",
+    "line": "blurb: String(localized: \"Cuts the TLS hello into two records, then splits the packet at the domain. Works on most providers.\", bundle: .main),"
+  },
+  "Split at Domain": {
+    "en": "Split at Domain",
+    "where": "Shared/Presets.swift:17",
+    "line": "Preset(id: \"split-sni\", name: String(localized: \"Split at Domain\", bundle: .main), symbol: \"scissors\","
+  },
+  "Splits the first packet in the middle of the site name, so the filter never sees it whole.": {
+    "en": "Splits the first packet in the middle of the site name, so the filter never sees it whole.",
+    "where": "Shared/Presets.swift:18",
+    "line": "blurb: String(localized: \"Splits the first packet in the middle of the site name, so the filter never sees it whole.\", bundle: .main),"
+  },
+  "Split at Server Name": {
+    "en": "Split at Server Name",
+    "where": "Shared/Presets.swift:20",
+    "line": "Preset(id: \"split-sniext\", name: String(localized: \"Split at Server Name\", bundle: .main), symbol: \"tag\","
+  },
+  "Splits the first packet right where the site name begins, before the filter can read it.": {
+    "en": "Splits the first packet right where the site name begins, before the filter can read it.",
+    "where": "Shared/Presets.swift:21",
+    "line": "blurb: String(localized: \"Splits the first packet right where the site name begins, before the filter can read it.\", bundle: .main),"
+  },
+  "Split in Many Places": {
+    "en": "Split in Many Places",
+    "where": "Shared/Presets.swift:23",
+    "line": "Preset(id: \"multisplit\", name: String(localized: \"Split in Many Places\", bundle: .main), symbol: \"square.split.2x2\","
+  },
+  "Cuts the first packet into several small pieces, so none of them shows the whole site name.": {
+    "en": "Cuts the first packet into several small pieces, so none of them shows the whole site name.",
+    "where": "Shared/Presets.swift:24",
+    "line": "blurb: String(localized: \"Cuts the first packet into several small pieces, so none of them shows the whole site name.\", bundle: .main),"
+  },
+  "TLS Record at Domain": {
+    "en": "TLS Record at Domain",
+    "where": "Shared/Presets.swift:26",
+    "line": "Preset(id: \"tlsrec-midsld\", name: String(localized: \"TLS Record at Domain\", bundle: .main), symbol: \"square.split.1x2\","
+  },
+  "Cuts the TLS hello into two records in the middle of the site name. Try it when splitting alone is not enough.": {
+    "en": "Cuts the TLS hello into two records in the middle of the site name. Try it when splitting alone is not enough.",
+    "where": "Shared/Presets.swift:27",
+    "line": "blurb: String(localized: \"Cuts the TLS hello into two records in the middle of the site name. Try it when splitting alone is not enough.\", bundle: .main),"
+  },
+  "Split + Disorder": {
+    "en": "Split + Disorder",
+    "where": "Shared/Presets.swift:29",
+    "line": "Preset(id: \"split-disorder\", name: String(localized: \"Split + Disorder\", bundle: .main), symbol: \"arrow.left.arrow.right\","
+  },
+  "Splits the packet and sends the pieces out of order.": {
+    "en": "Splits the packet and sends the pieces out of order.",
+    "where": "Shared/Presets.swift:30",
+    "line": "blurb: String(localized: \"Splits the packet and sends the pieces out of order.\", bundle: .main),"
+  },
+  "Out-of-Band Byte": {
+    "en": "Out-of-Band Byte",
+    "where": "Shared/Presets.swift:32",
+    "line": "Preset(id: \"oob\", name: String(localized: \"Out-of-Band Byte\", bundle: .main), symbol: \"exclamationmark.bubble\","
+  },
+  "Adds an urgent byte between the pieces that the server drops but the filter reads.": {
+    "en": "Adds an urgent byte between the pieces that the server drops but the filter reads.",
+    "where": "Shared/Presets.swift:33",
+    "line": "blurb: String(localized: \"Adds an urgent byte between the pieces that the server drops but the filter reads.\", bundle: .main),"
+  },
+  "HTTP Header Tricks": {
+    "en": "HTTP Header Tricks",
+    "where": "Shared/Presets.swift:35",
+    "line": "Preset(id: \"http-tricks\", name: String(localized: \"HTTP Header Tricks\", bundle: .main), symbol: \"textformat\","
+  },
+  "Changes how the Host header is written, for sites that still use plain HTTP.": {
+    "en": "Changes how the Host header is written, for sites that still use plain HTTP.",
+    "where": "Shared/Presets.swift:36",
+    "line": "blurb: String(localized: \"Changes how the Host header is written, for sites that still use plain HTTP.\", bundle: .main),"
+  },
+  "Padded HTTP Header": {
+    "en": "Padded HTTP Header",
+    "where": "Shared/Presets.swift:38",
+    "line": "Preset(id: \"hostpad\", name: String(localized: \"Padded HTTP Header\", bundle: .main), symbol: \"text.badge.plus\","
+  },
+  "Adds filler headers before the Host header, for plain HTTP sites where the filter reads only the start.": {
+    "en": "Adds filler headers before the Host header, for plain HTTP sites where the filter reads only the start.",
+    "where": "Shared/Presets.swift:39",
+    "line": "blurb: String(localized: \"Adds filler headers before the Host header, for plain HTTP sites where the filter reads only the start.\", bundle: .main),"
+  },
+  "Everything at Once": {
+    "en": "Everything at Once",
+    "where": "Shared/Presets.swift:41",
+    "line": "Preset(id: \"aggressive\", name: String(localized: \"Everything at Once\", bundle: .main), symbol: \"bolt.shield\","
+  },
+  "TLS records, split, disorder, and header tricks together. Try it when the others fail.": {
+    "en": "TLS records, split, disorder, and header tricks together. Try it when the others fail.",
+    "where": "Shared/Presets.swift:42",
+    "line": "blurb: String(localized: \"TLS records, split, disorder, and header tricks together. Try it when the others fail.\", bundle: .main),"
+  },
+  "“%@” is not a tpws flag. Flags start with --.": {
+    "en": "“%@” is not a tpws flag. Flags start with --.",
+    "where": "Shared/StrategyCheck.swift:32",
+    "line": "add(String(localized: \"“\\(arg)” is not a tpws flag. Flags start with --.\", bundle: .main))"
+  },
+  "%@ is set by the app. Remove it.": {
+    "en": "%@ is set by the app. Remove it.",
+    "where": "Shared/StrategyCheck.swift:40",
+    "line": "add(String(localized: \"\\(flag) is set by the app. Remove it.\", bundle: .main))"
+  },
+  "%@ only works on Linux. tpws on iPhone does not know it.": {
+    "en": "%@ only works on Linux. tpws on iPhone does not know it.",
+    "where": "Shared/StrategyCheck.swift:44",
+    "line": "add(String(localized: \"\\(flag) only works on Linux. tpws on iPhone does not know it.\", bundle: .main))"
+  },
+  "tpws does not know %@.": {
+    "en": "tpws does not know %@.",
+    "where": "Shared/StrategyCheck.swift:48",
+    "line": "add(String(localized: \"tpws does not know \\(flag).\", bundle: .main))"
+  },
+  "%@ takes no value.": {
+    "en": "%@ takes no value.",
+    "where": "Shared/StrategyCheck.swift:53",
+    "line": "if value != nil { add(String(localized: \"\\(flag) takes no value.\", bundle: .main)) }"
+  },
+  "%@ needs a value, like %@=…": {
+    "en": "%@ needs a value, like %@=…",
+    "where": "Shared/StrategyCheck.swift:57",
+    "line": "if value == nil { add(String(localized: \"\\(flag) needs a value, like \\(flag)=…\", bundle: .main)); continue }"
+  },
+  "An out-of-band byte and disorder together break connections on iPhone, and tpws refuses them. Turn on only one of them.": {
+    "en": "An out-of-band byte and disorder together break connections on iPhone, and tpws refuses them. Turn on only one of them.",
+    "where": "Shared/StrategyCheck.swift:64",
+    "line": "add(String(localized: \"An out-of-band byte and disorder together break connections on iPhone, and tpws refuses them. Turn on only one of them.\", bundle: .main))"
+  },
+  "%@=%@ is not a list of positions. Use numbers (not 0) or markers like 1,midsld or sniext+1.": {
+    "en": "%@=%@ is not a list of positions. Use numbers (not 0) or markers like 1,midsld or sniext+1.",
+    "where": "Shared/StrategyCheck.swift:131",
+    "line": "return String(localized: \"\\(flag)=\\(v) is not a list of positions. Use numbers (not 0) or markers like 1,midsld or sniext+1.\", bundle: .main)"
+  },
+  "Too many split positions. tpws takes at most %lld.": {
+    "en": "Too many split positions. tpws takes at most %lld.",
+    "where": "Shared/StrategyCheck.swift:135",
+    "line": "return String(localized: \"Too many split positions. tpws takes at most \\(StrategyCheck.maxSplits).\", bundle: .main)"
+  },
+  "%@=%@ is not a position. Use a number or a marker like sniext+1.": {
+    "en": "%@=%@ is not a position. Use a number or a marker like sniext+1.",
+    "where": "Shared/StrategyCheck.swift:144",
+    "line": "return String(localized: \"\\(flag)=\\(v) is not a position. Use a number or a marker like sniext+1.\", bundle: .main)"
+  },
+  "%@ needs a number that is not 0.": {
+    "en": "%@ needs a number that is not 0.",
+    "where": "Shared/StrategyCheck.swift:148",
+    "line": "return String(localized: \"\\(flag) needs a number that is not 0.\", bundle: .main)"
+  },
+  "Host spelling must be exactly 4 letters, like hoSt.": {
+    "en": "Host spelling must be exactly 4 letters, like hoSt.",
+    "where": "Shared/StrategyCheck.swift:151",
+    "line": "if v.count != 4 { return String(localized: \"Host spelling must be exactly 4 letters, like hoSt.\", bundle: .main) }"
+  },
+  "%@ needs a whole number, like %@=1024.": {
+    "en": "%@ needs a whole number, like %@=1024.",
+    "where": "Shared/StrategyCheck.swift:154",
+    "line": "if UInt(v) == nil { return String(localized: \"\\(flag) needs a whole number, like \\(flag)=1024.\", bundle: .main) }"
+  },
+  "%@ must be between 1 and 300.": {
+    "en": "%@ must be between 1 and 300.",
+    "where": "Shared/StrategyCheck.swift:157",
+    "line": "return String(localized: \"\\(flag) must be between 1 and 300.\", bundle: .main)"
+  },
+  "The out-of-band byte must be one character or 0x and two hex digits, like 0x01.": {
+    "en": "The out-of-band byte must be one character or 0x and two hex digits, like 0x01.",
+    "where": "Shared/StrategyCheck.swift:161",
+    "line": "return String(localized: \"The out-of-band byte must be one character or 0x and two hex digits, like 0x01.\", bundle: .main)"
+  },
+  "%@ takes no value, http, or tls.": {
+    "en": "%@ takes no value, http, or tls.",
+    "where": "Shared/StrategyCheck.swift:165",
+    "line": "return String(localized: \"\\(flag) takes no value, http, or tls.\", bundle: .main)"
+  },
+  "%@=%@ is not a port list. Use ports and ranges like 80,443 or 1000-2000.": {
+    "en": "%@=%@ is not a port list. Use ports and ranges like 80,443 or 1000-2000.",
+    "where": "Shared/StrategyCheck.swift:171",
+    "line": "return String(localized: \"\\(flag)=\\(v) is not a port list. Use ports and ranges like 80,443 or 1000-2000.\", bundle: .main)"
+  },
+  "%@ takes http, tls, or unknown, separated by commas.": {
+    "en": "%@ takes http, tls, or unknown, separated by commas.",
+    "where": "Shared/StrategyCheck.swift:176",
+    "line": "return String(localized: \"\\(flag) takes http, tls, or unknown, separated by commas.\", bundle: .main)"
+  },
+  "%@ takes ipv4, ipv6, or both.": {
+    "en": "%@ takes ipv4, ipv6, or both.",
+    "where": "Shared/StrategyCheck.swift:181",
+    "line": "return String(localized: \"\\(flag) takes ipv4, ipv6, or both.\", bundle: .main)"
+  },
+  "%@ needs a byte offset like 100, or n and a block number like n2.": {
+    "en": "%@ needs a byte offset like 100, or n and a block number like n2.",
+    "where": "Shared/StrategyCheck.swift:186",
+    "line": "return String(localized: \"\\(flag) needs a byte offset like 100, or n and a block number like n2.\", bundle: .main)"
+  },
+  "TLS records at %@": {
+    "en": "TLS records at %@",
+    "where": "Shared/StrategyOptions.swift:158",
+    "line": "if !tlsRecord.trimmed.isEmpty { parts.append(String(localized: \"TLS records at \\(tlsRecord.compact)\", bundle: .main)) }"
+  },
+  "Split at %@": {
+    "en": "Split at %@",
+    "where": "Shared/StrategyOptions.swift:159",
+    "line": "if !splitPositions.trimmed.isEmpty { parts.append(String(localized: \"Split at \\(splitPositions.compact)\", bundle: .main)) }"
+  },
+  "Disorder": {
+    "en": "Disorder",
+    "where": "Shared/StrategyOptions.swift:160",
+    "line": "if disorder { parts.append(String(localized: \"Disorder\", bundle: .main)) }"
+  },
+  "OOB byte": {
+    "en": "OOB byte",
+    "where": "Shared/StrategyOptions.swift:161",
+    "line": "if oob { parts.append(String(localized: \"OOB byte\", bundle: .main)) }"
+  },
+  "%lld HTTP tricks": {
+    "en": {
+      "one": "1 HTTP trick",
+      "other": "%lld HTTP tricks"
+    },
+    "where": "Shared/StrategyOptions.swift:165",
+    "line": "if http > 0 { parts.append(String(localized: \"\\(http) HTTP tricks\", bundle: .main)) }"
+  },
+  "+%lld more": {
+    "en": "+%lld more",
+    "where": "Shared/StrategyOptions.swift:166",
+    "line": "if !extra.isEmpty { parts.append(String(localized: \"+\\(extra.count) more\", bundle: .main)) }"
+  },
+  "No changes to traffic": {
+    "en": "No changes to traffic",
+    "where": "Shared/StrategyOptions.swift:167",
+    "line": "return parts.isEmpty ? String(localized: \"No changes to traffic\", bundle: .main) : parts.joined(separator: \" · \")"
+  },
+  "The tunnel has no settings. Open Zapret and turn it on again.": {
+    "en": "The tunnel has no settings. Open Zapret and turn it on again.",
+    "where": "Tunnel/PacketTunnelProvider.swift:105",
+    "line": "case .noConfig: String(localized: \"The tunnel has no settings. Open Zapret and turn it on again.\")",
+    "note": "Error from the VPN extension shown by iOS."
+  },
+  "tpws did not start. See the log.": {
+    "en": "tpws did not start. See the log.",
+    "where": "Tunnel/PacketTunnelProvider.swift:106",
+    "line": "case .tpwsFailed: String(localized: \"tpws did not start. See the log.\")",
+    "note": "Error from the VPN extension shown by iOS."
+  },
+  "The tunnel could not be opened.": {
+    "en": "The tunnel could not be opened.",
+    "where": "Tunnel/PacketTunnelProvider.swift:107",
+    "line": "case .noTunnel: String(localized: \"The tunnel could not be opened.\")",
+    "note": "Error from the VPN extension shown by iOS."
+  },
+  "Zapret Bypass": {
+    "en": "Zapret Bypass",
+    "where": "Widgets/ZapretWidgets.swift:54",
+    "line": ".configurationDisplayName(\"Zapret Bypass\")",
+    "note": "Widget and Control Center control name."
+  },
+  "Shows whether the bypass is on, and its strategy. Tap to turn it on or off.": {
+    "en": "Shows whether the bypass is on, and its strategy. Tap to turn it on or off.",
+    "where": "Widgets/ZapretWidgets.swift:55",
+    "line": ".description(\"Shows whether the bypass is on, and its strategy. Tap to turn it on or off.\")"
+  },
+  "Bypass on": {
+    "en": "Bypass on",
+    "where": "Widgets/ZapretWidgets.swift:69",
+    "line": "Label(entry.isOn ? \"Bypass on\" : \"Bypass off\", systemImage: \"shield.lefthalf.filled\")",
+    "note": "Widget: Lock Screen and inline text. Very short."
+  },
+  "Bypass off": {
+    "en": "Bypass off",
+    "where": "Widgets/ZapretWidgets.swift:69",
+    "line": "Label(entry.isOn ? \"Bypass on\" : \"Bypass off\", systemImage: \"shield.lefthalf.filled\")",
+    "note": "Widget: Lock Screen and inline text. Very short."
+  },
+  "Bypass is on": {
+    "en": "Bypass is on",
+    "where": "Widgets/ZapretWidgets.swift:98",
+    "line": "Text(entry.isOn ? \"Bypass is on\" : \"Bypass is off\").font(.headline)",
+    "note": "Widget (Home Screen) and Overview headline."
+  },
+  "Bypass is off": {
+    "en": "Bypass is off",
+    "where": "Widgets/ZapretWidgets.swift:98",
+    "line": "Text(entry.isOn ? \"Bypass is on\" : \"Bypass is off\").font(.headline)",
+    "note": "Widget (Home Screen) and Overview headline."
+  },
+  "Off": {
+    "en": "Off",
+    "where": "Widgets/ZapretWidgets.swift:117",
+    "line": "Label(isOn ? \"On\" : \"Off\", systemImage: \"shield.lefthalf.filled\")",
+    "note": "Control Center label when the bypass is off. Short."
+  },
+  "Turns the Zapret bypass on or off.": {
+    "en": "Turns the Zapret bypass on or off.",
+    "where": "Widgets/ZapretWidgets.swift:122",
+    "line": ".description(\"Turns the Zapret bypass on or off.\")"
+  }
+}

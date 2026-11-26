@@ -102,9 +102,9 @@ enum TunnelError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .noConfig: "The tunnel has no settings. Open Zapret and turn it on again."
-        case .tpwsFailed: "tpws did not start. See the log."
-        case .noTunnel: "The tunnel could not be opened."
+        case .noConfig: String(localized: "The tunnel has no settings. Open Zapret and turn it on again.")
+        case .tpwsFailed: String(localized: "tpws did not start. See the log.")
+        case .noTunnel: String(localized: "The tunnel could not be opened.")
         }
     }
 }

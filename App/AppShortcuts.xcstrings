@@ -1,0 +1,31 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Toggle ${applicationName}" : {
+      "extractionState" : "manual",
+      "localizations" : {},
+      "comment" : "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+    },
+    "Turn ${applicationName} bypass off" : {
+      "extractionState" : "manual",
+      "localizations" : {},
+      "comment" : "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+    },
+    "Turn ${applicationName} bypass on" : {
+      "extractionState" : "manual",
+      "localizations" : {},
+      "comment" : "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+    },
+    "Turn off ${applicationName}" : {
+      "extractionState" : "manual",
+      "localizations" : {},
+      "comment" : "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written."
+    },
+    "Turn on ${applicationName}" : {
+      "extractionState" : "manual",
+      "localizations" : {},
+      "comment" : "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written; it becomes the app name (Zapret). Write a phrase a person would say aloud."
+    }
+  },
+  "version" : "1.0"
+}

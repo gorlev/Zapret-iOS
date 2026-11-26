@@ -1,0 +1,88 @@
+{
+  "_skipFiles": [
+    "DebugTamperCard.swift"
+  ],
+  "_skip": [
+    "",
+    "https://example.com",
+    "mybank.com",
+    "youtube.com 203.0.113.0/24",
+    "tpws",
+    "hev-socks5-tunnel",
+    "tpws (zapret)",
+    "Cloudflare",
+    "Google",
+    "Zapret",
+    "%@ %@",
+    "%@\n%@"
+  ],
+  "_plural": {
+    "%lld sites": {
+      "one": "1 site",
+      "other": "%lld sites"
+    },
+    "%lld IP addresses": {
+      "one": "1 IP address",
+      "other": "%lld IP addresses"
+    },
+    "Added %lld sites.": {
+      "one": "Added 1 site.",
+      "other": "Added %lld sites."
+    },
+    "Deleted %lld sites": {
+      "one": "Deleted 1 site",
+      "other": "Deleted %lld sites"
+    },
+    "Deleted %lld subscriptions": {
+      "one": "Deleted 1 subscription",
+      "other": "Deleted %lld subscriptions"
+    },
+    "Only the %lld sites in your list.": {
+      "one": "Only the one site in your list.",
+      "other": "Only the %lld sites in your list."
+    },
+    "%lld strategies open every site.": {
+      "one": "1 strategy opens every site.",
+      "other": "%lld strategies open every site."
+    },
+    "%lld strategies open %@.": {
+      "one": "1 strategy opens %@.",
+      "other": "%lld strategies open %@."
+    },
+    "%lld HTTP tricks": {
+      "one": "1 HTTP trick",
+      "other": "%lld HTTP tricks"
+    },
+    "tpws adds a site after %lld failed connections within a minute.": {
+      "one": "tpws adds a site after 1 failed connection within a minute.",
+      "other": "tpws adds a site after %lld failed connections within a minute."
+    }
+  },
+  "_note": {
+    "Delete %lld": "Bottom-bar button while selecting rows; %lld is how many rows are selected.",
+    "%@ Copy": "Default name for a duplicated strategy; %@ is the original strategy name.",
+    "%lld h %@ min": "Running time, e.g. '1 h 05 min'. %@ is two-digit minutes. Use your language's usual short units.",
+    "%lld min": "Running time in a stat tile, short unit.",
+    "%lld s": "Running time in a stat tile, seconds, short unit.",
+    "%lld ms": "Milliseconds after a response time, short unit.",
+    "Turn on ${applicationName}": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written; it becomes the app name (Zapret). Write a phrase a person would say aloud.",
+    "Turn ${applicationName} bypass on": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written.",
+    "Turn off ${applicationName}": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written.",
+    "Turn ${applicationName} bypass off": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written.",
+    "Toggle ${applicationName}": "Siri / Shortcuts phrase. ${applicationName} must stay exactly as written.",
+    "Turn Bypass On": "Shortcuts action name and App Shortcut tile title (short).",
+    "Turn Bypass Off": "Shortcuts action name and App Shortcut tile title (short).",
+    "Toggle Bypass": "Shortcuts action name and App Shortcut tile title (short).",
+    "Set Bypass": "Shortcuts action name used by the Control Center switch.",
+    "On": "Parameter name of the Set Bypass action (a yes/no value); also the Control Center label when the bypass is on.",
+    "Off": "Control Center label when the bypass is off. Short.",
+    "Bypass on": "Widget: Lock Screen and inline text. Very short.",
+    "Bypass off": "Widget: Lock Screen and inline text. Very short.",
+    "Bypass is on": "Widget (Home Screen) and Overview headline.",
+    "Bypass is off": "Widget (Home Screen) and Overview headline.",
+    "Zapret Bypass": "Widget and Control Center control name.",
+    "The tunnel has no settings. Open Zapret and turn it on again.": "Error from the VPN extension shown by iOS.",
+    "tpws did not start. See the log.": "Error from the VPN extension shown by iOS.",
+    "The tunnel could not be opened.": "Error from the VPN extension shown by iOS."
+  }
+}
