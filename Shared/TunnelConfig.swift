@@ -25,8 +25,16 @@ public nonisolated enum AppGroup {
         for suffix in [".tunnel", ".widgets"] where id.hasSuffix(suffix) { id.removeLast(suffix.count) }
         return id
     }()
-    public static let id = "group." + appBundleID
-    public static let tunnelBundleID = appBundleID + ".tunnel"
+
+    /// The App Group this copy was signed with. Sideloading tools (AltStore,
+    /// Feather, Sideloadly) re-sign with their own bundle IDs and may rename the
+    /// group, so it is read from the embedded provisioning profile; builds
+    /// without one (the simulator) use "group." plus the bundle ID.
+    public static let id: String = SigningInfo.appGroup ?? "group." + appBundleID
+
+    /// The tunnel extension's bundle ID, read from the extension inside the app,
+    /// since re-signing may change it.
+    public static let tunnelBundleID: String = SigningInfo.tunnelBundleID ?? appBundleID + ".tunnel"
 
     public static var container: URL {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: id)

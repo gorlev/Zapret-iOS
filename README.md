@@ -104,12 +104,34 @@ iOS does not let an app run command-line tools or change the system proxy. Zapre
 
 ## Install
 
-ZapretiOS is not on the App Store. You build it from source and install it on your own iPhone or iPad.
+ZapretiOS is not on the App Store. There are two ways to put it on your iPhone or iPad. Both need **iOS 26** or later and a **paid Apple Developer Program membership**: the bypass runs in a Network Extension (a VPN), and Apple does not let free Apple IDs sign one.
 
-You need:
-- a Mac with **Xcode 26** or later, and [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`);
-- an iPhone or iPad with **iOS 26** or later;
-- a **paid Apple Developer Program membership**. The VPN uses Apple's Network Extension, which free Apple IDs cannot sign. Add your account in Xcode under **Settings → Accounts**.
+| | Sideload the IPA | Build from source |
+|---|---|---|
+| You need | The IPA, a sideloading tool, and your developer certificate | A Mac with Xcode and your developer account |
+| Effort | Re-sign and install the IPA | One command |
+| Updates | Download the next release | `git pull` and run it again |
+
+### Option 1: Sideload the IPA
+
+Each [release](https://github.com/gorlev/Zapret-iOS/releases/latest) has `Zapret-iOS-<version>.ipa`. It is signed *ad hoc*: it holds no certificate or provisioning profile, only the entitlements it needs, so you re-sign it with your own.
+
+1. Download the IPA from the [latest release](https://github.com/gorlev/Zapret-iOS/releases/latest).
+2. Re-sign and install it with a tool that uses **your paid developer certificate**, such as [Feather](https://github.com/khcrysalis/Feather), [Sideloadly](https://sideloadly.io), or [AltStore](https://altstore.io) signed in with a paid developer account.
+3. Make sure the tool keeps these capabilities for the app *and* both extensions (`ZapretTunnel` and `ZapretWidgets`):
+   - **Network Extensions → Packet Tunnel**
+   - **App Groups** (any group name; the app reads it from its own profile)
+4. Open Zapret and tap the switch. iOS asks to add a VPN configuration: allow it.
+
+> [!IMPORTANT]
+> **A free Apple ID will not work.** AltStore, SideStore, or Sideloadly with a free account install the app, but cannot sign the VPN extension, so the switch fails to start. Shared "wildcard" certificates usually lack the Network Extension and App Group capabilities for the same reason.
+
+If the switch does not start, open the **Log** page and its **Tunnel** tab: a missing capability shows up there or as an error under the switch.
+
+### Option 2: Build from source
+
+
+You need a Mac with **Xcode 26** or later and [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`), with your paid developer account added in Xcode under **Settings → Accounts**.
 
 ```bash
 git clone https://github.com/gorlev/Zapret-iOS.git
@@ -193,7 +215,8 @@ project.yml     the XcodeGen spec; the Xcode project is generated, never committ
 | Simulator build | `xcodegen generate && xcodebuild -project ZapretiOS.xcodeproj -scheme ZapretiOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' -derivedDataPath build/DD CODE_SIGNING_ALLOWED=NO build` |
 | Find a Strategy logic | `tools/check-finder.sh` |
 | Translations | `python3 tools/l10n.py check` |
-| Signed IPA | `tools/build-ipa.sh` |
+| Signed IPA for your iPhone | `tools/build-ipa.sh` |
+| Ad hoc IPA for a release (checked for personal paths) | `tools/build-sideload-ipa.sh` |
 
 Debug builds have sample states for screenshots: launch with `ZAPRET_DEMO=on` for a running bypass, or `ZAPRET_FINDER_SAMPLE=start|progress|verdict` for Find a Strategy.
 
