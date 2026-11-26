@@ -7,6 +7,8 @@
 **A native iPhone and iPad app for [zapret](https://github.com/bol-van/zapret)'s DPI bypass.**
 One switch, ready-made strategies, site lists, and a strategy finder, running on your iPhone as a local VPN. The sibling of [ZapretMac](https://github.com/gorlev/ZapretMac).
 
+[![Latest release](https://img.shields.io/github/v/release/gorlev/Zapret-iOS?color=0B7285&label=release)](https://github.com/gorlev/Zapret-iOS/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gorlev/Zapret-iOS/total?color=0B7285)](https://github.com/gorlev/Zapret-iOS/releases)
 [![iOS 26+](https://img.shields.io/badge/iOS-26%2B-000000?logo=apple&logoColor=white)](#install)
 [![Swift 6](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)](https://swift.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0B7285)](LICENSE)
