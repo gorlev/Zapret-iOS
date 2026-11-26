@@ -4,8 +4,8 @@ Thanks for helping. Bug reports, strategy reports, translations, and code are al
 
 ## Asking and reporting
 
-- **Questions** ("does this strategy work on my provider?", "how do I…?") belong in [Discussions](https://github.com/gorlev/ZapretiOS/discussions).
-- **Bugs** and **feature ideas** belong in [Issues](https://github.com/gorlev/ZapretiOS/issues/new/choose). The forms ask for what helps most: your iOS version, your device, and the log.
+- **Questions** ("does this strategy work on my provider?", "how do I…?") belong in [Discussions](https://github.com/gorlev/Zapret-iOS/discussions).
+- **Bugs** and **feature ideas** belong in [Issues](https://github.com/gorlev/Zapret-iOS/issues/new/choose). The forms ask for what helps most: your iOS version, your device, and the log.
 - **Security problems** must not go in a public issue. See [SECURITY.md](SECURITY.md).
 
 ZapretiOS is a front end for zapret's `tpws`. If a strategy itself does not get past your provider's filter, try **Find a Strategy** first. If no `tpws` option works, the [zapret project](https://github.com/bol-van/zapret) is the right place to ask.

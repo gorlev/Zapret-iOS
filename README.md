@@ -2,7 +2,7 @@
 
 <img src="docs/images/icon.png" width="128" height="128" alt="Zapret for iOS icon">
 
-# ZapretiOS
+# Zapret for iOS
 
 **A native iPhone and iPad app for [zapret](https://github.com/bol-van/zapret)'s DPI bypass.**
 One switch, ready-made strategies, site lists, and a strategy finder, running on your iPhone as a local VPN. The sibling of [ZapretMac](https://github.com/gorlev/ZapretMac).
@@ -35,6 +35,9 @@ One switch, ready-made strategies, site lists, and a strategy finder, running on
 - [Languages](#languages)
 - [Contributing](#contributing)
 - [Acknowledgements and license](#acknowledgements-and-license)
+
+> [!TIP]
+> On a Mac? **[ZapretMac](https://github.com/gorlev/ZapretMac)** is the same app for macOS, with a menu bar item, a system proxy, and Transparent mode. Both share the strategies, site lists, Find a Strategy, and translations.
 
 ## What it does
 
@@ -109,8 +112,8 @@ You need:
 - a **paid Apple Developer Program membership**. The VPN uses Apple's Network Extension, which free Apple IDs cannot sign. Add your account in Xcode under **Settings → Accounts**.
 
 ```bash
-git clone https://github.com/gorlev/ZapretiOS.git
-cd ZapretiOS
+git clone https://github.com/gorlev/Zapret-iOS.git
+cd Zapret-iOS
 ```
 
 Connect your iPhone with a cable (and turn on **Developer Mode** in **Settings → Privacy & Security** if asked), then:
@@ -202,9 +205,11 @@ The translations were written to read naturally in each language rather than wor
 
 ## Contributing
 
-Bug reports, strategy reports, translations, and code are all welcome. Questions go in [Discussions](https://github.com/gorlev/ZapretiOS/discussions), bugs and ideas in [Issues](https://github.com/gorlev/ZapretiOS/issues/new/choose), and security problems through a [private report](SECURITY.md). Before opening a pull request, read [CONTRIBUTING.md](CONTRIBUTING.md).
+Bug reports, strategy reports, translations, and code are all welcome. Questions go in [Discussions](https://github.com/gorlev/Zapret-iOS/discussions), bugs and ideas in [Issues](https://github.com/gorlev/Zapret-iOS/issues/new/choose), and security problems through a [private report](SECURITY.md). Before opening a pull request, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Acknowledgements and license
+
+ZapretiOS is the iPhone and iPad version of **[ZapretMac](https://github.com/gorlev/ZapretMac)**: its strategies, site-list logic, Find a Strategy scans, and translations come from there, adapted to iOS.
 
 ZapretiOS is a graphical front end for **[zapret](https://github.com/bol-van/zapret)** by **bol-van**. All of the actual bypass work is done by zapret's `tpws`. Packets reach it through **[hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)** by **heiher**. ZapretiOS is not affiliated with either project.
 

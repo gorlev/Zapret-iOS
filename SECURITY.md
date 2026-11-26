@@ -6,7 +6,7 @@ ZapretiOS runs a VPN extension that sees every app's traffic on your iPhone. Sec
 
 **Please do not open a public issue.** Report it privately instead:
 
-1. Go to the [Security tab](https://github.com/gorlev/ZapretiOS/security) of this repository.
+1. Go to the [Security tab](https://github.com/gorlev/Zapret-iOS/security) of this repository.
 2. Click **Report a vulnerability**.
 
 Include what you found, the steps to reproduce it, the ZapretiOS version or commit, and your iOS version. You will get a reply as soon as possible. The fix is published before the details are made public, and you are credited in the release notes unless you prefer not to be.

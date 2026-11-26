@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: Question or help
-    url: https://github.com/gorlev/ZapretiOS/discussions
+    url: https://github.com/gorlev/Zapret-iOS/discussions
     about: Ask how to use ZapretiOS, or which strategy works on your network.
   - name: Security vulnerability
-    url: https://github.com/gorlev/ZapretiOS/security/advisories/new
+    url: https://github.com/gorlev/Zapret-iOS/security/advisories/new
     about: Report security problems privately, not in a public issue.
   - name: Problem with tpws itself
     url: https://github.com/bol-van/zapret
