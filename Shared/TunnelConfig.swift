@@ -18,8 +18,15 @@ public enum DNSChoice: String, CaseIterable, Sendable, Codable, Identifiable {
 
 /// The files and settings the app and the tunnel extension share through the App Group.
 public nonisolated enum AppGroup {
-    public static let id = "group.com.gorlev.zapretios"
-    public static let tunnelBundleID = "com.gorlev.zapretios.tunnel"
+    /// The app's bundle ID, also inside the tunnel and widget extensions
+    /// (their IDs are the app's plus ".tunnel" or ".widgets").
+    public static let appBundleID: String = {
+        var id = Bundle.main.bundleIdentifier ?? "com.gorlev.zapretios"
+        for suffix in [".tunnel", ".widgets"] where id.hasSuffix(suffix) { id.removeLast(suffix.count) }
+        return id
+    }()
+    public static let id = "group." + appBundleID
+    public static let tunnelBundleID = appBundleID + ".tunnel"
 
     public static var container: URL {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: id)

@@ -37,6 +37,8 @@ final class AppModel {
     let lists = SiteLists()
 
     private var manager: NETunnelProviderManager?
+    /// README screenshots (debug builds only): ignore the real VPN status.
+    private var isDemo = false
     private var statusObserver: NSObjectProtocol?
     private var logTimer: Timer?
     private var logOffset: UInt64 = 0
@@ -63,6 +65,18 @@ final class AppModel {
         }
         lists.onChange = { [weak self] in self?.restartIfRunning() }
         loadTask = Task { await loadManager() }
+        #if DEBUG
+        // Screenshots for the README: ZAPRET_DEMO=on shows a running bypass
+        // with sample counts, since the VPN cannot run in the simulator.
+        if ProcessInfo.processInfo.environment["ZAPRET_DEMO"] == "on" {
+            loadTask?.cancel()
+            isDemo = true
+            state = .running
+            startedAt = .now.addingTimeInterval(-754)
+            connections = 238
+            hostsSeen = ["discord.com", "gateway.discord.gg", "cdn.discordapp.com", "roblox.com", "www.wattpad.com"]
+        }
+        #endif
     }
 
     private func save() {
@@ -151,6 +165,7 @@ final class AppModel {
     }
 
     private func statusChanged() {
+        if isDemo { return }
         guard let connection = manager?.connection else { return }
         switch connection.status {
         case .connected:

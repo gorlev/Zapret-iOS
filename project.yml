@@ -8,6 +8,9 @@ options:
   knownRegions: [en, tr, de, es, it, fr, pt-BR, ru, Base]
 settings:
   base:
+    # Your own bundle ID base, when you build with your Apple Developer account:
+    #   ZAPRET_BUNDLE_ID=com.example.zapret tools/build-ipa.sh
+    ZAPRET_BUNDLE_ID: com.gorlev.zapretios
     CODE_SIGN_STYLE: Automatic
     SWIFT_VERSION: "6.0"
     SWIFT_EMIT_LOC_STRINGS: YES
@@ -32,7 +35,7 @@ targets:
       - path: Icon/Accent.xcassets
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios
+        PRODUCT_BUNDLE_IDENTIFIER: $(ZAPRET_BUNDLE_ID)
         PRODUCT_NAME: ZapretiOS
         INFOPLIST_KEY_CFBundleDisplayName: Zapret
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
@@ -61,7 +64,7 @@ targets:
       - Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios.widgets
+        PRODUCT_BUNDLE_IDENTIFIER: $(ZAPRET_BUNDLE_ID).widgets
         PRODUCT_NAME: ZapretWidgets
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Zapret
@@ -81,7 +84,7 @@ targets:
       - Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.gorlev.zapretios.tunnel
+        PRODUCT_BUNDLE_IDENTIFIER: $(ZAPRET_BUNDLE_ID).tunnel
         PRODUCT_NAME: ZapretTunnel
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Zapret Tunnel
